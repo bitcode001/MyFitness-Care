@@ -8,6 +8,7 @@ import {Provider} from 'react-redux';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 export const queryClient = new QueryClient();
 
+import {NavigationContainer} from '@react-navigation/native';
 import MainScreen from '@/screens/main.screen';
 
 function App(): JSX.Element {
@@ -15,7 +16,9 @@ function App(): JSX.Element {
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <PersistGate persistor={persistStore(store)}>
-          <MainScreen />
+          <NavigationContainer>
+            <MainScreen />
+          </NavigationContainer>
         </PersistGate>
       </Provider>
     </QueryClientProvider>
