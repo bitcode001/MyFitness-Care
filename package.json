@@ -10,6 +10,7 @@
     "ios-install-0": "cd ios && bundle install && bundle exec pod install",
     "ios-install-1": "cd ios && bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install",
     "clean-ios": "cd ios && rm -rf Pods build Podfile.lock && pod cache clean --all && xcodebuild clean",
+    "clean-android": "cd android && ./gradlew clean && rm -rf build && rm -rf ./app/.cxx && cd ..",
     "test": "jest"
   },
   "dependencies": {

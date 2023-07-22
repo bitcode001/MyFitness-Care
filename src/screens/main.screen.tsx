@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 });
 
 const GenIcon = (focused: boolean, name: string) => (
-  <View className="d-flex flex-col h-full absolute top-1/2">
+  <View className="d-flex flex-col h-full justify-center">
     <MaterialIcon
       name={name}
       size={30}
@@ -71,6 +71,9 @@ export default function MainScreen(): JSX.Element {
           component={PerformanceScreen}
           options={{
             tabBarIcon: ({focused}) => GenIcon(focused, 'poll'),
+            tabBarIconStyle: {
+              backgroundColor: 'pink',
+            },
           }}
           listeners={({navigation, route}) => ({
             tabPress: e => {
