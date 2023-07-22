@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Dimensions, StatusBar} from 'react-native';
+import {StyleSheet, Dimensions, StatusBar, View} from 'react-native';
 import {Button} from 'react-native-paper';
 import Modal from 'react-native-modal';
 import AnimatedLottieView from 'lottie-react-native';
@@ -42,22 +42,23 @@ const GlobalLoadingView = () => {
         hideModalContentWhileAnimating={true}
         deviceHeight={deviceHeight}>
         {/* <ActivityIndicator size="large" color="#00ff00" /> */}
-        <AnimatedLottieView
-          source={require('@/assets/lottie/animation_meditation.json')}
-          autoPlay
-          loop
-          resizeMode="cover"
-          // eslint-disable-next-line react-native/no-inline-styles
-          style={{width: 200, height: 200}}
-          cacheComposition={true}
-          autoSize={true}
-          enableMergePathsAndroidForKitKatAndAbove
-          hardwareAccelerationAndroid
-          key={Date.now().toString() + Math.random()}
-          testID={Date.now().toString()}
-          useNativeLooping
-          renderMode="AUTOMATIC"
-        />
+        <View className="w-13 h13">
+          <AnimatedLottieView
+            source={require('@/assets/lottie/animation_meditation.json')}
+            autoPlay
+            loop
+            resizeMode="cover"
+            // eslint-disable-next-line react-native/no-inline-styles
+            cacheComposition={true}
+            autoSize={true}
+            enableMergePathsAndroidForKitKatAndAbove
+            hardwareAccelerationAndroid
+            key={Date.now().toString() + Math.random()}
+            testID={Date.now().toString()}
+            useNativeLooping
+            renderMode="AUTOMATIC"
+          />
+        </View>
         <Button mode="contained" onPress={() => setIsLoading(false)}>
           Close
         </Button>

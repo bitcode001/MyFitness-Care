@@ -1,10 +1,13 @@
+import SafeAreaScrollView from '@/components/SafeAreaScrollView';
+import UserIntro from '@/components/UserIntro';
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
 
 export default function PerformanceScreen(): JSX.Element {
   return (
-    <View>
+    <SafeAreaScrollView>
+      <UserIntro profileLabel="Progress Summary" />
       <Text>Performance Screen</Text>
-    </View>
+    </SafeAreaScrollView>
   );
 }

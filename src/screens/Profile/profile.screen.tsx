@@ -1,10 +1,109 @@
+import ProgressPie from '@/components/ProgressPie';
+import SafeAreaScrollView from '@/components/SafeAreaScrollView';
+import UserIntro from '@/components/UserIntro';
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Image, Text, TouchableOpacity, View, ScrollView} from 'react-native';
 
+const LevelComponent = () => {
+  return (
+    <View className="bg-green-500 px-3 py-1 ml-4 rounded-full">
+      <Text className="text-white font-semibold text-sm">Level 1</Text>
+    </View>
+  );
+};
+
+const infoSectionStyle = {
+  rowGap: {
+    rowGap: 15,
+  },
+};
 export default function ProfileScreen(): JSX.Element {
   return (
-    <View>
-      <Text>Profile Screen</Text>
-    </View>
+    <SafeAreaScrollView>
+      <UserIntro
+        profileLabel={'Hey there,'}
+        levelComponent={<LevelComponent />}
+      />
+
+      {/* USER INFO SECTION */}
+      <View className="flex flex-col mt-10" style={infoSectionStyle.rowGap}>
+        <TouchableOpacity className="bg-white px-4 py-3 rounded-2xl flex flex-row items-center">
+          <Image
+            className="h-6 w-6"
+            source={require('@/assets/icons/user.png')}
+          />
+          <Text className="ml-6 text-lg font-light">Profile Summary</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="bg-white px-4 py-3 rounded-2xl flex flex-row items-center">
+          <Image
+            className="h-6 w-6"
+            source={require('@/assets/icons/achievement.png')}
+          />
+          <Text className="ml-6 text-lg font-light">Achievements</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="bg-white px-4 py-3 rounded-2xl flex flex-row items-center">
+          <Image
+            className="h-6 w-6"
+            source={require('@/assets/icons/exercise.png')}
+          />
+          <Text className="ml-6 text-lg font-light">My Routine</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Challenges Section */}
+      <Text className="text-2xl font-normal mt-10 mb-5">Challenges</Text>
+      <ScrollView horizontal>
+        {[1, 2, 3, 4, 5].map((item, index) => (
+          <View
+            key={index}
+            className="flex flex-row justify-center items-center p-3 py-4 bg-white rounded-xl mr-4">
+            <Image
+              className="w-28 h-24 rounded-lg"
+              source={{
+                uri: 'https://picsum.photos/300/300',
+              }}
+            />
+            <View className="px-6 py-2">
+              <Text className="text-base leading-5 mb-2 font-semibold">
+                Legs Workout
+              </Text>
+              <Text>Complete 2 of these</Text>
+              <View className="flex flex-row gap-2 mb-2 mt-1">
+                <View className="bg-green-500 px-3 py-1 rounded-full">
+                  <Text className="text-xs text-white">Fitcoins: 5</Text>
+                </View>
+                <View className="bg-sky-500 px-3 py-1 rounded-full">
+                  <Text className="text-xs text-white">Exp: 30</Text>
+                </View>
+              </View>
+            </View>
+            <Image
+              className="w-8 h-8 rounded-full absolute right-4 bottom-2"
+              source={require('@/assets/icons/star.png')}
+            />
+          </View>
+        ))}
+      </ScrollView>
+
+      {/* Economy Section */}
+      <Text className="text-2xl font-normal mt-10 mb-5">Economy</Text>
+      <View className="flex flex-row gap-4">
+        <TouchableOpacity className="bg-white flex-1 flex-col justify-center items-center px-2 py-6 rounded-xl">
+          <ProgressPie percentage={40} radius={37} strokeWidth={0} />
+          <Text className="text-base font-medium mt-2">For Next Level</Text>
+          <Text className="text-2xl font-normal">130 exp</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="bg-white flex-1 flex-col justify-center items-center px-2 py-6 rounded-xl">
+          <Image
+            className="w-20 h-20"
+            source={require('@/assets/icons/money.png')}
+          />
+          <Text className="text-base font-medium mt-2">
+            Your fitcoin balance
+          </Text>
+          <Text className="text-2xl font-normal">200</Text>
+        </TouchableOpacity>
+      </View>
+    </SafeAreaScrollView>
   );
 }

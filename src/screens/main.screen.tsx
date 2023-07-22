@@ -2,6 +2,7 @@
 import React from 'react';
 import {View, StyleSheet, Animated, Dimensions} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {MyToast} from '@/components/MyToast';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -9,6 +10,8 @@ const Tab = createBottomTabNavigator();
 import HomeScreen from './Home/home.screen';
 import ProfileScreen from './Profile/profile.screen';
 import PerformanceScreen from './Performance/performance.screen';
+import {MThemeColors} from '@/constant/colors';
+import {MSpacing} from '@/constant/measurements';
 
 const styles = StyleSheet.create({
   shadow: {
@@ -47,15 +50,19 @@ export default function MainScreen(): JSX.Element {
     <>
       <Tab.Navigator
         initialRouteName="Home"
+        sceneContainerStyle={{
+          backgroundColor: MThemeColors.defaultScreenBG,
+        }}
         screenOptions={{
           tabBarShowLabel: false,
+          headerShown: false,
           tabBarStyle: {
             position: 'absolute',
-            bottom: 40,
-            left: 20,
-            right: 20,
-            height: 70,
-            borderRadius: 15,
+            bottom: MSpacing.bottomTabBar.bottomOffset,
+            left: MSpacing.bottomTabBar.sideSpacing,
+            right: MSpacing.bottomTabBar.sideSpacing,
+            height: MSpacing.bottomTabBar.height,
+            borderRadius: MSpacing.bottomTabBar.borderRadius,
             ...styles.shadow,
           },
         }}>
@@ -121,6 +128,8 @@ export default function MainScreen(): JSX.Element {
           ],
         }}
       />
+      {/* Global Toast */}
+      <MyToast />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StatusBar, StyleSheet} from 'react-native';
 import Toast, {
   BaseToast,
   // SuccessToast,
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 10,
     marginVertical: 10,
+    marginTop: 30,
   },
   successStyle: {
     borderLeftColor: '#4CAF50',
