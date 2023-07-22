@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 });
 
 const GenIcon = (focused: boolean, name: string) => (
-  <View className="d-flex flex-col h-full justify-center">
+  <View className="d-flex flex-col h-full flex-1 justify-center">
     <MaterialIcon
       name={name}
       size={30}
@@ -71,9 +71,18 @@ export default function MainScreen(): JSX.Element {
           component={PerformanceScreen}
           options={{
             tabBarIcon: ({focused}) => GenIcon(focused, 'poll'),
-            tabBarIconStyle: {
-              backgroundColor: 'pink',
+            tabBarItemStyle: {
+              height: MSpacing.bottomTabBar.height,
             },
+            // tabBarStyle: {
+            //   backgroundColor: 'purple',
+            // },
+            // tabBarIconStyle: {
+            //   backgroundColor: 'pink',
+            // },
+            // tabBarBadgeStyle: {
+            //   backgroundColor: 'green',
+            // },
           }}
           listeners={({navigation, route}) => ({
             tabPress: e => {
@@ -89,6 +98,9 @@ export default function MainScreen(): JSX.Element {
           component={HomeScreen}
           options={{
             tabBarIcon: ({focused}) => GenIcon(focused, 'home'),
+            tabBarItemStyle: {
+              height: MSpacing.bottomTabBar.height,
+            },
           }}
           listeners={({navigation, route}) => ({
             tabPress: e => {
@@ -104,6 +116,9 @@ export default function MainScreen(): JSX.Element {
           component={ProfileScreen}
           options={{
             tabBarIcon: ({focused}) => GenIcon(focused, 'account'),
+            tabBarItemStyle: {
+              height: MSpacing.bottomTabBar.height,
+            },
           }}
           listeners={({navigation, route}) => ({
             tabPress: e => {

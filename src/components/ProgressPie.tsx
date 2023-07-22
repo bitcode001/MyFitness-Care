@@ -23,8 +23,11 @@ const Pie = ({percentage, radius, strokeWidth = 0}: PieInterface) => {
   return (
     <Svg width={r * 2 + strokeWidth * 2} height={r * 2 + strokeWidth * 2}>
       <G>
+        {/* <Circle cx={cx} cy={cy} r={r} fill="#D1FED6" />
+        <Path d={d + ` L ${cx} ${cy}`} fill="#26D136" /> */}
         <Circle cx={cx} cy={cy} r={r} fill="#D1FED6" />
         <Path d={d + ` L ${cx} ${cy}`} fill="#26D136" />
+        <Circle cx={cx} cy={cy} r={r / 2} fill="white" />
       </G>
     </Svg>
   );
