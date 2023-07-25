@@ -35,22 +35,22 @@ const GlobalLoadingView = () => {
         animationIn={'fadeIn'}
         animationOut={'fadeOut'}
         backdropColor="black"
-        backdropOpacity={0.4}
+        backdropOpacity={0.8}
         statusBarTranslucent={true}
         useNativeDriver={true}
         useNativeDriverForBackdrop={true}
         hideModalContentWhileAnimating={true}
         deviceHeight={deviceHeight}>
         {/* <ActivityIndicator size="large" color="#00ff00" /> */}
-        <View className="w-13 h13">
+        <View className="w-64 h-64 flex justify-center items-center">
           <AnimatedLottieView
             source={require('@/assets/lottie/animation_meditation.json')}
             autoPlay
             loop
-            resizeMode="cover"
+            // resizeMode="cover"
             // eslint-disable-next-line react-native/no-inline-styles
             cacheComposition={true}
-            autoSize={true}
+            // autoSize={true}
             enableMergePathsAndroidForKitKatAndAbove
             hardwareAccelerationAndroid
             key={Date.now().toString() + Math.random()}

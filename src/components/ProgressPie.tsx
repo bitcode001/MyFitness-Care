@@ -1,6 +1,5 @@
 import React from 'react';
 import Svg, {Path, G, Circle} from 'react-native-svg';
-
 interface PieInterface {
   percentage: number;
   radius: number;

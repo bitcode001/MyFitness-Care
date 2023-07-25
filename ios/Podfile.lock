@@ -906,9 +906,9 @@ PODS:
   - hermes-engine/Pre-built (0.72.3)
   - leveldb-library (1.22.2)
   - libevent (2.1.12)
-  - lottie-ios (4.2.0)
-  - lottie-react-native (6.0.0-rc.7):
-    - lottie-ios (~> 4.2.0)
+  - lottie-ios (3.4.4)
+  - lottie-react-native (5.1.6):
+    - lottie-ios (~> 3.4.0)
     - React-Core
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
@@ -1331,6 +1331,8 @@ PODS:
     - React-perflogger (= 0.72.3)
   - RNCAsyncStorage (1.19.1):
     - React-Core
+  - RNCMaskedView (0.2.9):
+    - React-Core
   - RNFBApp (18.3.0):
     - Firebase/CoreOnly (= 10.12.0)
     - React-Core
@@ -1348,7 +1350,7 @@ PODS:
   - RNGoogleSignin (10.0.1):
     - GoogleSignIn (~> 7.0)
     - React-Core
-  - RNReanimated (3.3.0):
+  - RNReanimated (3.4.0):
     - DoubleConversion
     - FBLazyVector
     - glog
@@ -1380,7 +1382,7 @@ PODS:
   - RNScreens (3.22.1):
     - React-Core
     - React-RCTImage
-  - RNSVG (13.10.0):
+  - RNSVG (13.9.0):
     - React-Core
   - RNVectorIcons (9.2.0):
     - React-Core
@@ -1463,6 +1465,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCMaskedView (from `../node_modules/@react-native-masked-view/masked-view`)"
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBAuth (from `../node_modules/@react-native-firebase/auth`)"
   - "RNFBFirestore (from `../node_modules/@react-native-firebase/firestore`)"
@@ -1598,6 +1601,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-masked-view/masked-view"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBAuth:
@@ -1657,8 +1662,8 @@ SPEC CHECKSUMS:
   hermes-engine: 10fbd3f62405c41ea07e71973ea61e1878d07322
   leveldb-library: f03246171cce0484482ec291f88b6d563699ee06
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
-  lottie-react-native: a7341509cbc0bf01dff9889d1f7e17e8e745cf9e
+  lottie-ios: 8f97d3271e155c2d688875c29cd3c74908aef5f8
+  lottie-react-native: 8f9d4be452e23f6e5ca0fdc11669dc99ab52be81
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
@@ -1696,14 +1701,15 @@ SPEC CHECKSUMS:
   React-utils: bcb57da67eec2711f8b353f6e3d33bd8e4b2efa3
   ReactCommon: 3ccb8fb14e6b3277e38c73b0ff5e4a1b8db017a9
   RNCAsyncStorage: f47fe18526970a69c34b548883e1aeceb115e3e1
+  RNCMaskedView: 949696f25ec596bfc697fc88e6f95cf0c79669b6
   RNFBApp: 147c3274daa84d7410d457510548d5fb3b317e37
   RNFBAuth: 7f10a8eb8b55ec604946d071bdd9a228d80c4486
   RNFBFirestore: 6e4f66156e5762fb26894cc9824bf1e60264f7e9
   RNGestureHandler: dec4645026e7401a0899f2846d864403478ff6a5
   RNGoogleSignin: ccaa4a81582cf713eea562c5dd9dc1961a715fd0
-  RNReanimated: 9f7068e43b9358a46a688d94a5a3adb258139457
+  RNReanimated: 020859659f64be2d30849a1fe88c821a7c3e0cbf
   RNScreens: 50ffe2fa2342eabb2d0afbe19f7c1af286bc7fb3
-  RNSVG: 80584470ff1ffc7994923ea135a3e5ad825546b9
+  RNSVG: 53c661b76829783cdaf9b7a57258f3d3b4c28315
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 8796b55dba14d7004f980b54bcc9833ee45b28ce

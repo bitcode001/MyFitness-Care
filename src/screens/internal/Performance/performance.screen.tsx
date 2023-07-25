@@ -53,13 +53,15 @@ const SummaryGrid = () => {
             backgroundColor: perk.color,
           }}
           className="rounded-xl">
-          <View className="flex flex-row justify-between items-center bg-white rounded-xl mr-1 px-6 py-4">
-            {perk.icon && <Image className="h-10 w-10" source={perk.icon} />}
-            <View className="flex flex-col justify-between flex-1 ml-4">
+          <View className="flex flex-row justify-between items-center bg-white rounded-xl mr-1 p-4 flex-grow">
+            {perk.icon && <Image className="h-8 w-8" source={perk.icon} />}
+            <View className="flex flex-col justify-between flex-1 ml-6">
               <Text className="text-xs font-medium  text-black">
                 {perk.title}
               </Text>
-              <Text className="text-2xl font-semibold">{perk.count}</Text>
+              <Text className="text-2xl font-semibold text-black">
+                {perk.count}
+              </Text>
             </View>
           </View>
         </View>
