@@ -13,8 +13,6 @@ import {MSpacing} from '@/constant/measurements';
 // import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Button, IconButton} from 'react-native-paper';
-import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function ExerciseScreen(): JSX.Element {
   // const insets = useSafeAreaInsets();
@@ -22,8 +20,24 @@ export default function ExerciseScreen(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   const [startExercise, setStartExercise] = React.useState(false);
 
+  const exerciseList = [1, 2, 3, 4, 5];
+  const [completedExerciseIndex, setCompletedExerciseIndex] = React.useState<
+    number | null
+  >(null);
+
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.lighter : MThemeColors.white,
+  };
+
+  const shouldDisable = (dependent: boolean) => {
+    if (
+      completedExerciseIndex === null ||
+      completedExerciseIndex < exerciseList.length - 1
+    ) {
+      return dependent;
+    } else {
+      return true;
+    }
   };
 
   const handleExerciseStart = () => {
@@ -32,6 +46,16 @@ export default function ExerciseScreen(): JSX.Element {
 
   const handleExerciseStop = () => {
     setStartExercise(!startExercise);
+    setCompletedExerciseIndex(val => (val !== null ? val + 1 : 0));
+  };
+
+  const customizeExerciseStat = (index: number) => {
+    return {
+      opacity:
+        completedExerciseIndex !== null && index <= completedExerciseIndex
+          ? 0.5
+          : 1,
+    };
   };
 
   return (
@@ -75,14 +99,14 @@ export default function ExerciseScreen(): JSX.Element {
               mode="contained"
               className="self-center"
               loading={startExercise}
-              disabled={startExercise}
+              disabled={shouldDisable(startExercise)}
               onPress={handleExerciseStart}>
               <Text>Start Timer</Text>
             </Button>
 
             <IconButton
               icon="pause"
-              disabled={!startExercise}
+              disabled={shouldDisable(!startExercise)}
               animated
               onPress={handleExerciseStop}
               iconColor={MThemeColors.black}
@@ -102,11 +126,12 @@ export default function ExerciseScreen(): JSX.Element {
           paddingBottom:
             MSpacing.bottomTabBar.height + MSpacing.bottomTabBar.bottomOffset,
         }}>
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
+        {exerciseList.map((item, index) => {
           return (
             <View
               key={index}
-              className="bg-white rounded-2xl p-4 flex flex-row justify-between items-center my-4">
+              className="bg-white rounded-2xl p-4 flex flex-row justify-between items-center my-4"
+              style={customizeExerciseStat(index)}>
               <Image
                 className="w-16 h-16 rounded-full"
                 source={{uri: 'https://picsum.photos/200/200'}}
