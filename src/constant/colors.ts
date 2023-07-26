@@ -10,6 +10,8 @@ export const MThemeColors = {
   lightPurple: '#A7CAFF',
   lightPink: '#FDA7FF',
   baseOrange: '#FFB55F',
+  skyBlue: '#31C6E7',
+  successGreen: '#00C851', // #26D136
 
   tabBg: '#E7E7E7',
 };

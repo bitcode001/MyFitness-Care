@@ -7,6 +7,7 @@ const Tab = createBottomTabNavigator();
 import HomeScreen from '@/screens/internal/Home/home.screen';
 import ProfileScreen from '@/screens/internal/Profile/profile.screen';
 import PerformanceScreen from '@/screens/internal/Performance/performance.screen';
+import ExerciseScreen from './Exercise/exercise.screen';
 
 import {MThemeColors} from '@/constant/colors';
 import {MSpacing} from '@/constant/measurements';
@@ -42,11 +43,11 @@ const getWidth = () => {
 
   width = width - 40;
 
-  return width / 3;
+  return width / 4;
 };
 
 export default function InternalBottomStack(): JSX.Element {
-  const tabOffsetValue = React.useRef(new Animated.Value(getWidth())).current;
+  const tabOffsetValue = React.useRef(new Animated.Value(0)).current;
   return (
     <>
       <Tab.Navigator
@@ -68,6 +69,24 @@ export default function InternalBottomStack(): JSX.Element {
           },
         }}>
         <Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            tabBarIcon: ({focused}) => GenIcon(focused, 'home'),
+            tabBarItemStyle: {
+              height: MSpacing.bottomTabBar.height,
+            },
+          }}
+          listeners={({navigation, route}) => ({
+            tabPress: e => {
+              Animated.spring(tabOffsetValue, {
+                toValue: 0,
+                useNativeDriver: true,
+              }).start();
+            },
+          })}
+        />
+        <Tab.Screen
           name="Performance"
           component={PerformanceScreen}
           options={{
@@ -88,17 +107,17 @@ export default function InternalBottomStack(): JSX.Element {
           listeners={({navigation, route}) => ({
             tabPress: e => {
               Animated.spring(tabOffsetValue, {
-                toValue: 0,
+                toValue: getWidth(),
                 useNativeDriver: true,
               }).start();
             },
           })}
         />
         <Tab.Screen
-          name="Home"
-          component={HomeScreen}
+          name="Exercise"
+          component={ExerciseScreen}
           options={{
-            tabBarIcon: ({focused}) => GenIcon(focused, 'home'),
+            tabBarIcon: ({focused}) => GenIcon(focused, 'dumbbell'),
             tabBarItemStyle: {
               height: MSpacing.bottomTabBar.height,
             },
@@ -106,7 +125,7 @@ export default function InternalBottomStack(): JSX.Element {
           listeners={({navigation, route}) => ({
             tabPress: e => {
               Animated.spring(tabOffsetValue, {
-                toValue: getWidth(),
+                toValue: getWidth() * 2,
                 useNativeDriver: true,
               }).start();
             },
@@ -124,7 +143,7 @@ export default function InternalBottomStack(): JSX.Element {
           listeners={({navigation, route}) => ({
             tabPress: e => {
               Animated.spring(tabOffsetValue, {
-                toValue: getWidth() * 2,
+                toValue: getWidth() * 3,
                 useNativeDriver: true,
               }).start();
             },
