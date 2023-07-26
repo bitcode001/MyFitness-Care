@@ -3,33 +3,25 @@ import React from 'react';
 import InternalScreen from './internal';
 import OnboardingStack from './onboarding';
 import {MyToast} from '@/components/MyToast';
-import GlobalLoadingView from '@/components/GlobalLoadingView';
+import GlobalSpinner from '@/components/GlobalSpinner';
+import auth from '@react-native-firebase/auth';
 import useFirebase from '@/hooks/firebase.auth.hook';
+import {useSelector} from 'react-redux';
+import {RootState} from '@/redux/store';
 
 export default function MainScreen() {
-  const {isSignedIn} = useFirebase();
-  const [signInStat, setSignInStat] = React.useState<boolean | null>(null);
-  const {LoadingView, setIsLoading} = GlobalLoadingView();
+  const {handleAuthStateChanged} = useFirebase();
+  const authState = useSelector((state: RootState) => state.auth);
 
   React.useEffect(() => {
-    setIsLoading(true);
-    isSignedIn()
-      .then(res => {
-        console.log('res', res);
-        if (typeof res === 'boolean') {
-          setSignInStat(res);
-        }
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }, [isSignedIn, setIsLoading]);
+    const subscriber = auth().onAuthStateChanged(handleAuthStateChanged);
+
+    return subscriber; // unsubscribe on unmount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const renderApp = () => {
-    if (signInStat === null) {
-      return <LoadingView />;
-    }
-    if (signInStat) {
+    if (authState.isAuthenticated) {
       return <InternalScreen />;
     }
     return <OnboardingStack />;
@@ -39,6 +31,7 @@ export default function MainScreen() {
     <>
       {renderApp()}
       <MyToast />
+      <GlobalSpinner />
     </>
   );
 }

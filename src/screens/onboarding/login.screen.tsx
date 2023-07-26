@@ -9,6 +9,11 @@ import Toast from 'react-native-toast-message';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 import ErrorLabel from '@/components/Form/ErrorLabel';
+import useFirebase, {
+  getFirebaseAuthErrorMessage,
+} from '@/hooks/firebase.auth.hook';
+import {useDispatch} from 'react-redux';
+import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 
 type LoginScreenNavigationProp = StackNavigationProp<
   OnboardingStackParamList,
@@ -36,16 +41,31 @@ interface InitialLoginFormInterface {
 }
 
 export default function LoginScreen({navigation}: LoginInterface): JSX.Element {
+  const {signInWithCredential} = useFirebase();
   const [passwordVisible, setPasswordVisible] = React.useState(false);
   const togglePasswordVisibility = () => setPasswordVisible(!passwordVisible);
+  const dispatch = useDispatch();
 
-  const handleLogin = (values: InitialLoginFormInterface) => {
-    console.log(values);
-    Toast.show({
-      type: 'success',
-      text1: 'Success',
-      text2: 'You have successfully logged in!',
-    });
+  const handleLogin = async (values: InitialLoginFormInterface) => {
+    dispatch(startSpinner());
+    const {email, password} = values;
+    try {
+      await signInWithCredential(email, password);
+      dispatch(stopSpinner());
+      Toast.show({
+        type: 'success',
+        text1: 'Success',
+        text2: 'You have successfully logged in!',
+      });
+    } catch (error: any) {
+      dispatch(stopSpinner());
+      const msg = getFirebaseAuthErrorMessage(error?.code);
+      Toast.show({
+        type: 'error',
+        text1: 'Error',
+        text2: msg,
+      });
+    }
   };
 
   return (
@@ -72,6 +92,7 @@ export default function LoginScreen({navigation}: LoginInterface): JSX.Element {
                 outlineColor="transparent"
                 label={'Email'}
                 mode="outlined"
+                autoCapitalize="none"
                 onChangeText={handleChange('email')}
                 onBlur={handleBlur('email')}
                 value={values.email}

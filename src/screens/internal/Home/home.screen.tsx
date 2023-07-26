@@ -1,18 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Image, ScrollView, View, Text} from 'react-native';
 
-import auth from '@react-native-firebase/auth';
-
-import useFirebase from '@/hooks/firebase.auth.hook';
-// import {useSelector} from 'react-redux';
-// import {RootState} from '@/redux/store';
-
-// import SafeArea from '@components/SafeArea';
-// import {Button} from 'react-native-paper';
-// import {useGetAllExerciseDetails} from '@/apis/exercise.db';
-// import {useExtractQuery} from '@/hooks/useExtractFirebaseData';
-// import Toast from 'react-native-toast-message';
-// import GlobalLoadingView from '@/components/GlobalLoadingView';
 import {MThemeColors} from '@/constant/colors';
 import UserIntro from '@/components/UserIntro';
 import SafeAreaScrollView from '@/components/SafeAreaScrollView';
@@ -31,43 +19,6 @@ const CustomLabel = ({label, color}: {label: string; color: string}) => {
 };
 
 export default function HomeScreen(): JSX.Element {
-  // const authState = useSelector((state: RootState) => state.auth);
-  // const {getCurrentUser, getTokens, signIn, isSignedIn, signOut} =
-  //   useFirebase();
-
-  const {handleAuthStateChanged} = useFirebase();
-
-  // const {data, isLoading, isError, error, refetch, fetchStatus} =
-  //   useGetAllExerciseDetails();
-  // const {mappedData} = useExtractQuery(data);
-  // const {setIsLoading} = GlobalLoadingView();
-
-  // if (!isLoading && !isError) {
-  //   console.log('Extracted Data: ', mappedData);
-  // }
-
-  // useEffect(() => {
-  //   if (!isLoading && error) {
-  //     Toast.show({
-  //       type: 'error',
-  //       text1: 'ERROR ',
-  //       text2: `${error.message}`,
-  //     });
-  //   }
-  //   if (isLoading && fetchStatus === 'fetching') {
-  //     console.log('Should show spinner!');
-  //     setIsLoading(true);
-  //   } else {
-  //     setIsLoading(false);
-  //   }
-  // }, [error, isLoading, fetchStatus, setIsLoading]);
-
-  useEffect(() => {
-    const subscriber = auth().onAuthStateChanged(handleAuthStateChanged);
-    return subscriber; // unsubscribe on unmount
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <SafeAreaScrollView>
       <UserIntro profileLabel="Todays Exercise" />

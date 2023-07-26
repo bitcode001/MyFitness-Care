@@ -3,6 +3,7 @@ import SafeAreaScrollView from '@/components/SafeAreaScrollView';
 import UserIntro from '@/components/UserIntro';
 import React from 'react';
 import {Image, Text, TouchableOpacity, View, ScrollView} from 'react-native';
+import useFirebase from '@/hooks/firebase.auth.hook';
 
 const LevelComponent = () => {
   return (
@@ -18,6 +19,12 @@ const infoSectionStyle = {
   },
 };
 export default function ProfileScreen(): JSX.Element {
+  const {signOut} = useFirebase();
+
+  const handleLogOut = async () => {
+    console.log('Log out');
+    await signOut();
+  };
   return (
     <SafeAreaScrollView>
       <UserIntro
@@ -47,6 +54,16 @@ export default function ProfileScreen(): JSX.Element {
             source={require('@/assets/icons/exercise.png')}
           />
           <Text className="ml-6 text-lg font-light">My Routine</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          className="bg-white px-4 py-3 rounded-2xl flex flex-row items-center"
+          onPress={handleLogOut}>
+          <Image
+            className="h-6 w-6"
+            source={require('@/assets/icons/shutdown.png')}
+          />
+          <Text className="ml-6 text-lg font-light">Log Out</Text>
         </TouchableOpacity>
       </View>
 

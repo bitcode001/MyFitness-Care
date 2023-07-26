@@ -1,7 +1,8 @@
 import {createSlice} from '@reduxjs/toolkit';
 import type {PayloadAction} from '@reduxjs/toolkit';
 // import {auth} from 'src/hooks/useFirebase';
-import {User} from '@react-native-google-signin/google-signin';
+// import {User} from '@react-native-google-signin/google-signin';
+import {FirebaseAuthTypes} from '@react-native-firebase/auth';
 
 // export const rehydrateAuthSlice = createAsyncThunk(
 //   'auth/rehydrate',
@@ -12,12 +13,12 @@ import {User} from '@react-native-google-signin/google-signin';
 // );
 
 export interface AuthSliceInterface {
-  user: User | null;
+  frUser: FirebaseAuthTypes.User | null;
   isAuthenticated: boolean;
 }
 
 const initialState: AuthSliceInterface = {
-  user: null,
+  frUser: null,
   isAuthenticated: false,
 };
 
@@ -36,13 +37,13 @@ export const authSlice = createSlice({
   reducers: {
     invalidateUser: () => {
       return {
-        user: null,
+        frUser: null,
         isAuthenticated: false,
       };
     },
-    setUser: (_, action: PayloadAction<User | null>) => {
+    setUser: (_, action: PayloadAction<FirebaseAuthTypes.User | null>) => {
       return {
-        user: action.payload,
+        frUser: action.payload,
         isAuthenticated: !!action.payload,
       };
     },
