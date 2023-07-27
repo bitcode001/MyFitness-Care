@@ -14,6 +14,7 @@ import {MSpacing} from '@/constant/measurements';
 
 import {StyleSheet, View, Animated, Dimensions} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import RoutineSetupScreen from './Routine/routine.setup.screen';
 
 const styles = StyleSheet.create({
   shadow: {
@@ -48,124 +49,125 @@ const getWidth = () => {
 
 export default function InternalBottomStack(): JSX.Element {
   const tabOffsetValue = React.useRef(new Animated.Value(0)).current;
-  return (
-    <>
-      <Tab.Navigator
-        initialRouteName="Home"
-        sceneContainerStyle={{
-          backgroundColor: MThemeColors.defaultScreenBG,
-        }}
-        screenOptions={{
-          tabBarShowLabel: false,
-          headerShown: false,
-          tabBarStyle: {
-            position: 'absolute',
-            bottom: MSpacing.bottomTabBar.bottomOffset,
-            left: MSpacing.bottomTabBar.sideSpacing,
-            right: MSpacing.bottomTabBar.sideSpacing,
-            height: MSpacing.bottomTabBar.height,
-            borderRadius: MSpacing.bottomTabBar.borderRadius,
-            ...styles.shadow,
-          },
-        }}>
-        <Tab.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{
-            tabBarIcon: ({focused}) => GenIcon(focused, 'home'),
-            tabBarItemStyle: {
-              height: MSpacing.bottomTabBar.height,
-            },
-          }}
-          listeners={({navigation, route}) => ({
-            tabPress: e => {
-              Animated.spring(tabOffsetValue, {
-                toValue: 0,
-                useNativeDriver: true,
-              }).start();
-            },
-          })}
-        />
-        <Tab.Screen
-          name="Performance"
-          component={PerformanceScreen}
-          options={{
-            tabBarIcon: ({focused}) => GenIcon(focused, 'poll'),
-            tabBarItemStyle: {
-              height: MSpacing.bottomTabBar.height,
-            },
-            // tabBarStyle: {
-            //   backgroundColor: 'purple',
-            // },
-            // tabBarIconStyle: {
-            //   backgroundColor: 'pink',
-            // },
-            // tabBarBadgeStyle: {
-            //   backgroundColor: 'green',
-            // },
-          }}
-          listeners={({navigation, route}) => ({
-            tabPress: e => {
-              Animated.spring(tabOffsetValue, {
-                toValue: getWidth(),
-                useNativeDriver: true,
-              }).start();
-            },
-          })}
-        />
-        <Tab.Screen
-          name="Exercise"
-          component={ExerciseScreen}
-          options={{
-            tabBarIcon: ({focused}) => GenIcon(focused, 'dumbbell'),
-            tabBarItemStyle: {
-              height: MSpacing.bottomTabBar.height,
-            },
-          }}
-          listeners={({navigation, route}) => ({
-            tabPress: e => {
-              Animated.spring(tabOffsetValue, {
-                toValue: getWidth() * 2,
-                useNativeDriver: true,
-              }).start();
-            },
-          })}
-        />
-        <Tab.Screen
-          name="Profile"
-          component={ProfileScreen}
-          options={{
-            tabBarIcon: ({focused}) => GenIcon(focused, 'account'),
-            tabBarItemStyle: {
-              height: MSpacing.bottomTabBar.height,
-            },
-          }}
-          listeners={({navigation, route}) => ({
-            tabPress: e => {
-              Animated.spring(tabOffsetValue, {
-                toValue: getWidth() * 3,
-                useNativeDriver: true,
-              }).start();
-            },
-          })}
-        />
-      </Tab.Navigator>
-      <Animated.View
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={{
-          position: 'absolute',
-          bottom: 40,
-          left: 40,
-          height: 2,
-          width: getWidth() - 40,
-          backgroundColor: 'red',
-          transform: [
-            {
-              translateX: tabOffsetValue,
-            },
-          ],
-        }}
-      />
-    </>
-  );
+  return <RoutineSetupScreen />;
+  // return (
+  //   <>
+  //     <Tab.Navigator
+  //       initialRouteName="Home"
+  //       sceneContainerStyle={{
+  //         backgroundColor: MThemeColors.defaultScreenBG,
+  //       }}
+  //       screenOptions={{
+  //         tabBarShowLabel: false,
+  //         headerShown: false,
+  //         tabBarStyle: {
+  //           position: 'absolute',
+  //           bottom: MSpacing.bottomTabBar.bottomOffset,
+  //           left: MSpacing.bottomTabBar.sideSpacing,
+  //           right: MSpacing.bottomTabBar.sideSpacing,
+  //           height: MSpacing.bottomTabBar.height,
+  //           borderRadius: MSpacing.bottomTabBar.borderRadius,
+  //           ...styles.shadow,
+  //         },
+  //       }}>
+  //       <Tab.Screen
+  //         name="Home"
+  //         component={HomeScreen}
+  //         options={{
+  //           tabBarIcon: ({focused}) => GenIcon(focused, 'home'),
+  //           tabBarItemStyle: {
+  //             height: MSpacing.bottomTabBar.height,
+  //           },
+  //         }}
+  //         listeners={({navigation, route}) => ({
+  //           tabPress: e => {
+  //             Animated.spring(tabOffsetValue, {
+  //               toValue: 0,
+  //               useNativeDriver: true,
+  //             }).start();
+  //           },
+  //         })}
+  //       />
+  //       <Tab.Screen
+  //         name="Performance"
+  //         component={PerformanceScreen}
+  //         options={{
+  //           tabBarIcon: ({focused}) => GenIcon(focused, 'poll'),
+  //           tabBarItemStyle: {
+  //             height: MSpacing.bottomTabBar.height,
+  //           },
+  //           // tabBarStyle: {
+  //           //   backgroundColor: 'purple',
+  //           // },
+  //           // tabBarIconStyle: {
+  //           //   backgroundColor: 'pink',
+  //           // },
+  //           // tabBarBadgeStyle: {
+  //           //   backgroundColor: 'green',
+  //           // },
+  //         }}
+  //         listeners={({navigation, route}) => ({
+  //           tabPress: e => {
+  //             Animated.spring(tabOffsetValue, {
+  //               toValue: getWidth(),
+  //               useNativeDriver: true,
+  //             }).start();
+  //           },
+  //         })}
+  //       />
+  //       <Tab.Screen
+  //         name="Exercise"
+  //         component={ExerciseScreen}
+  //         options={{
+  //           tabBarIcon: ({focused}) => GenIcon(focused, 'dumbbell'),
+  //           tabBarItemStyle: {
+  //             height: MSpacing.bottomTabBar.height,
+  //           },
+  //         }}
+  //         listeners={({navigation, route}) => ({
+  //           tabPress: e => {
+  //             Animated.spring(tabOffsetValue, {
+  //               toValue: getWidth() * 2,
+  //               useNativeDriver: true,
+  //             }).start();
+  //           },
+  //         })}
+  //       />
+  //       <Tab.Screen
+  //         name="Profile"
+  //         component={ProfileScreen}
+  //         options={{
+  //           tabBarIcon: ({focused}) => GenIcon(focused, 'account'),
+  //           tabBarItemStyle: {
+  //             height: MSpacing.bottomTabBar.height,
+  //           },
+  //         }}
+  //         listeners={({navigation, route}) => ({
+  //           tabPress: e => {
+  //             Animated.spring(tabOffsetValue, {
+  //               toValue: getWidth() * 3,
+  //               useNativeDriver: true,
+  //             }).start();
+  //           },
+  //         })}
+  //       />
+  //     </Tab.Navigator>
+  //     <Animated.View
+  //       // eslint-disable-next-line react-native/no-inline-styles
+  //       style={{
+  //         position: 'absolute',
+  //         bottom: 40,
+  //         left: 40,
+  //         height: 2,
+  //         width: getWidth() - 40,
+  //         backgroundColor: 'red',
+  //         transform: [
+  //           {
+  //             translateX: tabOffsetValue,
+  //           },
+  //         ],
+  //       }}
+  //     />
+  //   </>
+  // );
 }
