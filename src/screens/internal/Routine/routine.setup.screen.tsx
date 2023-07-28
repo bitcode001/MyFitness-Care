@@ -3,8 +3,11 @@ import UserIntro from '@/components/UserIntro';
 // import {MThemeColors} from '@/constant/colors';
 import React from 'react';
 import {Image, View} from 'react-native';
-import {Text} from 'react-native-paper';
+import {Button, Text} from 'react-native-paper';
 import StepOne from './step.one';
+import StepTwo from './step.two';
+import StepThree from './step.three';
+import {MThemeColors} from '@/constant/colors';
 
 export interface DaysInterface {
   id: number;
@@ -22,6 +25,7 @@ export default function RoutineSetupScreen(): JSX.Element {
     {id: 6, day: 'friday', stat: null},
     {id: 7, day: 'saturday', stat: null},
   ]);
+
   return (
     <SafeAreaScrollView>
       <UserIntro profileLabel="Lets get started !" />
@@ -37,34 +41,24 @@ export default function RoutineSetupScreen(): JSX.Element {
       </View>
 
       {/* Stepper Section */}
-      <View className="flex flex-col justify-between items-start mt-10 relative">
-        <View className="absolute left-6 top-0 h-full w-0.5 bg-slate-300" />
+      <View className="flex flex-col justify-between items-start mt-10">
+        {/* <View className="absolute left-6 top-0 h-full w-0.5 bg-slate-300" /> */}
         {/* Step one of the stepper */}
         <StepOne days={days} setDays={setDays} />
-        <View className="flex flex-row items-start pb-12">
-          <View className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-            <Text className="text-lg font-medium leading-5 text-center">2</Text>
-          </View>
 
-          <View className="flex flex-col px-6 pt-2">
-            <Text className="text-lg font-bold leading-5">Step 2</Text>
-            <Text className="text-base font-normal">
-              Lets setup your exercise routine
-            </Text>
-          </View>
-        </View>
-        <View className="flex flex-row items-start">
-          <View className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-            <Text className="text-lg font-medium leading-5 text-center">3</Text>
-          </View>
-          <View className="flex flex-col px-6 pt-2">
-            <Text className="text-lg font-bold leading-5">Step 3</Text>
-            <Text className="text-base font-normal">
-              Lets set the date and time to start
-            </Text>
-          </View>
-        </View>
+        {/* Step two of the stepper */}
+        <StepTwo days={days} />
+
+        {/* Step three of the stepper */}
+        <StepThree />
       </View>
+
+      <Button
+        mode="contained"
+        style={{backgroundColor: MThemeColors.darkGreen}}
+        className="rounded-none my-10 mt-16 ml-12">
+        <Text className="text-white text-lg font-medium">Finish Setup</Text>
+      </Button>
     </SafeAreaScrollView>
   );
 }

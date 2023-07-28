@@ -7,6 +7,7 @@ export const MThemeColors = {
   white: '#FFFFFF',
   lightRed: '#FFA7A7',
   lightGreen: '#A7FFBA',
+  darkGreen: '#007813',
   lightPurple: '#A7CAFF',
   lightPink: '#FDA7FF',
   baseOrange: '#FFB55F',
@@ -14,4 +15,5 @@ export const MThemeColors = {
   successGreen: '#00C851', // #26D136
 
   tabBg: '#E7E7E7',
+  gray: '#EAEAEA',
 };

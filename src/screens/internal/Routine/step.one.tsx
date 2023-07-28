@@ -30,7 +30,7 @@ const RenderDaysSelection = ({
           key={d.id}
           className="flex flex-row justify-between items-center my-1.5">
           <Text className="text-sm font-normal capitalize">{d.day}</Text>
-          <View className="flex flex-row gap-7 bg-pink">
+          <View className="flex flex-row gap-6 bg-pink">
             <TouchableOpacity
               className="flex flex-row items-center"
               onPress={() => handleCheckboxPress(d.id, 0)}>
@@ -70,13 +70,14 @@ export default function StepOne({
 }: StepOneInterface): JSX.Element {
   return (
     <React.Fragment>
-      <View className="flex flex-row items-start pb-12">
-        <View className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-          <Text className="text-lg font-medium leading-5 text-center">1</Text>
+      <View className="flex flex-row items-start relative">
+        <View className="absolute left-4 top-0 h-full w-0.5 bg-slate-300" />
+        <View className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+          <Text className="text-base font-medium leading-5 text-center">1</Text>
         </View>
-        <View className="flex flex-col px-6 pt-2">
+        <View className="flex flex-col flex-1 pl-4 pt-1 pb-12">
           <Text className="text-lg font-bold leading-5">Step 1</Text>
-          <Text className="text-base font-normal">
+          <Text className="text-base font-medium">
             Lets discuss your exercise pattern
           </Text>
 
