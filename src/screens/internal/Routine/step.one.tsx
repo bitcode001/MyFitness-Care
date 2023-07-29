@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {TextInput, Checkbox} from 'react-native-paper';
 import {DaysInterface} from './routine.setup.screen';
+import StepNavigator from './step.navigator';
 
 interface RenderDaysSelectionInterface {
   days: DaysInterface[];
@@ -62,12 +63,19 @@ const RenderDaysSelection = ({
 interface StepOneInterface {
   days: DaysInterface[];
   setDays: React.Dispatch<React.SetStateAction<DaysInterface[]>>;
+  step: number;
+  setStep: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export default function StepOne({
   days,
   setDays,
+  step,
+  setStep,
 }: StepOneInterface): JSX.Element {
+  const handleNextStep = () => {
+    setStep(2);
+  };
   return (
     <React.Fragment>
       <View className="flex flex-row items-start relative">
@@ -75,24 +83,29 @@ export default function StepOne({
         <View className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
           <Text className="text-base font-medium leading-5 text-center">1</Text>
         </View>
-        <View className="flex flex-col flex-1 pl-4 pt-1 pb-12">
+        <View className="flex flex-col flex-1 pl-4 pt-1 pb-8">
           <Text className="text-lg font-bold leading-5">Step 1</Text>
           <Text className="text-base font-medium">
             Lets discuss your exercise pattern
           </Text>
+          {step === 1 && (
+            <React.Fragment>
+              <Text className="text-base font-normal mt-6">
+                How many days a week you want rest ?
+              </Text>
+              <TextInput mode="outlined" keyboardType="numeric" />
 
-          <Text className="text-base font-normal mt-6">
-            How many days a week you want rest ?
-          </Text>
-          <TextInput mode="outlined" keyboardType="numeric" />
+              <View className="mt-6">
+                <Text className="text-base font-normal mt-6 mb-2">
+                  Select your exercise pattern
+                </Text>
 
-          <View className="mt-6">
-            <Text className="text-base font-normal mt-6 mb-2">
-              Select your exercise pattern
-            </Text>
+                <RenderDaysSelection days={days} updateDays={setDays} />
+              </View>
 
-            <RenderDaysSelection days={days} updateDays={setDays} />
-          </View>
+              <StepNavigator step={step} navigateNext={handleNextStep} />
+            </React.Fragment>
+          )}
         </View>
       </View>
     </React.Fragment>

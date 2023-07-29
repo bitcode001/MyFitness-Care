@@ -14,6 +14,7 @@ export const queryClient = new QueryClient();
 import {NavigationContainer} from '@react-navigation/native';
 import MainScreen from '@/screens/main.screen';
 
+import {PaperProvider} from 'react-native-paper';
 import {enGB, registerTranslation} from 'react-native-paper-dates';
 registerTranslation('en-GB', enGB);
 registerTranslation('en', {
@@ -41,7 +42,9 @@ function App(): JSX.Element {
         <Provider store={store}>
           <PersistGate persistor={persistStore(store)}>
             <NavigationContainer>
-              <MainScreen />
+              <PaperProvider>
+                <MainScreen />
+              </PaperProvider>
             </NavigationContainer>
           </PersistGate>
         </Provider>

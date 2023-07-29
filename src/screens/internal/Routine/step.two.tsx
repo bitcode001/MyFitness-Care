@@ -1,23 +1,269 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useMemo} from 'react';
 import {TouchableOpacity, View} from 'react-native';
-import {Text} from 'react-native-paper';
-import {DaysInterface} from './routine.setup.screen';
+import {Button, Text, TextInput} from 'react-native-paper';
+import {
+  DaysInterface,
+  ExerciseRoutineInterface,
+  FetchedExerciseData,
+  WEEKDAYS,
+} from './routine.setup.screen';
 import {MThemeColors} from '@/constant/colors';
+import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import DropDown from 'react-native-paper-dropdown';
+import StepNavigator from './step.navigator';
 
-const RegenExercises = ({days}: {days: DaysInterface[]}) => {
+export interface StepTwoInterface {
+  days: DaysInterface[];
+  exerciseRoutine: ExerciseRoutineInterface;
+  setExerciseRoutine: React.Dispatch<
+    React.SetStateAction<ExerciseRoutineInterface>
+  >;
+  fetchedExerciseData: FetchedExerciseData[] | [];
+  step: number;
+  setStep: React.Dispatch<React.SetStateAction<number>>;
+}
+interface ExerciseOperationInterface {
+  day: WEEKDAYS;
+  exerciseRoutine: ExerciseRoutineInterface;
+  removeExercise: (day: WEEKDAYS, exId: number) => void;
+}
+
+const ExerciseOpearation = ({
+  day,
+  exerciseRoutine,
+  removeExercise,
+}: ExerciseOperationInterface) => {
+  if (exerciseRoutine[day]?.exercises.length === 0) {
+    return (
+      <View className="flex flex-col justify-center items-start pt-2">
+        <Text className="text-base font-semibold capitalize">
+          No exercises added
+        </Text>
+        <Text className="text-sm font-normal capitalize">
+          Add atleast one exercise by clicking button below
+        </Text>
+      </View>
+    );
+  }
+
+  return (
+    <React.Fragment>
+      {exerciseRoutine[day]?.exercises.map(ex => (
+        <View
+          className="bg-white p-4 pb-8 mb-10 flex flex-col justify-center items-center relative"
+          key={ex.id}>
+          <TouchableOpacity
+            className="absolute -bottom-6 rounded-full p-2"
+            style={{
+              backgroundColor: MThemeColors.grayBox,
+              // borderBlockEndColor: 'pink',
+              // borderBlockStartColor: 'pink',
+              // borderEndColor: 'black',
+              // borderStartColor: 'black',
+            }}
+            onPress={() => removeExercise(day, ex.id)}>
+            <View className="flex justify-center items-center rounded-full bg-red-500 w-8 h-8">
+              <MaterialIcon size={17} color={MThemeColors.white} name="minus" />
+            </View>
+          </TouchableOpacity>
+          <TextInput
+            className="mb-4 w-full"
+            mode="outlined"
+            label={'Exercise Name'}
+          />
+          <View className="flex flex-row gap-4">
+            <TextInput className="flex flex-1" mode="outlined" label={'Sets'} />
+            <TextInput className="flex flex-1" mode="outlined" label={'Reps'} />
+          </View>
+        </View>
+      ))}
+    </React.Fragment>
+  );
+};
+
+const RegenExercises = ({
+  days,
+  exerciseRoutine,
+  setExerciseRoutine,
+  fetchedExerciseData,
+}: Omit<StepTwoInterface, 'step' | 'setStep'>) => {
   const memoizedFilteredList = useMemo(() => {
     return days.filter(d => d.stat === 1);
   }, [days]);
+
+  const toggleDropdownVisibility = (day: WEEKDAYS) => {
+    setExerciseRoutine(prev => ({
+      ...prev,
+      [day]: {
+        ...prev[day],
+        dropdownStat: !prev[day]?.dropdownStat,
+      },
+    }));
+  };
+
+  const toggleExerciseAccordion = (day: WEEKDAYS) => {
+    setExerciseRoutine(prev => ({
+      ...prev,
+      [day]: {
+        ...prev[day],
+        accordionStat: !prev[day]?.accordionStat,
+      },
+    }));
+  };
+
+  const updateSelectedTargetMuscle = (value: string, day: WEEKDAYS) => {
+    setExerciseRoutine(prev => ({
+      ...prev,
+      [day]: {
+        ...prev[day],
+        targetMusclegroup: value,
+      },
+    }));
+  };
+
+  const handleAddExercise = (day: WEEKDAYS) => {
+    let ex_ref = exerciseRoutine[day]?.exercises;
+    if (ex_ref) {
+      ex_ref = [
+        ...ex_ref,
+        {
+          id: Date.now(),
+          name: '',
+          gifUrl: '',
+          sets: 0,
+          reps: 0,
+        },
+      ];
+    } else {
+      ex_ref = [
+        {
+          id: Date.now(),
+          name: '',
+          gifUrl: '',
+          sets: 0,
+          reps: 0,
+        },
+      ];
+    }
+
+    setExerciseRoutine(prev => ({
+      ...prev,
+      [day]: {
+        ...prev[day],
+        exercises: ex_ref,
+      },
+    }));
+  };
+
+  const removeExercise = (day: WEEKDAYS, exId: number) => {
+    let ex_ref = exerciseRoutine[day]?.exercises;
+
+    if (ex_ref) {
+      const filtered_ex = ex_ref.filter(el => el.id !== exId);
+
+      setExerciseRoutine(prev => ({
+        ...prev,
+        [day]: {
+          ...prev[day],
+          exercises: filtered_ex,
+        },
+      }));
+    }
+  };
+
+  const dropdownList = useMemo(() => {
+    if (fetchedExerciseData.length > 0) {
+      return fetchedExerciseData[0].targetMuscles.map(d => ({
+        label: d.toUpperCase(),
+        value: d,
+      }));
+    } else {
+      return [];
+    }
+  }, [fetchedExerciseData]);
+
+  React.useEffect(() => {
+    // console.log('Exercise Routine', JSON.stringify(exerciseRoutine));
+  }, [exerciseRoutine]);
+
   return (
     <React.Fragment>
       {memoizedFilteredList.length > 0 ? (
         memoizedFilteredList.map(d => (
-          <TouchableOpacity
-            key={d.id}
-            style={{backgroundColor: MThemeColors.gray}}
-            className="p-4 my-5">
-            <Text className="text-lg font-semibold capitalize">{d.day}</Text>
-          </TouchableOpacity>
+          <React.Fragment key={d.id}>
+            <TouchableOpacity
+              onPress={() => toggleExerciseAccordion(d.day)}
+              style={{backgroundColor: MThemeColors.gray}}
+              className="p-4 my-5 flex flex-row justify-between items-center">
+              <Text className="text-lg font-semibold capitalize">{d.day}</Text>
+              <MaterialIcon
+                name="chevron-down"
+                size={30}
+                color={MThemeColors.black}
+              />
+            </TouchableOpacity>
+
+            {Object.keys(exerciseRoutine).length > 0 &&
+              exerciseRoutine[d.day]?.accordionStat && (
+                <View
+                  className="p-4"
+                  style={{
+                    backgroundColor: MThemeColors.grayBox,
+                  }}>
+                  <Text className="text-base font-normal mb-5">
+                    Target Muscle
+                  </Text>
+                  <DropDown
+                    mode={'outlined'}
+                    label="Select a target muscle"
+                    inputProps={{
+                      style: {
+                        backgroundColor: MThemeColors.white,
+                      },
+                      multiline: true,
+                    }}
+                    dropDownContainerHeight={250}
+                    dropDownItemTextStyle={{
+                      color: MThemeColors.black,
+                    }}
+                    dropDownItemSelectedTextStyle={{
+                      color: MThemeColors.black,
+                      fontWeight: 'bold',
+                    }}
+                    list={dropdownList}
+                    visible={exerciseRoutine[d.day]?.dropdownStat ?? false}
+                    value={
+                      exerciseRoutine[d.day]?.targetMusclegroup ??
+                      'Select a target muscle'
+                    }
+                    onDismiss={() => toggleDropdownVisibility(d.day)}
+                    setValue={value => updateSelectedTargetMuscle(value, d.day)}
+                    showDropDown={() => toggleDropdownVisibility(d.day)}
+                    multiSelect
+                  />
+
+                  {/* COLLECTION OF EXERCISES DETAILS  */}
+                  <Text className="text-base font-normal my-5">Exercises</Text>
+
+                  <ExerciseOpearation
+                    day={d.day}
+                    exerciseRoutine={exerciseRoutine}
+                    removeExercise={removeExercise}
+                  />
+
+                  <Button
+                    className="mt-5 rounded-none"
+                    style={{
+                      backgroundColor: MThemeColors.black,
+                    }}
+                    mode="contained"
+                    onPress={() => handleAddExercise(d.day)}>
+                    Add Exercise
+                  </Button>
+                </View>
+              )}
+          </React.Fragment>
         ))
       ) : (
         <View className="flex flex-col justify-center items-start pt-6">
@@ -32,11 +278,21 @@ const RegenExercises = ({days}: {days: DaysInterface[]}) => {
     </React.Fragment>
   );
 };
-export interface StepTwoInterface {
-  days: DaysInterface[];
-}
 
-export default function StepTwo({days}: StepTwoInterface): JSX.Element {
+export default function StepTwo({
+  days,
+  exerciseRoutine,
+  setExerciseRoutine,
+  fetchedExerciseData,
+  step,
+  setStep,
+}: StepTwoInterface): JSX.Element {
+  const handleNavigateNext = () => {
+    setStep(3);
+  };
+  const handleNavigateBack = () => {
+    setStep(1);
+  };
   return (
     <React.Fragment>
       <View className="flex flex-row items-start relative">
@@ -45,13 +301,28 @@ export default function StepTwo({days}: StepTwoInterface): JSX.Element {
           <Text className="text-base font-medium leading-5 text-center">2</Text>
         </View>
 
-        <View className="flex flex-col flex-1 pl-4 pt-1 pb-12">
+        <View className="flex flex-col flex-1 pl-4 pt-1 pb-8">
           <Text className="text-lg font-bold leading-5">Step 2</Text>
           <Text className="text-base font-medium">
             Lets setup your exercise routine
           </Text>
 
-          <RegenExercises days={days} />
+          {step === 2 && (
+            <React.Fragment>
+              <RegenExercises
+                days={days}
+                exerciseRoutine={exerciseRoutine}
+                setExerciseRoutine={setExerciseRoutine}
+                fetchedExerciseData={fetchedExerciseData}
+              />
+
+              <StepNavigator
+                step={step}
+                navigateNext={handleNavigateNext}
+                navigateBack={handleNavigateBack}
+              />
+            </React.Fragment>
+          )}
         </View>
       </View>
     </React.Fragment>

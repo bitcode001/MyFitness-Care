@@ -10,10 +10,10 @@ const useGetAllExerciseDetails = () => {
     FirebaseFirestoreTypes.QuerySnapshot<FirebaseFirestoreTypes.DocumentData>,
     ReactNativeFirebase.NativeFirebaseError
   >({
-    queryKey: ['getPerformnace'],
+    queryKey: ['getExerciseDetails'],
     queryFn: () => exerciseCollection.get(),
     refetchOnWindowFocus: false,
-    enabled: false,
+    // enabled: false,
   });
 };
 

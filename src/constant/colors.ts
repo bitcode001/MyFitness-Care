@@ -16,4 +16,5 @@ export const MThemeColors = {
 
   tabBg: '#E7E7E7',
   gray: '#EAEAEA',
+  grayBox: '#E4E4E4',
 };

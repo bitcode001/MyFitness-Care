@@ -3,6 +3,7 @@ module.exports = {
   plugins: [
     'nativewind/babel',
     'react-native-reanimated/plugin',
+    'react-native-paper/babel',
     [
       'module-resolver',
       {
