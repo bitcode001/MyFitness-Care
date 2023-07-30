@@ -65,6 +65,15 @@ export interface FetchedExerciseData {
 //     title: 'Select Time',
 //   },
 // ];
+const DAYS_SELECTION_AND_STAT: DaysInterface[] = [
+  {id: 1, day: 'sunday', stat: null},
+  {id: 2, day: 'monday', stat: null},
+  {id: 3, day: 'tuesday', stat: null},
+  {id: 4, day: 'wednesday', stat: null},
+  {id: 5, day: 'thursday', stat: null},
+  {id: 6, day: 'friday', stat: null},
+  {id: 7, day: 'saturday', stat: null},
+];
 
 export default function RoutineSetupScreen(): JSX.Element {
   const {
@@ -76,15 +85,13 @@ export default function RoutineSetupScreen(): JSX.Element {
 
   const dispatch = useDispatch();
 
-  const [days, setDays] = React.useState<DaysInterface[]>([
-    {id: 1, day: 'sunday', stat: null},
-    {id: 2, day: 'monday', stat: null},
-    {id: 3, day: 'tuesday', stat: null},
-    {id: 4, day: 'wednesday', stat: null},
-    {id: 5, day: 'thursday', stat: null},
-    {id: 6, day: 'friday', stat: null},
-    {id: 7, day: 'saturday', stat: null},
-  ]);
+  const [days, setDays] = React.useState<DaysInterface[]>(
+    DAYS_SELECTION_AND_STAT,
+  );
+
+  const resetExercisePattern = () => {
+    setDays(DAYS_SELECTION_AND_STAT);
+  };
 
   const [exerciseRoutine, setExerciseRoutine] =
     React.useState<ExerciseRoutineInterface>({});
@@ -153,7 +160,13 @@ export default function RoutineSetupScreen(): JSX.Element {
       <View className="flex flex-col justify-between items-start mt-10">
         {/* <View className="absolute left-6 top-0 h-full w-0.5 bg-slate-300" /> */}
         {/* Step one of the stepper */}
-        <StepOne days={days} setDays={setDays} step={step} setStep={setStep} />
+        <StepOne
+          days={days}
+          setDays={setDays}
+          step={step}
+          setStep={setStep}
+          resetExercisePattern={resetExercisePattern}
+        />
 
         {/* Step two of the stepper */}
         <StepTwo
