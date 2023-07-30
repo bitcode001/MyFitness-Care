@@ -26,7 +26,7 @@ const useExtractQuery = <T>(
   if (!dataMap) {
     return {};
   }
-  const mappedData: T[] | undefined = dataMap?.docs.map(
+  const mappedData: T[] | undefined = dataMap.docs.map(
     (
       d: FirebaseFirestoreTypes.QueryDocumentSnapshot<FirebaseFirestoreTypes.DocumentData>,
     ) =>

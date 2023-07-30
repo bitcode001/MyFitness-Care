@@ -30,7 +30,7 @@ export interface DaysInterface {
 export interface ExerciseInterface {
   id: number;
   name: string;
-  gifUrl: string;
+  gifUrl?: string;
   sets: number;
   reps: number;
 }
@@ -96,6 +96,18 @@ export default function RoutineSetupScreen(): JSX.Element {
   const [exerciseRoutine, setExerciseRoutine] =
     React.useState<ExerciseRoutineInterface>({});
 
+  const treeShakeExerciseRoutine = () => {
+    const r_days = days.filter(el => el.stat === 0);
+    const cp = {...exerciseRoutine};
+    r_days.forEach(el => {
+      if (cp[el.day]) {
+        delete cp[el.day];
+      }
+    });
+
+    setExerciseRoutine(cp);
+  };
+
   const [step, setStep] = React.useState<number>(1);
 
   // FOR STEP 3
@@ -107,6 +119,14 @@ export default function RoutineSetupScreen(): JSX.Element {
     minutes: '00',
   });
 
+  const initiateFinalSetup = () => {
+    // PRE CONDITION CHECK
+    // console.log('Exercise Routine: ', JSON.stringify(exerciseRoutine));
+    // console.log('Date: ', date);
+    // console.log('Time: ', time);
+    // console.log('Days: ', days);
+  };
+
   React.useEffect(() => {
     for (let i = 0; i < days.length; i++) {
       if (days[i].stat === 1 && !exerciseRoutine[days[i].day]) {
@@ -116,11 +136,12 @@ export default function RoutineSetupScreen(): JSX.Element {
             id: days[i].id,
             accordionStat: false,
             dropdownStat: false,
+            targetMusclegroup: '',
             exercises: [
               {
                 id: Date.now(),
                 name: '',
-                gifUrl: '',
+                // gifUrl: '',
                 sets: 0,
                 reps: 0,
               },
@@ -166,6 +187,7 @@ export default function RoutineSetupScreen(): JSX.Element {
           step={step}
           setStep={setStep}
           resetExercisePattern={resetExercisePattern}
+          treeShakeExerciseRoutine={treeShakeExerciseRoutine}
         />
 
         {/* Step two of the stepper */}
@@ -193,7 +215,8 @@ export default function RoutineSetupScreen(): JSX.Element {
         <Button
           mode="contained"
           style={{backgroundColor: MThemeColors.darkGreen}}
-          className="rounded-none my-10 mt-16 ml-12">
+          className="rounded-none my-10 mt-16 ml-12"
+          onPress={initiateFinalSetup}>
           <Text className="text-white text-lg font-medium">Finish Setup</Text>
         </Button>
       )}

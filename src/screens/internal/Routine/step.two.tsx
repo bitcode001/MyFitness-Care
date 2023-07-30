@@ -4,6 +4,7 @@ import {TouchableOpacity, View} from 'react-native';
 import {Button, Text, TextInput} from 'react-native-paper';
 import {
   DaysInterface,
+  ExerciseInterface,
   ExerciseRoutineInterface,
   FetchedExerciseData,
   WEEKDAYS,
@@ -12,7 +13,7 @@ import {MThemeColors} from '@/constant/colors';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import DropDown from 'react-native-paper-dropdown';
 import StepNavigator from './step.navigator';
-
+import Toast from 'react-native-toast-message';
 export interface StepTwoInterface {
   days: DaysInterface[];
   exerciseRoutine: ExerciseRoutineInterface;
@@ -26,12 +27,16 @@ export interface StepTwoInterface {
 interface ExerciseOperationInterface {
   day: WEEKDAYS;
   exerciseRoutine: ExerciseRoutineInterface;
+  setExerciseRoutine: React.Dispatch<
+    React.SetStateAction<ExerciseRoutineInterface>
+  >;
   removeExercise: (day: WEEKDAYS, exId: number) => void;
 }
 
 const ExerciseOpearation = ({
   day,
   exerciseRoutine,
+  setExerciseRoutine,
   removeExercise,
 }: ExerciseOperationInterface) => {
   if (exerciseRoutine[day]?.exercises.length === 0) {
@@ -47,9 +52,35 @@ const ExerciseOpearation = ({
     );
   }
 
+  const handleChangeInput = (
+    value: string,
+    index: number,
+    key: keyof ExerciseInterface,
+  ) => {
+    const ex_ref = exerciseRoutine[day]?.exercises;
+    if (ex_ref) {
+      const ex = ex_ref[index];
+      if (key === 'name') {
+        ex[key] = value;
+      }
+      if (key === 'sets' || key === 'reps') {
+        const filteredValue = value.replace(/[^0-9]/g, '');
+        ex[key] = Number(filteredValue);
+      }
+
+      setExerciseRoutine(prev => ({
+        ...prev,
+        [day]: {
+          ...prev[day],
+          exercises: ex_ref,
+        },
+      }));
+    }
+  };
+
   return (
     <React.Fragment>
-      {exerciseRoutine[day]?.exercises.map(ex => (
+      {exerciseRoutine[day]?.exercises.map((ex, idx) => (
         <View
           className="bg-white p-4 pb-8 mb-10 flex flex-col justify-center items-center relative"
           key={ex.id}>
@@ -71,10 +102,26 @@ const ExerciseOpearation = ({
             className="mb-4 w-full"
             mode="outlined"
             label={'Exercise Name'}
+            value={ex.name}
+            onChangeText={value => handleChangeInput(value, idx, 'name')}
           />
           <View className="flex flex-row gap-4">
-            <TextInput className="flex flex-1" mode="outlined" label={'Sets'} />
-            <TextInput className="flex flex-1" mode="outlined" label={'Reps'} />
+            <TextInput
+              keyboardType="numeric"
+              className="flex flex-1"
+              mode="outlined"
+              label={'Sets'}
+              value={ex.sets ? ex.sets.toString() : ''}
+              onChangeText={value => handleChangeInput(value, idx, 'sets')}
+            />
+            <TextInput
+              keyboardType="numeric"
+              className="flex flex-1"
+              mode="outlined"
+              label={'Reps'}
+              value={ex.reps ? ex.reps.toString() : ''}
+              onChangeText={value => handleChangeInput(value, idx, 'reps')}
+            />
           </View>
         </View>
       ))}
@@ -130,7 +177,7 @@ const RegenExercises = ({
         {
           id: Date.now(),
           name: '',
-          gifUrl: '',
+          // gifUrl: '',
           sets: 0,
           reps: 0,
         },
@@ -140,7 +187,7 @@ const RegenExercises = ({
         {
           id: Date.now(),
           name: '',
-          gifUrl: '',
+          // gifUrl: '',
           sets: 0,
           reps: 0,
         },
@@ -233,10 +280,7 @@ const RegenExercises = ({
                     }}
                     list={dropdownList}
                     visible={exerciseRoutine[d.day]?.dropdownStat ?? false}
-                    value={
-                      exerciseRoutine[d.day]?.targetMusclegroup ??
-                      'Select a target muscle'
-                    }
+                    value={exerciseRoutine[d.day]?.targetMusclegroup ?? ''}
                     onDismiss={() => toggleDropdownVisibility(d.day)}
                     setValue={value => updateSelectedTargetMuscle(value, d.day)}
                     showDropDown={() => toggleDropdownVisibility(d.day)}
@@ -249,6 +293,7 @@ const RegenExercises = ({
                   <ExerciseOpearation
                     day={d.day}
                     exerciseRoutine={exerciseRoutine}
+                    setExerciseRoutine={setExerciseRoutine}
                     removeExercise={removeExercise}
                   />
 
@@ -288,7 +333,56 @@ export default function StepTwo({
   setStep,
 }: StepTwoInterface): JSX.Element {
   const handleNavigateNext = () => {
-    setStep(3);
+    const grindDays = days.filter(d => d.stat === 1);
+    const grindWeekdays: WEEKDAYS[] = grindDays.map(el => el.day);
+
+    // Check whether the selected days have atleast one exercise set up
+    const isEveryExNonEmpty = grindWeekdays.every(gwd => {
+      if (
+        exerciseRoutine[gwd]?.exercises &&
+        exerciseRoutine[gwd]?.exercises.length
+      ) {
+        return true;
+      }
+      return false;
+    });
+
+    // Check whether the selected days exercise fields are not empty
+    const isEveryExFieldNonEmpty = grindWeekdays.every(gwd => {
+      if (
+        exerciseRoutine[gwd]?.exercises &&
+        exerciseRoutine[gwd]?.exercises.length &&
+        exerciseRoutine[gwd]?.targetMusclegroup
+      ) {
+        const exe = exerciseRoutine[gwd]?.exercises;
+        const flag = exe?.every(ex => {
+          if (ex.name !== '' && ex.sets && ex.reps) {
+            return true;
+          }
+          return false;
+        });
+        return flag;
+      }
+      return false;
+    });
+
+    if (isEveryExNonEmpty) {
+      if (isEveryExFieldNonEmpty) {
+        setStep(3);
+      } else {
+        Toast.show({
+          type: 'error',
+          text1: 'Missing exercise details',
+          text2: 'Please fill all the exercise details',
+        });
+      }
+    } else {
+      Toast.show({
+        type: 'error',
+        text1: 'No exercises added',
+        text2: 'Add atleast one exercise to continue',
+      });
+    }
   };
   const handleNavigateBack = () => {
     setStep(1);

@@ -70,6 +70,7 @@ interface StepOneInterface {
   step: number;
   setStep: React.Dispatch<React.SetStateAction<number>>;
   resetExercisePattern: () => void;
+  treeShakeExerciseRoutine: () => void;
 }
 
 const restDaysOption = [
@@ -97,6 +98,7 @@ export default function StepOne({
   step,
   setStep,
   resetExercisePattern,
+  treeShakeExerciseRoutine,
 }: StepOneInterface): JSX.Element {
   const [restDay, setRestDay] = React.useState<string>('');
   const [restDayDropdownVis, setRestDayDropdownVis] =
@@ -123,8 +125,8 @@ export default function StepOne({
       const restDays = days.filter(d => d.stat === 0);
       if (grindDays.length < 7 - restDayNum) {
         Toast.show({
-          type: 'warning',
-          text1: 'Warning',
+          type: 'error',
+          text1: 'Missing exercise pattern',
           text2: `Please select atleast ${
             7 - restDayNum
           } days for exercise pattern`,
@@ -132,12 +134,14 @@ export default function StepOne({
         return;
       } else if (restDays.length < restDayNum) {
         Toast.show({
-          type: 'warning',
-          text1: 'Warning',
+          type: 'error',
+          text1: 'Mising rest days',
           text2: `Please select atleast ${restDayNum} days for rest`,
         });
         return;
       } else {
+        // PERFORM TREE SHAKING
+        treeShakeExerciseRoutine();
         setStep(2);
       }
     }
