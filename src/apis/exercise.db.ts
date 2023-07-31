@@ -1,7 +1,8 @@
-import {useQuery} from '@tanstack/react-query';
+import {useMutation, useQuery} from '@tanstack/react-query';
 import firestore from '@react-native-firebase/firestore';
 import {ReactNativeFirebase} from '@react-native-firebase/app';
 import {FirebaseFirestoreTypes} from '@react-native-firebase/firestore';
+import {IExerciseRoutineInterface} from '@/screens/internal/Routine/routine.setup.screen';
 
 const useGetAllExerciseDetails = () => {
   const exerciseCollection = firestore().collection('exercise-details');
@@ -17,7 +18,57 @@ const useGetAllExerciseDetails = () => {
   });
 };
 
-export {useGetAllExerciseDetails};
+export interface IUserExerciseDetails {
+  exercise: IExerciseRoutineInterface;
+  m_badges: string[];
+  m_challenges: string[];
+  m_exp: number;
+  m_level: number;
+  m_id: string;
+  m_streak: number;
+  start_date: Date;
+  start_time: {
+    hours: string;
+    minutes: string;
+  };
+  rest_days: string[];
+  workout_days: string[];
+}
+const useGetUserExerciseDetails = (userId: string) => {
+  const userDetailsCollection = firestore().collection('user-details');
+
+  return useQuery<
+    FirebaseFirestoreTypes.DocumentSnapshot<FirebaseFirestoreTypes.DocumentData>,
+    ReactNativeFirebase.NativeFirebaseError
+  >({
+    queryKey: ['getUserExerciseDetails', userId],
+    queryFn: () => userDetailsCollection.doc(userId).get(),
+    refetchOnWindowFocus: false,
+    cacheTime: 0,
+    // enabled: false,
+    // suspense: true,
+  });
+};
+
+const useSetUserExerciseDetails = (userId: string) => {
+  const userDetailsCollection = firestore().collection('user-details');
+
+  return useMutation<
+    void,
+    ReactNativeFirebase.NativeFirebaseError,
+    IUserExerciseDetails
+  >({
+    mutationKey: ['setUserExerciseDetails', userId],
+    mutationFn: (data: IUserExerciseDetails) =>
+      userDetailsCollection.doc(userId).set(data),
+  });
+};
+
+export {
+  useGetAllExerciseDetails,
+  useGetUserExerciseDetails,
+  useSetUserExerciseDetails,
+};
 
 // const options = {
 //   method: 'GET',

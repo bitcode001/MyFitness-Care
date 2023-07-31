@@ -17,8 +17,6 @@ const RenderDaysSelection = ({
   updateDays,
 }: RenderDaysSelectionInterface) => {
   const handleCheckboxPress = (id: number, type: number) => {
-    // console.log('Type', type);
-    // console.log('Index', id);
     updateDays(dd => {
       const temp = [...dd];
       const sItem = temp.find(dy => dy.id === id);
@@ -69,7 +67,6 @@ interface StepOneInterface {
   setDays: React.Dispatch<React.SetStateAction<DaysInterface[]>>;
   step: number;
   setStep: React.Dispatch<React.SetStateAction<number>>;
-  resetExercisePattern: () => void;
   treeShakeExerciseRoutine: () => void;
 }
 
@@ -97,7 +94,6 @@ export default function StepOne({
   setDays,
   step,
   setStep,
-  resetExercisePattern,
   treeShakeExerciseRoutine,
 }: StepOneInterface): JSX.Element {
   const [restDay, setRestDay] = React.useState<string>('');
@@ -106,7 +102,6 @@ export default function StepOne({
 
   const updateRestDayValue = (value: string) => {
     setRestDay(value);
-    resetExercisePattern();
   };
 
   const handleNextStep = () => {

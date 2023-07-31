@@ -7,10 +7,16 @@ import StepOne from './step.one';
 import StepTwo from './step.two';
 import StepThree from './step.three';
 import {MThemeColors} from '@/constant/colors';
-import {useGetAllExerciseDetails} from '@/apis/exercise.db';
-import {useDispatch} from 'react-redux';
+import {
+  IUserExerciseDetails,
+  useGetAllExerciseDetails,
+  useSetUserExerciseDetails,
+} from '@/apis/exercise.db';
+import {useDispatch, useSelector} from 'react-redux';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import {useExtractQuery} from '@/hooks/useExtractFirebaseData';
+import {RootState} from '@/redux/store';
+import Toast from 'react-native-toast-message';
 
 export type WEEKDAYS =
   | 'sunday'
@@ -38,8 +44,16 @@ export interface ExerciseInterface {
 export type ExerciseRoutineInterface = {
   [key in WEEKDAYS]?: {
     id: number;
-    accordionStat: false;
-    dropdownStat: false;
+    accordionStat?: false;
+    dropdownStat?: false;
+    targetMusclegroup: string;
+    exercises: ExerciseInterface[] | [];
+  };
+};
+
+export type IExerciseRoutineInterface = {
+  [key in WEEKDAYS]?: {
+    id: number;
     targetMusclegroup: string;
     exercises: ExerciseInterface[] | [];
   };
@@ -75,7 +89,11 @@ const DAYS_SELECTION_AND_STAT: DaysInterface[] = [
   {id: 7, day: 'saturday', stat: null},
 ];
 
-export default function RoutineSetupScreen(): JSX.Element {
+export default function RoutineSetupScreen({
+  handleUpdateComplete,
+}: {
+  handleUpdateComplete: React.Dispatch<React.SetStateAction<boolean | null>>;
+}): JSX.Element {
   const {
     data: exerciseData,
     isLoading,
@@ -83,18 +101,34 @@ export default function RoutineSetupScreen(): JSX.Element {
   } = useGetAllExerciseDetails();
   const {mappedData} = useExtractQuery<FetchedExerciseData>(exerciseData);
 
+  const authState = useSelector((state: RootState) => state.auth);
+
+  const {
+    mutate: mutateFinalUserData,
+    isIdle: mutationIdle,
+    isLoading: mutationOngoing,
+    isError: mutationError,
+    isSuccess: mutationSuccess,
+    status: mutationStatus,
+  } = useSetUserExerciseDetails(authState.frUser?.uid! ?? '');
+
   const dispatch = useDispatch();
 
   const [days, setDays] = React.useState<DaysInterface[]>(
     DAYS_SELECTION_AND_STAT,
   );
 
-  const resetExercisePattern = () => {
-    setDays(DAYS_SELECTION_AND_STAT);
-  };
-
   const [exerciseRoutine, setExerciseRoutine] =
     React.useState<ExerciseRoutineInterface>({});
+
+  const resetExerciseDays = () => {
+    const days_ref = DAYS_SELECTION_AND_STAT.map(el => ({
+      ...el,
+      stat: null,
+    }));
+    setDays(days_ref);
+    setExerciseRoutine({});
+  };
 
   const treeShakeExerciseRoutine = () => {
     const r_days = days.filter(el => el.stat === 0);
@@ -120,12 +154,69 @@ export default function RoutineSetupScreen(): JSX.Element {
   });
 
   const initiateFinalSetup = () => {
-    // PRE CONDITION CHECK
-    // console.log('Exercise Routine: ', JSON.stringify(exerciseRoutine));
-    // console.log('Date: ', date);
-    // console.log('Time: ', time);
-    // console.log('Days: ', days);
+    // PRE DATA
+    const r_days = days.filter(el => el.stat === 0).map(el => el.day);
+    const g_days = days.filter(el => el.stat === 1).map(el => el.day);
+    const refinedRoutine: IExerciseRoutineInterface = Object.keys(
+      exerciseRoutine,
+    ).reduce((prev, curr_item) => {
+      const c_ref = exerciseRoutine[curr_item as WEEKDAYS];
+      if (c_ref) {
+        delete c_ref.accordionStat;
+        delete c_ref.dropdownStat;
+      }
+
+      return {
+        ...prev,
+        [curr_item]: c_ref,
+      };
+    }, {});
+
+    const finalData: IUserExerciseDetails = {
+      exercise: refinedRoutine,
+      m_badges: [],
+      m_challenges: [],
+      m_exp: 0,
+      m_id: String(Date.now()),
+      m_level: 1,
+      m_streak: 0,
+      start_date: date,
+      start_time: time,
+      rest_days: r_days,
+      workout_days: g_days,
+    };
+    // console.log('Final Data: ', JSON.stringify(finalData, null, 2));
+    // MUTATE USER DATA NOW
+    mutateFinalUserData(finalData);
   };
+
+  React.useEffect(() => {
+    if (mutationOngoing) {
+      dispatch(startSpinner());
+    } else {
+      if (mutationIdle) {
+        dispatch(stopSpinner());
+      }
+
+      if (mutationSuccess) {
+        Toast.show({
+          type: 'success',
+          text1: 'Routine Setup',
+          text2: 'Routine setup completed successfully!',
+        });
+        handleUpdateComplete(true);
+        resetExerciseDays();
+      }
+      if (mutationError) {
+        Toast.show({
+          type: 'error',
+          text1: 'Routine Setup',
+          text2: 'Routine setup failed!',
+        });
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mutationStatus]);
 
   React.useEffect(() => {
     for (let i = 0; i < days.length; i++) {
@@ -186,7 +277,6 @@ export default function RoutineSetupScreen(): JSX.Element {
           setDays={setDays}
           step={step}
           setStep={setStep}
-          resetExercisePattern={resetExercisePattern}
           treeShakeExerciseRoutine={treeShakeExerciseRoutine}
         />
 

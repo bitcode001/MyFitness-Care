@@ -15,6 +15,7 @@ import {FirebaseAuthTypes} from '@react-native-firebase/auth';
 export interface AuthSliceInterface {
   frUser: FirebaseAuthTypes.User | null;
   isAuthenticated: boolean;
+  exerciseBooted?: boolean | null;
 }
 
 const initialState: AuthSliceInterface = {
@@ -39,6 +40,7 @@ export const authSlice = createSlice({
       return {
         frUser: null,
         isAuthenticated: false,
+        exerciseBooted: null,
       };
     },
     setUser: (_, action: PayloadAction<FirebaseAuthTypes.User | null>) => {

@@ -92,7 +92,7 @@ export default function StepThree({
                 </Text>
               </View>
               <View className="flex flex-col">
-                <Text className="text-base font-medium">Every</Text>
+                <Text className="text-base font-medium">Every (Time)</Text>
                 <Text className="text-base font-bold leading-5">
                   {time.hours}:{time.minutes}
                 </Text>
