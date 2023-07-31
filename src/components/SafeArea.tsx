@@ -2,7 +2,7 @@ import React, {PropsWithChildren} from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-function SafeArea({children}: PropsWithChildren<{}>): JSX.Element {
+function SafeArea({children}: PropsWithChildren): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {

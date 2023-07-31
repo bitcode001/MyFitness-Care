@@ -8,10 +8,15 @@ const useExtractDocument = <T>(
   if (!dataExtract) {
     return {};
   }
-  const mappedData = {
-    _id: dataExtract?.id,
-    ...dataExtract?.data(),
-  } as T;
+  let mappedData: T;
+  if (dataExtract.exists) {
+    mappedData = {
+      _id: dataExtract?.id,
+      ...dataExtract?.data(),
+    } as T;
+  } else {
+    mappedData = {} as T;
+  }
 
   return {
     mappedData,
@@ -26,7 +31,7 @@ const useExtractQuery = <T>(
   if (!dataMap) {
     return {};
   }
-  const mappedData: T[] | undefined = dataMap?.docs.map(
+  const mappedData: T[] | undefined = dataMap.docs.map(
     (
       d: FirebaseFirestoreTypes.QueryDocumentSnapshot<FirebaseFirestoreTypes.DocumentData>,
     ) =>
