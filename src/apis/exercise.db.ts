@@ -85,6 +85,7 @@ export interface IUserExerciseRecords {
     m_level: number;
     m_streak: number;
     m_trophies: number;
+    m_exp: number;
   };
   exercise: {
     date: Date;
@@ -98,6 +99,7 @@ export const initialUserExerciseRecords: IUserExerciseRecords = {
     m_level: 0,
     m_streak: 0,
     m_trophies: 0,
+    m_exp: 5,
   },
   exercise: [],
 };

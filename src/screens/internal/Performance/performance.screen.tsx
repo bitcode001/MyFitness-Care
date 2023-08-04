@@ -6,7 +6,11 @@ import {MSpacing} from '@/constant/measurements';
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
-import {useGetUserExerciseRecords} from '@/apis/exercise.db';
+// Data fetching utilities
+import {
+  IUserExerciseRecords,
+  useGetUserExerciseRecords,
+} from '@/apis/exercise.db';
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '@/redux/store';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
@@ -41,7 +45,29 @@ const perks = [
 
 const adjustedGap = 20;
 
-const SummaryGrid = () => {
+const SummaryGrid = ({
+  mappedData,
+}: {
+  mappedData: IUserExerciseRecords | undefined;
+}) => {
+  if (!mappedData) {
+    return 0;
+  }
+  const decideMetrics = (i: number) => {
+    switch (i) {
+      case 0:
+        return mappedData?.economy.m_trophies ?? 0;
+      case 1:
+        return mappedData?.economy.m_streak ?? 0;
+      case 2:
+        return mappedData?.economy.m_level ?? 0;
+      case 3:
+        return mappedData?.exercise.length ?? 0;
+      default:
+        return 0;
+    }
+  };
+
   return (
     <View
       className="flex flex-wrap flex-row justify-between mt-10"
@@ -65,7 +91,7 @@ const SummaryGrid = () => {
                 {perk.title}
               </Text>
               <Text className="text-2xl font-semibold text-black">
-                {perk.count}
+                {decideMetrics(index)}
               </Text>
             </View>
           </View>
@@ -96,13 +122,24 @@ export default function PerformanceScreen(): JSX.Element {
       </TouchableOpacity>
     ));
   };
+  // Data fetching logic
   const authState = useSelector((state: RootState) => state.auth);
   const dispatch = useDispatch();
   const {data, isLoading, isFetching} = useGetUserExerciseRecords(
     authState.frUser?.uid ?? '',
   );
 
-  const {mappedData} = useExtractDocument(data);
+  const {mappedData} = useExtractDocument<IUserExerciseRecords>(data);
+
+  const myExp = mappedData?.economy.m_exp ?? 0;
+  const totalExp = (() => {
+    let total = 0;
+    if (mappedData?.economy) {
+      total = mappedData.economy.m_level * 10 + 20;
+    }
+    return total;
+  })();
+  const progressBar = (myExp / totalExp) * 100;
 
   React.useEffect(() => {
     console.log('mapped Data', mappedData);
@@ -131,14 +168,16 @@ export default function PerformanceScreen(): JSX.Element {
       {/* Experience display section */}
       <Text className="text-2xl font-normal mt-16 mb-5">Experience Points</Text>
       <ProgressBar
-        progress={0.5}
+        progress={progressBar / 100}
         color={MThemeColors.black}
         className="h-3 rounded-lg"
       />
-      <Text className="text-xs text-black mt-2">1300/1500 exp</Text>
+      <Text className="text-xs text-black mt-2">
+        {myExp} / {totalExp} exp
+      </Text>
 
       {/* Summary Grid Section */}
-      <SummaryGrid />
+      <SummaryGrid mappedData={mappedData} />
     </SafeAreaScrollView>
   );
 }
