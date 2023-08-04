@@ -22,10 +22,7 @@ export interface IUserExerciseDetails {
   exercise: IExerciseRoutineInterface;
   m_badges: string[];
   m_challenges: string[];
-  m_exp: number;
-  m_level: number;
   m_id: string;
-  m_streak: number;
   start_date: Date;
   start_time: {
     hours: string;
@@ -34,6 +31,7 @@ export interface IUserExerciseDetails {
   rest_days: string[];
   workout_days: string[];
 }
+
 const useGetUserExerciseDetails = (userId: string) => {
   const userDetailsCollection = firestore().collection('user-details');
 
@@ -64,10 +62,82 @@ const useSetUserExerciseDetails = (userId: string) => {
   });
 };
 
+// Get Exercise Records
+const useGetUserExerciseRecords = (userId: string) => {
+  const exerciseRecordsCollection = firestore().collection('exercise-record');
+
+  return useQuery<
+    FirebaseFirestoreTypes.DocumentSnapshot<FirebaseFirestoreTypes.DocumentData>,
+    ReactNativeFirebase.NativeFirebaseError
+  >({
+    queryKey: ['getUserExerciseRecords', userId],
+    queryFn: () => exerciseRecordsCollection.doc(userId).get(),
+    refetchOnWindowFocus: false,
+    cacheTime: 0,
+    // enabled: false,
+    // suspense: true,
+  });
+};
+
+export interface IUserExerciseRecords {
+  economy: {
+    m_coin: number;
+    m_level: number;
+    m_streak: number;
+    m_trophies: number;
+  };
+  exercise: {
+    date: Date;
+    day: string;
+    exerciseCount: number;
+  }[];
+}
+export const initialUserExerciseRecords: IUserExerciseRecords = {
+  economy: {
+    m_coin: 0,
+    m_level: 0,
+    m_streak: 0,
+    m_trophies: 0,
+  },
+  exercise: [],
+};
+// Mutate user exercise records
+const useSetUserExerciseRecords = (userId: string) => {
+  const exerciseRecordsCollection = firestore().collection('exercise-record');
+
+  return useMutation<
+    void,
+    ReactNativeFirebase.NativeFirebaseError,
+    IUserExerciseRecords
+  >({
+    mutationKey: ['setUserExerciseRecords', userId],
+    mutationFn: (data: IUserExerciseRecords) =>
+      exerciseRecordsCollection.doc(userId).set(data),
+  });
+};
+
+type DynamicUserExerciseRecordsUpdateObj = Record<string, number | {}>;
+const useUpdateUserExerciseRecords = (userId: string) => {
+  const exerciseRecordsCollection = firestore().collection('exercise-record');
+
+  return useMutation<
+    void,
+    ReactNativeFirebase.NativeFirebaseError,
+    DynamicUserExerciseRecordsUpdateObj
+  >({
+    mutationKey: ['setUserExerciseRecords', userId],
+    mutationFn: (data: DynamicUserExerciseRecordsUpdateObj) =>
+      exerciseRecordsCollection.doc(userId).update(data),
+  });
+};
+
 export {
   useGetAllExerciseDetails,
   useGetUserExerciseDetails,
   useSetUserExerciseDetails,
+  useGetUserExerciseRecords,
+  useSetUserExerciseRecords,
+  useUpdateUserExerciseRecords,
 };
 
 // const options = {

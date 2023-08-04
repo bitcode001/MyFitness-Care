@@ -6,6 +6,11 @@ import {MSpacing} from '@/constant/measurements';
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
+import {useGetUserExerciseRecords} from '@/apis/exercise.db';
+import {useDispatch, useSelector} from 'react-redux';
+import {RootState} from '@/redux/store';
+import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
+import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
 
 const perks = [
   {
@@ -91,6 +96,24 @@ export default function PerformanceScreen(): JSX.Element {
       </TouchableOpacity>
     ));
   };
+  const authState = useSelector((state: RootState) => state.auth);
+  const dispatch = useDispatch();
+  const {data, isLoading, isFetching} = useGetUserExerciseRecords(
+    authState.frUser?.uid ?? '',
+  );
+
+  const {mappedData} = useExtractDocument(data);
+
+  React.useEffect(() => {
+    console.log('mapped Data', mappedData);
+    if (isLoading && isFetching) {
+      dispatch(startSpinner());
+    } else {
+      dispatch(stopSpinner());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, isFetching]);
+
   return (
     <SafeAreaScrollView>
       <UserIntro profileLabel="Progress Summary" />

@@ -9,8 +9,10 @@ import StepThree from './step.three';
 import {MThemeColors} from '@/constant/colors';
 import {
   IUserExerciseDetails,
+  initialUserExerciseRecords,
   useGetAllExerciseDetails,
   useSetUserExerciseDetails,
+  useSetUserExerciseRecords,
 } from '@/apis/exercise.db';
 import {useDispatch, useSelector} from 'react-redux';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
@@ -112,6 +114,15 @@ export default function RoutineSetupScreen({
     status: mutationStatus,
   } = useSetUserExerciseDetails(authState.frUser?.uid! ?? '');
 
+  const {
+    mutate: mutateUserExerciseRecords,
+    isIdle: mutationIdle2,
+    isLoading: mutationOngoing2,
+    isError: mutationError2,
+    isSuccess: mutationSuccess2,
+    status: mutationStatus2,
+  } = useSetUserExerciseRecords(authState.frUser?.uid! ?? '');
+
   const dispatch = useDispatch();
 
   const [days, setDays] = React.useState<DaysInterface[]>(
@@ -176,10 +187,7 @@ export default function RoutineSetupScreen({
       exercise: refinedRoutine,
       m_badges: [],
       m_challenges: [],
-      m_exp: 0,
       m_id: String(Date.now()),
-      m_level: 1,
-      m_streak: 0,
       start_date: date,
       start_time: time,
       rest_days: r_days,
@@ -188,17 +196,19 @@ export default function RoutineSetupScreen({
     // console.log('Final Data: ', JSON.stringify(finalData, null, 2));
     // MUTATE USER DATA NOW
     mutateFinalUserData(finalData);
+    // MUTATE and INITIALIZE EMPTY USER EXERCISE RECORD
+    mutateUserExerciseRecords(initialUserExerciseRecords);
   };
 
   React.useEffect(() => {
-    if (mutationOngoing) {
+    if (mutationOngoing || mutationOngoing2) {
       dispatch(startSpinner());
     } else {
-      if (mutationIdle) {
+      if (mutationIdle && mutationIdle2) {
         dispatch(stopSpinner());
       }
 
-      if (mutationSuccess) {
+      if (mutationSuccess && mutationSuccess2) {
         Toast.show({
           type: 'success',
           text1: 'Routine Setup',
@@ -207,7 +217,7 @@ export default function RoutineSetupScreen({
         handleUpdateComplete(true);
         resetExerciseDays();
       }
-      if (mutationError) {
+      if (mutationError || mutationError2) {
         Toast.show({
           type: 'error',
           text1: 'Routine Setup',
@@ -216,7 +226,7 @@ export default function RoutineSetupScreen({
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mutationStatus]);
+  }, [mutationStatus, mutationStatus2]);
 
   React.useEffect(() => {
     for (let i = 0; i < days.length; i++) {
