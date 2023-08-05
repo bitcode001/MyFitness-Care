@@ -50,10 +50,10 @@ const SummaryGrid = ({
 }: {
   mappedData: IUserExerciseRecords | undefined;
 }) => {
-  if (!mappedData) {
-    return 0;
-  }
   const decideMetrics = (i: number) => {
+    if (!mappedData) {
+      return 0;
+    }
     switch (i) {
       case 0:
         return mappedData?.economy.m_trophies ?? 0;
@@ -91,7 +91,7 @@ const SummaryGrid = ({
                 {perk.title}
               </Text>
               <Text className="text-2xl font-semibold text-black">
-                {decideMetrics(index)}
+                {String(decideMetrics(index)) ?? '0'}
               </Text>
             </View>
           </View>
@@ -142,7 +142,7 @@ export default function PerformanceScreen(): JSX.Element {
   const progressBar = (myExp / totalExp) * 100;
 
   React.useEffect(() => {
-    console.log('mapped Data', mappedData);
+    // console.log('mapped Data', mappedData);
     if (isLoading && isFetching) {
       dispatch(startSpinner());
     } else {
@@ -168,7 +168,7 @@ export default function PerformanceScreen(): JSX.Element {
       {/* Experience display section */}
       <Text className="text-2xl font-normal mt-16 mb-5">Experience Points</Text>
       <ProgressBar
-        progress={progressBar / 100}
+        progress={progressBar ? progressBar / 100 : 0}
         color={MThemeColors.black}
         className="h-3 rounded-lg"
       />

@@ -30,7 +30,7 @@ const CustomLabel = ({label, color}: {label: string; color: string}) => {
   );
 };
 
-const DAYS: Array<WEEKDAYS> = [
+export const W_DAYS: Array<WEEKDAYS> = [
   'sunday',
   'monday',
   'tuesday',
@@ -50,8 +50,8 @@ export default function HomeScreen(): JSX.Element {
 
   const {mappedData} = useExtractDocument<IUserExerciseDetails>(data);
 
-  const haveExerciseToday = !!mappedData?.exercise[DAYS[new Date().getDay()]];
-  const todaysExercise = mappedData?.exercise[DAYS[new Date().getDay()]];
+  const haveExerciseToday = !!mappedData?.exercise[W_DAYS[new Date().getDay()]];
+  const todaysExercise = mappedData?.exercise[W_DAYS[new Date().getDay()]];
 
   const totalSets = (() => {
     let total = 0;
@@ -93,7 +93,7 @@ export default function HomeScreen(): JSX.Element {
         // eslint-disable-next-line react-native/no-inline-styles
         style={{columnGap: 25}}>
         <View className="flex-1 flex-col flex-grow justify-center items-center p-3 py-4 bg-white rounded-xl">
-          {mappedData ? (
+          {mappedData && haveExerciseToday ? (
             <>
               <Image
                 className="w-20 h-20 rounded-full mb-3"
@@ -105,7 +105,15 @@ export default function HomeScreen(): JSX.Element {
               </Text>
             </>
           ) : (
-            <Text className="text-sm">No exercise data found</Text>
+            <View>
+              <Text className="text-sm font-semibold">
+                Thats it for today !
+              </Text>
+              <Image
+                className="w-8 h-8 rounded-full mt-2 self-start"
+                source={require('@/assets/icons/star.png')}
+              />
+            </View>
           )}
         </View>
 
@@ -139,7 +147,14 @@ export default function HomeScreen(): JSX.Element {
               />
             </>
           ) : (
-            <Text className="text-sm">No exercise data found</Text>
+            <View>
+              <Text className="text-sm text-white">You were awesome !</Text>
+
+              <Image
+                className="w-8 h-8 rounded-full mt-2 self-start"
+                source={require('@/assets/icons/star.png')}
+              />
+            </View>
           )}
         </View>
       </View>
@@ -161,7 +176,7 @@ export default function HomeScreen(): JSX.Element {
               COMING SOON
             </Text>
             <Image
-              className="w-8 h-8 rounded-full mt-2 self-end"
+              className="w-8 h-8 rounded-full mt-2 self-center"
               source={require('@/assets/icons/star.png')}
             />
           </View>

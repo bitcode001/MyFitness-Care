@@ -5,6 +5,17 @@ import React from 'react';
 import {Image, Text, TouchableOpacity, View, ScrollView} from 'react-native';
 import useFirebase from '@/hooks/firebase.auth.hook';
 
+// Data fetching utilities
+import {useDispatch, useSelector} from 'react-redux';
+import {RootState} from '@/redux/store';
+import {
+  IUserExerciseRecords,
+  useGetUserExerciseRecords,
+} from '@/apis/exercise.db';
+import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
+import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
+import FallbackUI from '@/components/Fallback/fallback.ui';
+
 const LevelComponent = () => {
   return (
     <View className="bg-green-500 px-3 py-1 ml-4 rounded-full">
@@ -18,6 +29,7 @@ const infoSectionStyle = {
     rowGap: 15,
   },
 };
+
 export default function ProfileScreen(): JSX.Element {
   const {signOut} = useFirebase();
 
@@ -25,6 +37,41 @@ export default function ProfileScreen(): JSX.Element {
     console.log('Log out');
     await signOut();
   };
+
+  // AUTH STATE
+  // Data fetching logic
+  const authState = useSelector((state: RootState) => state.auth);
+  const dispatch = useDispatch();
+  const {data, isLoading, isFetching} = useGetUserExerciseRecords(
+    authState.frUser?.uid ?? '',
+  );
+
+  const {mappedData} = useExtractDocument<IUserExerciseRecords>(data);
+
+  const myExp = mappedData?.economy.m_exp ?? 0;
+  const totalExp = (() => {
+    let total = 0;
+    if (mappedData?.economy) {
+      total = mappedData.economy.m_level * 10 + 20;
+    }
+    return total;
+  })();
+  const progressBar = (myExp / totalExp) * 100;
+
+  React.useEffect(() => {
+    // console.log('mapped Data', mappedData);
+    if (isLoading && isFetching) {
+      dispatch(startSpinner());
+    } else {
+      dispatch(stopSpinner());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, isFetching]);
+
+  if (!mappedData) {
+    return <FallbackUI />;
+  }
+
   return (
     <SafeAreaScrollView>
       <UserIntro
@@ -68,7 +115,12 @@ export default function ProfileScreen(): JSX.Element {
       </View>
 
       {/* Challenges Section */}
-      <Text className="text-2xl font-normal mt-10 mb-5">Challenges</Text>
+      <View className="flex flex-row justify-between items-center">
+        <Text className="text-2xl font-normal mt-10 mb-5">Challenges</Text>
+        <Text className="text-base font-normal text-green-500 mt-10 mb-5 ml-5">
+          Coming soon
+        </Text>
+      </View>
       <ScrollView horizontal>
         {[1, 2, 3, 4, 5].map((item, index) => (
           <View
@@ -87,7 +139,7 @@ export default function ProfileScreen(): JSX.Element {
               <Text>Complete 2 of these</Text>
               <View className="flex flex-row gap-2 mb-2 mt-1">
                 <View className="bg-green-500 px-3 py-1 rounded-full">
-                  <Text className="text-xs text-white">Fitcoins: 5</Text>
+                  <Text className="text-xs text-white">Fitcoins: 30</Text>
                 </View>
                 <View className="bg-sky-500 px-3 py-1 rounded-full">
                   <Text className="text-xs text-white">Exp: 30</Text>
@@ -106,9 +158,11 @@ export default function ProfileScreen(): JSX.Element {
       <Text className="text-2xl font-normal mt-10 mb-5">Economy</Text>
       <View className="flex flex-row gap-4">
         <TouchableOpacity className="bg-white flex-1 flex-col justify-center items-center px-2 py-6 rounded-xl">
-          <ProgressPie percentage={40} radius={37} strokeWidth={0} />
+          <ProgressPie percentage={progressBar} radius={37} strokeWidth={0} />
           <Text className="text-base font-medium mt-2">For Next Level</Text>
-          <Text className="text-2xl font-normal">130 exp</Text>
+          <Text className="text-2xl font-normal">
+            {mappedData.economy.m_exp} exp
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity className="bg-white flex-1 flex-col justify-center items-center px-2 py-6 rounded-xl">
           <Image
@@ -118,7 +172,9 @@ export default function ProfileScreen(): JSX.Element {
           <Text className="text-base font-medium mt-2">
             Your fitcoin balance
           </Text>
-          <Text className="text-2xl font-normal">200</Text>
+          <Text className="text-2xl font-normal">
+            {mappedData.economy.m_coin ?? 0}
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaScrollView>

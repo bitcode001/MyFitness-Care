@@ -14,13 +14,40 @@ import {MSpacing} from '@/constant/measurements';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Button, IconButton} from 'react-native-paper';
 
+// Data fetching utilities
+import {useDispatch, useSelector} from 'react-redux';
+import {RootState} from '@/redux/store';
+import {
+  IUserExerciseDetails,
+  useGetUserExerciseDetails,
+} from '@/apis/exercise.db';
+import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
+import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
+import FallbackUI from '@/components/Fallback/fallback.ui';
+import {W_DAYS} from '../Home/home.screen';
+// import {WEEKDAYS} from '../Routine/routine.setup.screen';
+
 export default function ExerciseScreen(): JSX.Element {
   // const insets = useSafeAreaInsets();
   // const statusBarHeight = insets.top;
   const isDarkMode = useColorScheme() === 'dark';
   const [startExercise, setStartExercise] = React.useState(false);
 
-  const exerciseList = [1, 2, 3, 4, 5];
+  // Data fetching logic
+  const authState = useSelector((state: RootState) => state.auth);
+  const dispatch = useDispatch();
+  const {data, isLoading, isFetching} = useGetUserExerciseDetails(
+    authState.frUser?.uid ?? '',
+  );
+
+  const {mappedData} = useExtractDocument<IUserExerciseDetails>(data);
+
+  const haveExerciseToday = !!mappedData?.exercise[W_DAYS[new Date().getDay()]];
+  const todaysExercise = mappedData?.exercise[W_DAYS[new Date().getDay()]];
+
+  const exerciseList = todaysExercise?.exercises.length
+    ? todaysExercise?.exercises.length
+    : 0;
   const [completedExerciseIndex, setCompletedExerciseIndex] = React.useState<
     number | null
   >(null);
@@ -32,7 +59,7 @@ export default function ExerciseScreen(): JSX.Element {
   const shouldDisable = (dependent: boolean) => {
     if (
       completedExerciseIndex === null ||
-      completedExerciseIndex < exerciseList.length - 1
+      completedExerciseIndex < exerciseList - 1
     ) {
       return dependent;
     } else {
@@ -58,6 +85,20 @@ export default function ExerciseScreen(): JSX.Element {
     };
   };
 
+  React.useEffect(() => {
+    // console.log('mapped Data', mappedData);
+    if (isLoading && isFetching) {
+      dispatch(startSpinner());
+    } else {
+      dispatch(stopSpinner());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, isFetching]);
+
+  if (!mappedData) {
+    return <FallbackUI />;
+  }
+
   return (
     <View
       className="flex-1"
@@ -76,102 +117,143 @@ export default function ExerciseScreen(): JSX.Element {
           // paddingTop: statusBarHeight,
         }}>
         <View className="pb-6 justify-center items-center">
-          <Text className="text-2xl text-white font-semibold">
-            Todays Exercise
-          </Text>
-          <Text className="text-lg text-white font-bold">Leg Day</Text>
+          {haveExerciseToday ? (
+            <>
+              <Text className="text-2xl text-white font-semibold">
+                Todays Exercise
+              </Text>
+              <Text className="text-lg text-white font-bold capitalize">
+                {todaysExercise?.targetMusclegroup
+                  .split(',')
+                  .filter(Boolean)
+                  .join(' ')}
+              </Text>
+            </>
+          ) : (
+            <Text className="text-2xl text-white font-semibold text-center px-10">
+              Rest is essential for a body growth as well
+            </Text>
+          )}
         </View>
         <View
           className="bg-white shadow-md p-8 rounded-2xl h-72 flex flex-col justify-center items-center absolute -bottom-48"
           style={{
             width: MSpacing.screenWidth - 40 * 2,
           }}>
-          <Text className="text-base leading-5 text-center font-medium">
-            Start your timer and stop it after you complete your exercise
-          </Text>
-          <Image
-            className="w-24 h-24 my-6"
-            source={require('@/assets/icons/start-exercise.png')}
-          />
+          {haveExerciseToday ? (
+            <>
+              <Text className="text-base leading-5 text-center font-medium">
+                Start your timer and stop it after you complete your exercise
+              </Text>
+              <Image
+                className="w-24 h-24 my-6"
+                source={require('@/assets/icons/start-exercise.png')}
+              />
 
-          <View className="flex flex-row mt-5">
-            <Button
-              mode="contained"
-              className="self-center"
-              loading={startExercise}
-              disabled={shouldDisable(startExercise)}
-              onPress={handleExerciseStart}>
-              <Text>Start Timer</Text>
-            </Button>
+              <View className="flex flex-row mt-5">
+                <Button
+                  mode="contained"
+                  className="self-center"
+                  loading={startExercise}
+                  disabled={shouldDisable(startExercise)}
+                  onPress={handleExerciseStart}>
+                  <Text>Start Timer</Text>
+                </Button>
 
-            <IconButton
-              icon="pause"
-              disabled={shouldDisable(!startExercise)}
-              animated
-              onPress={handleExerciseStop}
-              iconColor={MThemeColors.black}
-              // style={{
-              //   backgroundColor: MThemeColors.white,
-              // }}
-            />
-          </View>
+                <IconButton
+                  icon="pause"
+                  disabled={shouldDisable(!startExercise)}
+                  animated
+                  onPress={handleExerciseStop}
+                  iconColor={MThemeColors.black}
+                  // style={{
+                  //   backgroundColor: MThemeColors.white,
+                  // }}
+                />
+              </View>
+            </>
+          ) : (
+            <View className="flex flex-col justify-center items-center">
+              <Text className="text-lg text-center font-bold">
+                You have no exercise today.
+              </Text>
+              <Text className="text-sm text-center font-normal">
+                Enjoy your rest day champ !
+              </Text>
+              <Image
+                className="w-24 h-24 my-6"
+                source={require('@/assets/icons/tired.png')}
+              />
+            </View>
+          )}
         </View>
       </View>
 
       {/* BOTTOM SCROLL SECTION */}
-      <ScrollView
-        className="mt-56"
-        contentContainerStyle={{
-          paddingHorizontal: MSpacing.screenPadding,
-          paddingBottom:
-            MSpacing.bottomTabBar.height + MSpacing.bottomTabBar.bottomOffset,
-        }}>
-        {exerciseList.map((item, index) => {
-          return (
-            <View
-              key={index}
-              className="bg-white rounded-2xl p-4 flex flex-row justify-between items-center my-4"
-              style={customizeExerciseStat(index)}>
-              <Image
-                className="w-16 h-16 rounded-full"
-                source={{uri: 'https://picsum.photos/200/200'}}
-              />
-              <View className="flex flex-1 flex-row justify-between items-center ml-4">
+      {haveExerciseToday && (
+        <ScrollView
+          className="mt-56"
+          contentContainerStyle={{
+            paddingHorizontal: MSpacing.screenPadding,
+            paddingBottom:
+              MSpacing.bottomTabBar.height + MSpacing.bottomTabBar.bottomOffset,
+          }}>
+          {todaysExercise?.exercises.map((item, index) => {
+            return (
+              <View
+                key={index}
+                className="bg-white rounded-2xl p-4 flex flex-row justify-between items-center my-4"
+                style={customizeExerciseStat(index)}>
+                <Image
+                  className="w-16 h-16 rounded-full"
+                  source={{uri: 'https://picsum.photos/200/200'}}
+                />
                 <View className="flex flex-col">
-                  <Text className="text-base font-bold">Chest Fly</Text>
-                  <View className="flex flex-row">
+                  <Text className="text-base font-bold">{item.name}</Text>
+                  <View className="flex flex-row mb-2">
                     <Text className="text-sm leading-5 text-center font-medium">
-                      Sets: 5
+                      Sets: {item.sets}
                     </Text>
                     <Text className="mx-2">::</Text>
                     <Text className="text-xs leading-5 text-center font-medium">
-                      Reps: 5
+                      Reps: {item.reps}
                     </Text>
                   </View>
-                </View>
-                <View className="flex flex-col">
-                  <View
-                    className="rounded-full mb-2"
-                    style={{
-                      backgroundColor: MThemeColors.skyBlue,
-                    }}>
-                    <Text className="text-white text-xs px-2 py-1">+10exp</Text>
-                  </View>
-                  <View
-                    className="rounded-full"
-                    style={{
-                      backgroundColor: MThemeColors.successGreen,
-                    }}>
-                    <Text className="text-white text-xs px-2 py-1">
-                      +5 coin
-                    </Text>
+                  <View className="flex flex-row flex-wrap gap-2">
+                    <View
+                      className="rounded-full"
+                      style={{
+                        backgroundColor: MThemeColors.skyBlue,
+                      }}>
+                      <Text className="text-white text-xs px-2 py-1">
+                        +10exp
+                      </Text>
+                    </View>
+                    <View
+                      className="rounded-full"
+                      style={{
+                        backgroundColor: MThemeColors.baseOrange,
+                      }}>
+                      <Text className="text-white text-xs px-2 py-1">
+                        +5 trophies
+                      </Text>
+                    </View>
+                    <View
+                      className="rounded-full"
+                      style={{
+                        backgroundColor: MThemeColors.successGreen,
+                      }}>
+                      <Text className="text-white text-xs px-2 py-1">
+                        +2 MCoins
+                      </Text>
+                    </View>
                   </View>
                 </View>
               </View>
-            </View>
-          );
-        })}
-      </ScrollView>
+            );
+          })}
+        </ScrollView>
+      )}
     </View>
   );
 }

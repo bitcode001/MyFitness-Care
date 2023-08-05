@@ -1,5 +1,7 @@
+import {RootState} from '@/redux/store';
 import React from 'react';
 import {View, Text, Image} from 'react-native';
+import {useSelector} from 'react-redux';
 
 interface UserIntroInterface {
   profileLabel?: string;
@@ -10,21 +12,27 @@ export default function UserIntro({
   profileLabel = 'Todays summary !',
   levelComponent,
 }: UserIntroInterface) {
+  const authstat = useSelector((state: RootState) => state.auth);
   return (
     <View className="flex flex-row justify-between items-center">
-      <View className="py-4">
-        <View className="flex flex-row items-center">
-          <Text className="text-3xl font-bold">John Doe</Text>
+      <View className="py-4 flex-1">
+        <Text className="text-3xl font-bold">
+          {authstat.frUser?.displayName ?? authstat.frUser?.email}
+        </Text>
+
+        <View className="flex flex-row items-center flex-wrap mt-2">
+          <Text className="text-xl font-normal pt-1 text-gray-600">
+            {profileLabel}
+          </Text>
+
           {levelComponent && levelComponent}
         </View>
-        <Text className="text-xl font-normal pt-1 text-gray-600">
-          {profileLabel}
-        </Text>
       </View>
       <Image
         className="w-20 h-20 rounded-full"
         source={{
-          uri: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          uri:
+            authstat.frUser?.photoURL ?? 'https://picsum.photos/id/29/200/200',
         }}
       />
     </View>
