@@ -16,10 +16,12 @@ import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import FallbackUI from '@/components/Fallback/fallback.ui';
 
-const LevelComponent = () => {
+const LevelComponent = ({currentLevel}: {currentLevel: number}) => {
   return (
     <View className="bg-green-500 px-3 py-1 ml-4 rounded-full">
-      <Text className="text-white font-semibold text-sm">Level 1</Text>
+      <Text className="text-white font-semibold text-sm">
+        Level {currentLevel}
+      </Text>
     </View>
   );
 };
@@ -76,7 +78,9 @@ export default function ProfileScreen(): JSX.Element {
     <SafeAreaScrollView>
       <UserIntro
         profileLabel={'Hey there,'}
-        levelComponent={<LevelComponent />}
+        levelComponent={
+          <LevelComponent currentLevel={mappedData.economy.m_level} />
+        }
       />
 
       {/* USER INFO SECTION */}

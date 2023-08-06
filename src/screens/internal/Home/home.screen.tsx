@@ -101,7 +101,10 @@ export default function HomeScreen(): JSX.Element {
               />
               <Text className="text-sm">Lets do this again!</Text>
               <Text className="font-bold">
-                {Object.keys(mappedData.exercise).length * 10} exp to claim
+                {todaysExercise?.exercises
+                  ? todaysExercise.exercises.length * 10
+                  : 0}{' '}
+                exp to claim
               </Text>
             </>
           ) : (
