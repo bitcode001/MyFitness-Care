@@ -3,10 +3,12 @@ import {persistReducer} from 'redux-persist';
 // import storage from 'redux-persist/lib/storage';
 import authSliceReducer from './slice/auth.slice';
 import spinnerSliceReducer from './slice/spinner.slice';
+import exerciseSliceReducer from './slice/exercise.slice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const reducers = combineReducers({
   auth: authSliceReducer,
+  exercise: exerciseSliceReducer,
   spinner: spinnerSliceReducer,
 });
 

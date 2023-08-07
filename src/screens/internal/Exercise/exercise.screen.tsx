@@ -20,12 +20,19 @@ import {RootState} from '@/redux/store';
 import {
   IUserExerciseDetails,
   useGetUserExerciseDetails,
+  useUpdateUserExerciseRecords,
 } from '@/apis/exercise.db';
 import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import FallbackUI from '@/components/Fallback/fallback.ui';
 import {W_DAYS} from '../Home/home.screen';
+import {
+  // invalidateExerciseSlice,
+  setDidCompleteTodaysExercise,
+} from '@/redux/slice/exercise.slice';
 // import {WEEKDAYS} from '../Routine/routine.setup.screen';
+import Toast from 'react-native-toast-message';
+import calculateUserLevel from '@/constant/utils';
 
 export default function ExerciseScreen(): JSX.Element {
   // const insets = useSafeAreaInsets();
@@ -35,10 +42,20 @@ export default function ExerciseScreen(): JSX.Element {
 
   // Data fetching logic
   const authState = useSelector((state: RootState) => state.auth);
+  const exerciseState = useSelector((state: RootState) => state.exercise);
   const dispatch = useDispatch();
   const {data, isLoading, isFetching} = useGetUserExerciseDetails(
     authState.frUser?.uid ?? '',
   );
+
+  const {
+    mutate: mutateUserExerciseRecords,
+    isIdle: mutationIdle,
+    isLoading: mutationOngoing,
+    isError: mutationError,
+    isSuccess: mutationSuccess,
+    status: mutationStatus,
+  } = useUpdateUserExerciseRecords(authState.frUser?.uid ?? '');
 
   const {mappedData} = useExtractDocument<IUserExerciseDetails>(data);
 
@@ -56,7 +73,17 @@ export default function ExerciseScreen(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.lighter : MThemeColors.white,
   };
 
+  const tallyLastCompletedExerciseDay: () => boolean = () => {
+    if (exerciseState.todaysDay === W_DAYS[new Date().getDay()]) {
+      return true;
+    }
+    return false;
+  };
+
   const shouldDisable = (dependent: boolean) => {
+    if (tallyLastCompletedExerciseDay()) {
+      return true;
+    }
     if (
       completedExerciseIndex === null ||
       completedExerciseIndex < exerciseList - 1
@@ -77,6 +104,11 @@ export default function ExerciseScreen(): JSX.Element {
   };
 
   const customizeExerciseStat = (index: number) => {
+    if (tallyLastCompletedExerciseDay()) {
+      return {
+        opacity: 0.5,
+      };
+    }
     return {
       opacity:
         completedExerciseIndex !== null && index <= completedExerciseIndex
@@ -94,6 +126,69 @@ export default function ExerciseScreen(): JSX.Element {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading, isFetching]);
+
+  React.useEffect(() => {
+    console.log('Exercise state: ', exerciseState);
+    if (completedExerciseIndex === exerciseList - 1) {
+      mutateUserExerciseRecords({
+        date: String(new Date().toISOString()),
+        day: W_DAYS[new Date().getDay()],
+        exerciseCount: exerciseList,
+        m_coin: exerciseList * 2,
+        m_exp: exerciseList * 10,
+        m_trophies: exerciseList * 5,
+        m_streak: 1,
+        m_level: calculateUserLevel(exerciseList * 10),
+      });
+      console.log('final data: ', {
+        date: String(new Date().toISOString()),
+        day: W_DAYS[new Date().getDay()],
+        exerciseCount: exerciseList,
+        m_coin: exerciseList * 2,
+        m_exp: exerciseList * 10,
+        m_trophies: exerciseList * 5,
+        m_streak: 1,
+        m_level: calculateUserLevel(exerciseList * 10),
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [completedExerciseIndex]);
+
+  React.useEffect(() => {
+    if (mutationOngoing) {
+      dispatch(startSpinner());
+    } else {
+      if (mutationIdle) {
+        dispatch(stopSpinner());
+      }
+
+      if (mutationSuccess) {
+        Toast.show({
+          type: 'success',
+          text1: 'Hooray !',
+          text2: "You've completed your exercise today !",
+        });
+        // HANDLE UPDATE COMPLETE
+        dispatch(
+          setDidCompleteTodaysExercise({
+            didCompleteTodaysExercise: true,
+            todaysDay: W_DAYS[new Date().getDay()],
+          }),
+        );
+        dispatch(stopSpinner());
+      }
+      if (mutationError) {
+        Toast.show({
+          type: 'error',
+          text1: 'Ooops !',
+          text2: 'Something went wrong !',
+        });
+
+        dispatch(stopSpinner());
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mutationStatus]);
 
   if (!mappedData) {
     return <FallbackUI />;
@@ -143,7 +238,9 @@ export default function ExerciseScreen(): JSX.Element {
           {haveExerciseToday ? (
             <>
               <Text className="text-base leading-5 text-center font-medium">
-                Start your timer and stop it after you complete your exercise
+                {tallyLastCompletedExerciseDay()
+                  ? 'You have completed todays exercise'
+                  : 'Start your timer and stop it after you complete your exercise'}
               </Text>
               <Image
                 className="w-24 h-24 my-6"

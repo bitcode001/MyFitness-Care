@@ -19,6 +19,7 @@ import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import {useExtractQuery} from '@/hooks/useExtractFirebaseData';
 import {RootState} from '@/redux/store';
 import Toast from 'react-native-toast-message';
+import {invalidateExerciseSlice} from '@/redux/slice/exercise.slice';
 
 export type WEEKDAYS =
   | 'sunday'
@@ -188,7 +189,7 @@ export default function RoutineSetupScreen({
       m_badges: [],
       m_challenges: [],
       m_id: String(Date.now()),
-      start_date: date,
+      start_date: String(date),
       start_time: time,
       rest_days: r_days,
       workout_days: g_days,
@@ -216,6 +217,7 @@ export default function RoutineSetupScreen({
         });
         handleUpdateComplete(true);
         resetExerciseDays();
+        dispatch(invalidateExerciseSlice());
       }
       if (mutationError || mutationError2) {
         Toast.show({

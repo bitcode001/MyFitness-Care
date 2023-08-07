@@ -17,7 +17,7 @@ import MainScreen from '@/screens/main.screen';
 import {PaperProvider} from 'react-native-paper';
 import {enGB, registerTranslation} from 'react-native-paper-dates';
 registerTranslation('en-GB', enGB);
-registerTranslation('en', {
+registerTranslation('en-GB', {
   save: 'Save',
   selectSingle: 'Select date',
   selectMultiple: 'Select dates',

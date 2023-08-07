@@ -101,7 +101,7 @@ export default function StepThree({
 
             <View className="flex flex-row justify-between items-center gap-4 mt-10">
               <DatePickerModal
-                locale="en"
+                locale="en-GB"
                 mode="single"
                 visible={openDatePicker}
                 onDismiss={onDismissSingle}
