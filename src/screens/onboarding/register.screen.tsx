@@ -11,6 +11,7 @@ import Toast from 'react-native-toast-message';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 import ErrorLabel from '@/components/Form/ErrorLabel';
+import useFirebase from '@/hooks/firebase.auth.hook';
 
 type RegisterScreenNavigationProp = StackNavigationProp<
   OnboardingStackParamList,
@@ -25,7 +26,7 @@ type RegisterScreenProps = {
 };
 
 const registerValidation = Yup.object().shape({
-  username: Yup.string().required('Username is Required'),
+  username: Yup.string(),
   email: Yup.string()
     .email('Please enter valid email')
     .required('Email Address is Required'),
@@ -45,13 +46,41 @@ export default function RegisterScreen({
 }: RegisterScreenProps): JSX.Element {
   const [passwordVisible, setPasswordVisible] = React.useState(false);
   const togglePasswordVisibility = () => setPasswordVisible(!passwordVisible);
-  const handleRegister = (values: RegisterFieldsInitialInterface) => {
-    Toast.show({
-      type: 'success',
-      text1: 'Success',
-      text2: 'You have successfully registered!',
-    });
-    console.log('Registering values: ', values);
+  const {registerWithCredential, signInWithGoogle} = useFirebase();
+  const handleRegister = async (values: RegisterFieldsInitialInterface) => {
+    // Toast.show({
+    //   type: 'success',
+    //   text1: 'Success',
+    //   text2: 'You have successfully registered!',
+    // });
+    try {
+      await registerWithCredential(values.email, values.password);
+    } catch (error: any) {
+      Toast.show({
+        type: 'error',
+        text1: 'Error',
+        text2: error.message,
+      });
+    }
+  };
+  const handleLoginWithGoogle = async () => {
+    // dispatch(startSpinner());
+    try {
+      await signInWithGoogle();
+      // dispatch(stopSpinner());
+      Toast.show({
+        type: 'success',
+        text1: 'Success',
+        text2: 'You have successfully logged in!',
+      });
+    } catch (error: any) {
+      // dispatch(stopSpinner());
+      Toast.show({
+        type: 'error',
+        text1: 'Error',
+        text2: error.message,
+      });
+    }
   };
   const handleBackPress = () => {
     navigation.goBack();
@@ -89,22 +118,24 @@ export default function RegisterScreen({
         {({handleChange, handleBlur, handleSubmit, values}) => (
           <React.Fragment>
             <View className="my-5">
-              <TextInput
+              {/* <TextInput
                 className="mt-5"
                 outlineColor="transparent"
                 label={'Username'}
                 mode="outlined"
+                autoCapitalize="none"
                 onChangeText={handleChange('username')}
                 onBlur={handleBlur('username')}
                 value={values.username}
               />
-              <ErrorLabel fieldKey="username" />
+              <ErrorLabel fieldKey="username" /> */}
 
               <TextInput
                 className="mt-5"
                 outlineColor="transparent"
                 label={'Email'}
                 mode="outlined"
+                autoCapitalize="none"
                 onChangeText={handleChange('email')}
                 onBlur={handleBlur('email')}
                 value={values.email}
@@ -120,7 +151,7 @@ export default function RegisterScreen({
                 right={
                   <TextInput.Icon
                     onPress={() => togglePasswordVisibility()}
-                    icon="eye"
+                    icon={passwordVisible ? 'eye-off' : 'eye'}
                   />
                 }
                 onChangeText={handleChange('password')}
@@ -131,9 +162,14 @@ export default function RegisterScreen({
             </View>
 
             <Button
-              mode="contained"
-              className="mt-10"
-              onPress={() => handleSubmit()}>
+              mode="outlined"
+              className="mt-5"
+              icon={require('@/assets/icons/google.png')}
+              onPress={() => handleLoginWithGoogle()}>
+              <Text>Sign up with Google</Text>
+            </Button>
+            <Text className="text-center my-5">Or</Text>
+            <Button mode="contained" onPress={() => handleSubmit()}>
               <Text>Register</Text>
             </Button>
           </React.Fragment>

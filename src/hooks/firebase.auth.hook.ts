@@ -8,6 +8,7 @@ import {useDispatch} from 'react-redux';
 // import {setUser} from '@redux/slice/auth.slice';
 import {setUser} from '@/redux/slice/auth.slice';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
+// import Toast from 'react-native-toast-message';
 
 // Function to abstract error message from Firebase Auth error code
 export const getFirebaseAuthErrorMessage = (errorCode: string): string => {
@@ -55,7 +56,7 @@ const useFirebase = () => {
     await GoogleSignin.signOut();
   };
 
-  const signIn = async () => {
+  const signInWithGoogle = async () => {
     console.log('Signing In...');
     try {
       await GoogleSignin.hasPlayServices();
@@ -67,15 +68,22 @@ const useFirebase = () => {
       // dispatch(setUser(s_user));
       return userInfo;
     } catch (error: any) {
+      let msg = '';
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         // user cancelled the login flow
+        msg = 'Sign in cancelled';
       } else if (error.code === statusCodes.IN_PROGRESS) {
         // operation (e.g. sign in) is in progress already
+        msg = 'Sign in in progress';
       } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
         // play services not available or outdated
+        msg = 'Play services not available';
       } else {
         // some other error happened
+        msg = `Msg: ${error.message}`;
       }
+
+      throw Error(msg); // Throw error so that the caller can handle appropriately
     }
   };
 
@@ -100,6 +108,35 @@ const useFirebase = () => {
     } catch (error) {
       console.error(error);
       dispatch(stopSpinner());
+    }
+  };
+
+  const registerWithCredential = async (email: string, password: string) => {
+    dispatch(startSpinner());
+    try {
+      const user = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password);
+
+      dispatch(stopSpinner());
+      return user;
+    } catch (error: any) {
+      console.log(error);
+      let msg = '';
+      // Handle the registration error
+      if (error.code === 'auth/email-already-in-use') {
+        // Email already exists, display appropriate message or take necessary action
+        msg = 'Email already in use';
+      } else if (error.code === 'auth/weak-password') {
+        // Weak password, display appropriate message or take necessary action
+        msg = 'Weak password';
+      } else {
+        // Other registration errors, display a generic error message or handle as needed
+        msg = `Msg: ${error.message}`;
+      }
+
+      dispatch(stopSpinner());
+      throw Error(msg); // Throw error so that the caller can handle appropriately
     }
   };
 
@@ -157,8 +194,9 @@ const useFirebase = () => {
   };
 
   return {
-    signIn,
+    signInWithGoogle,
     signInWithCredential,
+    registerWithCredential,
     isSignedIn,
     getTokens,
     getCurrentUser,
