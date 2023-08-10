@@ -162,15 +162,17 @@ export default function RegisterScreen({
             </View>
 
             <Button
-              mode="outlined"
+              mode="contained"
               className="mt-5"
+              onPress={() => handleSubmit()}>
+              <Text>Register</Text>
+            </Button>
+            <Text className="text-center my-5">Or</Text>
+            <Button
+              mode="outlined"
               icon={require('@/assets/icons/google.png')}
               onPress={() => handleLoginWithGoogle()}>
               <Text>Sign up with Google</Text>
-            </Button>
-            <Text className="text-center my-5">Or</Text>
-            <Button mode="contained" onPress={() => handleSubmit()}>
-              <Text>Register</Text>
             </Button>
           </React.Fragment>
         )}
