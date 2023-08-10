@@ -6,6 +6,7 @@ import {
   IExerciseRoutineInterface,
   WEEKDAYS,
 } from '@/screens/internal/Routine/routine.setup.screen';
+import calculateUserLevel from '@/constant/utils';
 
 const useGetAllExerciseDetails = () => {
   const exerciseCollection = firestore().collection('exercise-details');
@@ -99,7 +100,7 @@ export interface IUserExerciseRecords {
 export const initialUserExerciseRecords: IUserExerciseRecords = {
   economy: {
     m_coin: 0,
-    m_level: 0,
+    m_level: 1,
     m_streak: 0,
     m_trophies: 0,
     m_exp: 5,
@@ -123,7 +124,7 @@ const useSetUserExerciseRecords = (userId: string) => {
 
 type DynamicUserExerciseRecordsUpdateObj = {
   m_coin: number;
-  m_level: number;
+  m_level?: number;
   m_streak: number;
   m_trophies: number;
   m_exp: number;
@@ -163,7 +164,9 @@ const useUpdateUserExerciseRecords = (userId: string) => {
         const newEconomy = {
           ...economyData.economy,
           m_coin: economyData.economy.m_coin + data.m_coin,
-          m_level: economyData.economy.m_level + data.m_level,
+          // m_level: economyData.economy.m_level + data.m_level,
+          m_level:
+            calculateUserLevel(economyData.economy.m_exp + data.m_exp) + 1, // Calculate new level based on the new exp (Example: Increment by 5
           m_streak: economyData.economy.m_streak + data.m_streak,
           m_trophies: economyData.economy.m_trophies + data.m_trophies,
           m_exp: economyData.economy.m_exp + data.m_exp,

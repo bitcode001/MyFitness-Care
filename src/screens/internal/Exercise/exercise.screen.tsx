@@ -32,7 +32,6 @@ import {
 } from '@/redux/slice/exercise.slice';
 // import {WEEKDAYS} from '../Routine/routine.setup.screen';
 import Toast from 'react-native-toast-message';
-import calculateUserLevel from '@/constant/utils';
 
 export default function ExerciseScreen(): JSX.Element {
   // const insets = useSafeAreaInsets();
@@ -128,7 +127,6 @@ export default function ExerciseScreen(): JSX.Element {
   }, [isLoading, isFetching]);
 
   React.useEffect(() => {
-    console.log('Exercise state: ', exerciseState);
     if (completedExerciseIndex === exerciseList - 1) {
       mutateUserExerciseRecords({
         date: String(new Date().toISOString()),
@@ -138,7 +136,7 @@ export default function ExerciseScreen(): JSX.Element {
         m_exp: exerciseList * 10,
         m_trophies: exerciseList * 5,
         m_streak: 1,
-        m_level: calculateUserLevel(exerciseList * 10),
+        // m_level: calculateUserLevel(exerciseList * 10),
       });
       console.log('final data: ', {
         date: String(new Date().toISOString()),
@@ -148,7 +146,7 @@ export default function ExerciseScreen(): JSX.Element {
         m_exp: exerciseList * 10,
         m_trophies: exerciseList * 5,
         m_streak: 1,
-        m_level: calculateUserLevel(exerciseList * 10),
+        // m_level: calculateUserLevel(exerciseList * 10),
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -189,6 +187,12 @@ export default function ExerciseScreen(): JSX.Element {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mutationStatus]);
+
+  // FOR TESTING PURPOSES
+  // React.useEffect(() => {
+  //   dispatch(invalidateExerciseSlice());
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   if (!mappedData) {
     return <FallbackUI />;

@@ -15,6 +15,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '@/redux/store';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
+import {EXP_BAR} from '@/constant/utils';
 
 const perks = [
   {
@@ -135,7 +136,7 @@ export default function PerformanceScreen(): JSX.Element {
   const totalExp = (() => {
     let total = 0;
     if (mappedData?.economy) {
-      total = mappedData.economy.m_level * 10 + 20;
+      total = mappedData.economy.m_level * EXP_BAR;
     }
     return total;
   })();

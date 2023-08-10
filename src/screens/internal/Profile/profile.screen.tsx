@@ -15,6 +15,7 @@ import {
 import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import FallbackUI from '@/components/Fallback/fallback.ui';
+import {EXP_BAR} from '@/constant/utils';
 
 const LevelComponent = ({currentLevel}: {currentLevel: number}) => {
   return (
@@ -54,7 +55,7 @@ export default function ProfileScreen(): JSX.Element {
   const totalExp = (() => {
     let total = 0;
     if (mappedData?.economy) {
-      total = mappedData.economy.m_level * 10 + 20;
+      total = mappedData.economy.m_level * EXP_BAR;
     }
     return total;
   })();
@@ -165,7 +166,7 @@ export default function ProfileScreen(): JSX.Element {
           <ProgressPie percentage={progressBar} radius={37} strokeWidth={0} />
           <Text className="text-base font-medium mt-2">For Next Level</Text>
           <Text className="text-2xl font-normal">
-            {mappedData.economy.m_exp} exp
+            {totalExp - mappedData.economy.m_exp} exp
           </Text>
         </TouchableOpacity>
         <TouchableOpacity className="bg-white flex-1 flex-col justify-center items-center px-2 py-6 rounded-xl">
