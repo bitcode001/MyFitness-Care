@@ -1,0 +1,1818 @@
+[
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_0.gif?alt=media",
+    "id": "1512",
+    "name": "all fours squad stretch",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_1.gif?alt=media",
+    "id": "3214",
+    "name": "arms apart circular toe touch (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_2.gif?alt=media",
+    "id": "1709",
+    "name": "assisted lying glutes stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_3.gif?alt=media",
+    "id": "1710",
+    "name": "assisted lying gluteus and piriformis stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_4.gif?alt=media",
+    "id": "0016",
+    "name": "assisted prone hamstring",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_5.gif?alt=media",
+    "id": "1713",
+    "name": "assisted prone lying quads stretch",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_6.gif?alt=media",
+    "id": "1712",
+    "name": "assisted side lying adductor stretch",
+    "target": "adductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_7.gif?alt=media",
+    "id": "1473",
+    "name": "backward jump",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_8.gif?alt=media",
+    "id": "0020",
+    "name": "balance board",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_9.gif?alt=media",
+    "id": "0980",
+    "name": "band bent-over hip extension",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_10.gif?alt=media",
+    "id": "1408",
+    "name": "band hip lift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_11.gif?alt=media",
+    "id": "0984",
+    "name": "band lying hip internal rotation",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_12.gif?alt=media",
+    "id": "0987",
+    "name": "band one arm single leg split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_13.gif?alt=media",
+    "id": "0991",
+    "name": "band pull through",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_14.gif?alt=media",
+    "id": "0996",
+    "name": "band seated hip internal rotation",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_15.gif?alt=media",
+    "id": "1001",
+    "name": "band single leg split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_16.gif?alt=media",
+    "id": "1004",
+    "name": "band squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_17.gif?alt=media",
+    "id": "1003",
+    "name": "band squat row",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_18.gif?alt=media",
+    "id": "1008",
+    "name": "band step-up",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_19.gif?alt=media",
+    "id": "1009",
+    "name": "band stiff leg deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_20.gif?alt=media",
+    "id": "1023",
+    "name": "band straight back stiff leg deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_21.gif?alt=media",
+    "id": "0024",
+    "name": "barbell bench front squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_22.gif?alt=media",
+    "id": "0026",
+    "name": "barbell bench squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_23.gif?alt=media",
+    "id": "0028",
+    "name": "barbell clean and press",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_24.gif?alt=media",
+    "id": "0029",
+    "name": "barbell clean-grip front squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_25.gif?alt=media",
+    "id": "0032",
+    "name": "barbell deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_26.gif?alt=media",
+    "id": "0039",
+    "name": "barbell front chest squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_27.gif?alt=media",
+    "id": "0042",
+    "name": "barbell front squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_28.gif?alt=media",
+    "id": "0043",
+    "name": "barbell full squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_29.gif?alt=media",
+    "id": "1461",
+    "name": "barbell full squat (back pov)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_30.gif?alt=media",
+    "id": "1462",
+    "name": "barbell full squat (side pov)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_31.gif?alt=media",
+    "id": "1545",
+    "name": "barbell full zercher squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_32.gif?alt=media",
+    "id": "1409",
+    "name": "barbell glute bridge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_33.gif?alt=media",
+    "id": "3562",
+    "name": "barbell glute bridge two legs on bench (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_34.gif?alt=media",
+    "id": "0044",
+    "name": "barbell good morning",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_35.gif?alt=media",
+    "id": "0046",
+    "name": "barbell hack squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_36.gif?alt=media",
+    "id": "1436",
+    "name": "barbell high bar squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_37.gif?alt=media",
+    "id": "0051",
+    "name": "barbell jefferson squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_38.gif?alt=media",
+    "id": "0053",
+    "name": "barbell jump squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_39.gif?alt=media",
+    "id": "1410",
+    "name": "barbell lateral lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_40.gif?alt=media",
+    "id": "1435",
+    "name": "barbell low bar squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_41.gif?alt=media",
+    "id": "0054",
+    "name": "barbell lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_42.gif?alt=media",
+    "id": "0058",
+    "name": "barbell lying lifting (on hip)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_43.gif?alt=media",
+    "id": "0063",
+    "name": "barbell narrow stance squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_44.gif?alt=media",
+    "id": "0066",
+    "name": "barbell one arm side deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_45.gif?alt=media",
+    "id": "0068",
+    "name": "barbell one leg squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_46.gif?alt=media",
+    "id": "0069",
+    "name": "barbell overhead squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_47.gif?alt=media",
+    "id": "0074",
+    "name": "barbell rack pull",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_48.gif?alt=media",
+    "id": "0078",
+    "name": "barbell rear lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_49.gif?alt=media",
+    "id": "0077",
+    "name": "barbell rear lunge v. 2",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_50.gif?alt=media",
+    "id": "0085",
+    "name": "barbell romanian deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_51.gif?alt=media",
+    "id": "0090",
+    "name": "barbell seated good morning",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_52.gif?alt=media",
+    "id": "0098",
+    "name": "barbell side split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_53.gif?alt=media",
+    "id": "0097",
+    "name": "barbell side split squat v. 2",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_54.gif?alt=media",
+    "id": "1756",
+    "name": "barbell single leg deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_55.gif?alt=media",
+    "id": "0099",
+    "name": "barbell single leg split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_56.gif?alt=media",
+    "id": "0101",
+    "name": "barbell speed squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_57.gif?alt=media",
+    "id": "2810",
+    "name": "barbell split squat v. 2",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_58.gif?alt=media",
+    "id": "0102",
+    "name": "barbell squat (on knees)",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_59.gif?alt=media",
+    "id": "2798",
+    "name": "barbell squat jump step rear lunge",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_60.gif?alt=media",
+    "id": "0114",
+    "name": "barbell step-up",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_61.gif?alt=media",
+    "id": "0115",
+    "name": "barbell stiff leg good morning",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_62.gif?alt=media",
+    "id": "0116",
+    "name": "barbell straight leg deadlift",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_63.gif?alt=media",
+    "id": "0117",
+    "name": "barbell sumo deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_64.gif?alt=media",
+    "id": "0124",
+    "name": "barbell wide squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_65.gif?alt=media",
+    "id": "0127",
+    "name": "barbell zercher squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_66.gif?alt=media",
+    "id": "3212",
+    "name": "basic toe touch (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_67.gif?alt=media",
+    "id": "0130",
+    "name": "bench hip extension",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_68.gif?alt=media",
+    "id": "3639",
+    "name": "bent knee lying twist (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_69.gif?alt=media",
+    "id": "3543",
+    "name": "bodyweight drop jump squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_70.gif?alt=media",
+    "id": "1494",
+    "name": "butterfly yoga pose",
+    "target": "adductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_71.gif?alt=media",
+    "id": "3235",
+    "name": "cable assisted inverse leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_72.gif?alt=media",
+    "id": "0157",
+    "name": "cable deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_73.gif?alt=media",
+    "id": "0168",
+    "name": "cable hip adduction",
+    "target": "adductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_74.gif?alt=media",
+    "id": "0196",
+    "name": "cable pull through (with rope)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_75.gif?alt=media",
+    "id": "0228",
+    "name": "cable standing hip extension",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_76.gif?alt=media",
+    "id": "1548",
+    "name": "chair leg extended stretch",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_77.gif?alt=media",
+    "id": "3769",
+    "name": "curtsey squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_78.gif?alt=media",
+    "id": "0291",
+    "name": "dumbbell bench squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_79.gif?alt=media",
+    "id": "0295",
+    "name": "dumbbell clean",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_80.gif?alt=media",
+    "id": "3635",
+    "name": "dumbbell contralateral forward lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_81.gif?alt=media",
+    "id": "0300",
+    "name": "dumbbell deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_82.gif?alt=media",
+    "id": "1760",
+    "name": "dumbbell goblet squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_83.gif?alt=media",
+    "id": "0336",
+    "name": "dumbbell lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_84.gif?alt=media",
+    "id": "0339",
+    "name": "dumbbell lying femoral",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_85.gif?alt=media",
+    "id": "3888",
+    "name": "dumbbell one arm snatch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_86.gif?alt=media",
+    "id": "0371",
+    "name": "dumbbell plyo squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_87.gif?alt=media",
+    "id": "0381",
+    "name": "dumbbell rear lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_88.gif?alt=media",
+    "id": "1459",
+    "name": "dumbbell romanian deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_89.gif?alt=media",
+    "id": "1757",
+    "name": "dumbbell single leg deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_90.gif?alt=media",
+    "id": "2805",
+    "name": "dumbbell single leg deadlift with stepbox support",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_91.gif?alt=media",
+    "id": "0410",
+    "name": "dumbbell single leg split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_92.gif?alt=media",
+    "id": "0411",
+    "name": "dumbbell single leg squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_93.gif?alt=media",
+    "id": "0413",
+    "name": "dumbbell squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_94.gif?alt=media",
+    "id": "0431",
+    "name": "dumbbell step-up",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_95.gif?alt=media",
+    "id": "2796",
+    "name": "dumbbell step-up lunge",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_96.gif?alt=media",
+    "id": "2812",
+    "name": "dumbbell step-up split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_97.gif?alt=media",
+    "id": "0432",
+    "name": "dumbbell stiff leg deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_98.gif?alt=media",
+    "id": "0434",
+    "name": "dumbbell straight leg deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_99.gif?alt=media",
+    "id": "2808",
+    "name": "dumbbell sumo pull through",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_100.gif?alt=media",
+    "id": "2803",
+    "name": "dumbbell supported squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_101.gif?alt=media",
+    "id": "1559",
+    "name": "exercise ball hip flexor stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_102.gif?alt=media",
+    "id": "1416",
+    "name": "exercise ball one leg prone lower body rotation",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_103.gif?alt=media",
+    "id": "1417",
+    "name": "exercise ball one legged diagonal kick hamstring curl",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_104.gif?alt=media",
+    "id": "1560",
+    "name": "exercise ball seated hamstring stretch",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_105.gif?alt=media",
+    "id": "2133",
+    "name": "farmers walk",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_106.gif?alt=media",
+    "id": "0459",
+    "name": "flutter kicks",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_107.gif?alt=media",
+    "id": "1472",
+    "name": "forward jump",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_108.gif?alt=media",
+    "id": "3470",
+    "name": "forward lunge (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_109.gif?alt=media",
+    "id": "3194",
+    "name": "frankenstein squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_110.gif?alt=media",
+    "id": "3561",
+    "name": "glute bridge march",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_111.gif?alt=media",
+    "id": "3523",
+    "name": "glute bridge two legs on bench (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_112.gif?alt=media",
+    "id": "3193",
+    "name": "glute-ham raise",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_113.gif?alt=media",
+    "id": "1511",
+    "name": "hamstring stretch",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_114.gif?alt=media",
+    "id": "3218",
+    "name": "hands clasped circular toe touch (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_115.gif?alt=media",
+    "id": "3215",
+    "name": "hands reversed clasped circular toe touch (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_116.gif?alt=media",
+    "id": "1418",
+    "name": "hug keens to chest",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "rope",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_117.gif?alt=media",
+    "id": "1564",
+    "name": "intermediate hip flexor and quad stretch",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_118.gif?alt=media",
+    "id": "0496",
+    "name": "inverse leg curl (bench support)",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_119.gif?alt=media",
+    "id": "2400",
+    "name": "inverse leg curl (on pull-up cable machine)",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_120.gif?alt=media",
+    "id": "1419",
+    "name": "iron cross stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_121.gif?alt=media",
+    "id": "0514",
+    "name": "jump squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_122.gif?alt=media",
+    "id": "0513",
+    "name": "jump squat v. 2",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_123.gif?alt=media",
+    "id": "0533",
+    "name": "kettlebell front squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_124.gif?alt=media",
+    "id": "0534",
+    "name": "kettlebell goblet squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_125.gif?alt=media",
+    "id": "0535",
+    "name": "kettlebell hang clean",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_126.gif?alt=media",
+    "id": "0536",
+    "name": "kettlebell lunge pass through",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_127.gif?alt=media",
+    "id": "0544",
+    "name": "kettlebell pistol squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_128.gif?alt=media",
+    "id": "0549",
+    "name": "kettlebell swing",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_129.gif?alt=media",
+    "id": "0551",
+    "name": "kettlebell turkish get up (squat style)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_130.gif?alt=media",
+    "id": "0555",
+    "name": "kick out sit",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_131.gif?alt=media",
+    "id": "1420",
+    "name": "kneeling jump squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_132.gif?alt=media",
+    "id": "1576",
+    "name": "leg up hamstring stretch",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_133.gif?alt=media",
+    "id": "2287",
+    "name": "lever alternate leg press ",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_134.gif?alt=media",
+    "id": "0578",
+    "name": "lever deadlift ",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_135.gif?alt=media",
+    "id": "2286",
+    "name": "lever hip extension v. 2",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_136.gif?alt=media",
+    "id": "2611",
+    "name": "lever horizontal one leg press",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_137.gif?alt=media",
+    "id": "0582",
+    "name": "lever kneeling leg curl ",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_138.gif?alt=media",
+    "id": "0585",
+    "name": "lever leg extension",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_139.gif?alt=media",
+    "id": "0586",
+    "name": "lever lying leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_140.gif?alt=media",
+    "id": "3195",
+    "name": "lever lying two-one leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_141.gif?alt=media",
+    "id": "0593",
+    "name": "lever reverse hyperextension ",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_142.gif?alt=media",
+    "id": "3759",
+    "name": "lever seated good morning",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_143.gif?alt=media",
+    "id": "0597",
+    "name": "lever seated hip abduction",
+    "target": "abductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_144.gif?alt=media",
+    "id": "0598",
+    "name": "lever seated hip adduction",
+    "target": "adductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_145.gif?alt=media",
+    "id": "0599",
+    "name": "lever seated leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_146.gif?alt=media",
+    "id": "3013",
+    "name": "low glute bridge on floor",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_147.gif?alt=media",
+    "id": "3582",
+    "name": "lunge with jump",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_148.gif?alt=media",
+    "id": "0613",
+    "name": "lying (side) quads stretch",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_149.gif?alt=media",
+    "id": "0624",
+    "name": "march sit (wall)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_150.gif?alt=media",
+    "id": "0628",
+    "name": "monster walk",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_151.gif?alt=media",
+    "id": "1476",
+    "name": "one leg squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_152.gif?alt=media",
+    "id": "0642",
+    "name": "outside leg kick push-up",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_153.gif?alt=media",
+    "id": "1422",
+    "name": "pelvic tilt into bridge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_154.gif?alt=media",
+    "id": "3662",
+    "name": "pike-to-cobra push-up",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_155.gif?alt=media",
+    "id": "3132",
+    "name": "potty squat with support",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_156.gif?alt=media",
+    "id": "0648",
+    "name": "power clean",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_157.gif?alt=media",
+    "id": "0661",
+    "name": "push-up inside leg kick",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_158.gif?alt=media",
+    "id": "3533",
+    "name": "quads",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_159.gif?alt=media",
+    "id": "3552",
+    "name": "quick feet v. 2",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_160.gif?alt=media",
+    "id": "0668",
+    "name": "rear decline bridge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "rope",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_161.gif?alt=media",
+    "id": "1582",
+    "name": "reclining big toe pose with rope",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "resistance band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_162.gif?alt=media",
+    "id": "3236",
+    "name": "resistance band hip thrusts on knees (female)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "resistance band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_163.gif?alt=media",
+    "id": "3007",
+    "name": "resistance band leg extension",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "resistance band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_164.gif?alt=media",
+    "id": "3006",
+    "name": "resistance band seated hip abduction",
+    "target": "abductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_165.gif?alt=media",
+    "id": "0675",
+    "name": "reverse hyper extension (on stability ball)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_166.gif?alt=media",
+    "id": "1423",
+    "name": "reverse hyper on flat bench",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_167.gif?alt=media",
+    "id": "2571",
+    "name": "rocking frog stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_168.gif?alt=media",
+    "id": "2205",
+    "name": "roller hip lat stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_169.gif?alt=media",
+    "id": "2202",
+    "name": "roller hip stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_170.gif?alt=media",
+    "id": "1585",
+    "name": "runners stretch",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_171.gif?alt=media",
+    "id": "1424",
+    "name": "seated glute stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_172.gif?alt=media",
+    "id": "2567",
+    "name": "seated piriformis stretch",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_173.gif?alt=media",
+    "id": "1587",
+    "name": "seated wide angle pose sequence",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_174.gif?alt=media",
+    "id": "0697",
+    "name": "self assisted inverse leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_175.gif?alt=media",
+    "id": "1766",
+    "name": "self assisted inverse leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_176.gif?alt=media",
+    "id": "0696",
+    "name": "self assisted inverse leg curl (on floor)",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_177.gif?alt=media",
+    "id": "1774",
+    "name": "side bridge hip abduction",
+    "target": "abductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_178.gif?alt=media",
+    "id": "0710",
+    "name": "side hip abduction",
+    "target": "abductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_179.gif?alt=media",
+    "id": "3667",
+    "name": "side lying hip adduction (male)",
+    "target": "adductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_180.gif?alt=media",
+    "id": "1775",
+    "name": "side plank hip adduction",
+    "target": "adductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_181.gif?alt=media",
+    "id": "3645",
+    "name": "single leg bridge with outstretched leg",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_182.gif?alt=media",
+    "id": "0730",
+    "name": "single leg platform slide",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_183.gif?alt=media",
+    "id": "1759",
+    "name": "single leg squat (pistol) male",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_184.gif?alt=media",
+    "id": "1489",
+    "name": "sissy squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_185.gif?alt=media",
+    "id": "1425",
+    "name": "sled 45 degrees one leg press",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_186.gif?alt=media",
+    "id": "0739",
+    "name": "sled 45в° leg press",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_187.gif?alt=media",
+    "id": "1464",
+    "name": "sled 45в° leg press (back pov)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_188.gif?alt=media",
+    "id": "1463",
+    "name": "sled 45в° leg press (side pov)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_189.gif?alt=media",
+    "id": "0740",
+    "name": "sled 45в° leg wide press",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_190.gif?alt=media",
+    "id": "0741",
+    "name": "sled closer hack squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_191.gif?alt=media",
+    "id": "0743",
+    "name": "sled hack squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "sled machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_192.gif?alt=media",
+    "id": "0744",
+    "name": "sled lying squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_193.gif?alt=media",
+    "id": "0749",
+    "name": "smith bent knee good morning",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_194.gif?alt=media",
+    "id": "0750",
+    "name": "smith chair squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_195.gif?alt=media",
+    "id": "0752",
+    "name": "smith deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_196.gif?alt=media",
+    "id": "1433",
+    "name": "smith front squat (clean grip)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_197.gif?alt=media",
+    "id": "3281",
+    "name": "smith full squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_198.gif?alt=media",
+    "id": "0755",
+    "name": "smith hack squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_199.gif?alt=media",
+    "id": "0760",
+    "name": "smith leg press",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_200.gif?alt=media",
+    "id": "1434",
+    "name": "smith low bar squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_201.gif?alt=media",
+    "id": "0768",
+    "name": "smith single leg split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_202.gif?alt=media",
+    "id": "0769",
+    "name": "smith sprint lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_203.gif?alt=media",
+    "id": "0770",
+    "name": "smith squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_204.gif?alt=media",
+    "id": "3142",
+    "name": "smith sumo squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_205.gif?alt=media",
+    "id": "0776",
+    "name": "snatch pull",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_206.gif?alt=media",
+    "id": "0778",
+    "name": "spider crawl push up",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_207.gif?alt=media",
+    "id": "2368",
+    "name": "split squats",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_208.gif?alt=media",
+    "id": "0786",
+    "name": "squat jerk",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "bosu ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_209.gif?alt=media",
+    "id": "1705",
+    "name": "squat on bosu ball",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_210.gif?alt=media",
+    "id": "1685",
+    "name": "squat to overhead reach",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_211.gif?alt=media",
+    "id": "1686",
+    "name": "squat to overhead reach with twist",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "rope",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_212.gif?alt=media",
+    "id": "1599",
+    "name": "standing hamstring and calf stretch with strap",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_213.gif?alt=media",
+    "id": "0795",
+    "name": "standing single leg curl",
+    "target": "hamstrings"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_214.gif?alt=media",
+    "id": "1427",
+    "name": "straight leg outer hip abductor",
+    "target": "abductors"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_215.gif?alt=media",
+    "id": "0809",
+    "name": "suspended split squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_216.gif?alt=media",
+    "id": "3433",
+    "name": "swimmer kicks v. 2 (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "tire",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_217.gif?alt=media",
+    "id": "2459",
+    "name": "tire flip",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "trap bar",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_218.gif?alt=media",
+    "id": "0811",
+    "name": "trap bar deadlift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_219.gif?alt=media",
+    "id": "1466",
+    "name": "twist hip lift",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_220.gif?alt=media",
+    "id": "1460",
+    "name": "walking lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_221.gif?alt=media",
+    "id": "3643",
+    "name": "weighted cossack squats (male)",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_222.gif?alt=media",
+    "id": "3644",
+    "name": "weighted lunge with swing",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_223.gif?alt=media",
+    "id": "0851",
+    "name": "weighted sissy squat",
+    "target": "quads"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_224.gif?alt=media",
+    "id": "0852",
+    "name": "weighted squat",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_225.gif?alt=media",
+    "id": "3642",
+    "name": "weighted stretch lunge",
+    "target": "glutes"
+  },
+  {
+    "bodyPart": "upper legs",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fupper_legs%2Fupper_legs_226.gif?alt=media",
+    "id": "1604",
+    "name": "world greatest stretch",
+    "target": "hamstrings"
+  }
+]

@@ -1,6 +1,6 @@
 import {MThemeColors} from '@/constant/colors';
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import {Button} from 'react-native-paper';
 
 interface StepNavigatorInterface {
@@ -16,7 +16,7 @@ export default function StepNavigator({
 }: StepNavigatorInterface): JSX.Element {
   return (
     <View className="flex flex-row justify-between gap-4 my-10">
-      {step > 1 && (
+      {step > 0 && (
         <Button
           className="mt-5 rounded-none flex-1"
           mode="outlined"

@@ -49,7 +49,7 @@ const RenderDaysSelection = ({
               className="flex flex-row items-center"
               onPress={() => handleCheckboxPress(d.id, 1)}>
               <React.Fragment>
-                <Text>Grind</Text>
+                <Text>Exercise</Text>
                 <Checkbox.Android
                   status={d.stat === 1 ? 'checked' : 'unchecked'}
                 />
@@ -70,7 +70,8 @@ interface StepOneInterface {
   treeShakeExerciseRoutine: () => void;
 }
 
-const restDaysOption = [
+// For Dropdown Exercise Day
+const exerciseDayOption = [
   {label: '1', value: 1},
   {label: '2', value: 2},
   {label: '3', value: 3},
@@ -82,7 +83,7 @@ const findNumLabel = (num: string): number => {
   if (num === '') {
     return 1;
   }
-  const found = restDaysOption.find(d => d.label === String(num));
+  const found = exerciseDayOption.find(d => d.label === String(num));
   if (found) {
     return found.value;
   }
@@ -96,42 +97,40 @@ export default function StepOne({
   setStep,
   treeShakeExerciseRoutine,
 }: StepOneInterface): JSX.Element {
-  const [restDay, setRestDay] = React.useState<string>('');
-  const [restDayDropdownVis, setRestDayDropdownVis] =
+  const [exerciseDay, setExerciseDay] = React.useState<string>('');
+  const [exerciseDayDropdownVis, setExerciseDayDropdownVis] =
     React.useState<boolean>(false);
 
   const updateRestDayValue = (value: string) => {
-    setRestDay(value);
+    setExerciseDay(value);
   };
 
   const handleNextStep = () => {
     // PRE CONDITION CHECK
-    if (restDay === '') {
+    if (exerciseDay === '') {
       Toast.show({
         type: 'warning',
         text1: 'Warning',
         text2:
-          'Please select rest day and corresponding exercise pattern first',
+          'Please select exercise day and corresponding exercise pattern first',
       });
       return;
     } else {
-      const restDayNum = findNumLabel(restDay);
+      const exerciseDayNum = findNumLabel(exerciseDay);
       const grindDays = days.filter(d => d.stat === 1);
       const restDays = days.filter(d => d.stat === 0);
-      if (grindDays.length < 7 - restDayNum) {
+      if (grindDays.length < exerciseDayNum) {
         Toast.show({
           type: 'error',
           text1: 'Missing exercise pattern',
-          text2: `Please select atleast ${
-            7 - restDayNum
-          } days for exercise pattern`,
+          text2: `Please select atleast ${exerciseDayNum} days for exercise pattern`,
         });
         return;
-      } else if (restDays.length < restDayNum) {
+      } else if (restDays.length < 7 - exerciseDayNum) {
         Toast.show({
           type: 'error',
-          text1: 'Mising rest days',
-          text2: `Please select atleast ${restDayNum} days for rest`,
+          text1: 'Mising exercise days',
+          text2: `Please select atleast ${7 - exerciseDayNum} days for rest`,
         });
         return;
       } else {
@@ -141,7 +140,9 @@ export default function StepOne({
       }
     }
   };
-
+  const handleNavigateBack = () => {
+    setStep(0);
+  };
   return (
     <React.Fragment>
       <View className="flex flex-row items-start relative">
@@ -157,16 +158,20 @@ export default function StepOne({
           {step === 1 && (
             <React.Fragment>
               <Text className="text-base font-normal mt-6 mb-2">
-                How many days a week you want rest ?
+                How many days a week you want to exercise ?
+              </Text>
+              <Text className="text-sm font-normal mt-2 mb-6">
+                We usually recommend atleast 3 days a week for beginners or
+                better results.
               </Text>
               <DropDown
-                label={'Select your rest day'}
+                label={'Select your exercise days'}
                 mode={'outlined'}
-                value={restDay}
-                list={restDaysOption}
-                visible={restDayDropdownVis}
-                showDropDown={() => setRestDayDropdownVis(true)}
-                onDismiss={() => setRestDayDropdownVis(false)}
+                value={exerciseDay}
+                list={exerciseDayOption}
+                visible={exerciseDayDropdownVis}
+                showDropDown={() => setExerciseDayDropdownVis(true)}
+                onDismiss={() => setExerciseDayDropdownVis(false)}
                 setValue={updateRestDayValue}
                 inputProps={{
                   style: {
@@ -186,7 +191,11 @@ export default function StepOne({
                 <RenderDaysSelection days={days} updateDays={setDays} />
               </View>
 
-              <StepNavigator step={step} navigateNext={handleNextStep} />
+              <StepNavigator
+                step={step}
+                navigateNext={handleNextStep}
+                navigateBack={handleNavigateBack}
+              />
             </React.Fragment>
           )}
         </View>

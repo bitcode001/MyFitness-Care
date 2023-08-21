@@ -1,0 +1,1306 @@
+[
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_0.gif?alt=media",
+    "id": "3294",
+    "name": "archer push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_1.gif?alt=media",
+    "id": "0009",
+    "name": "assisted chest dip (kneeling)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_2.gif?alt=media",
+    "id": "1716",
+    "name": "assisted seated pectoralis major stretch with stability ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_3.gif?alt=media",
+    "id": "2364",
+    "name": "assisted wide-grip chest dip (kneeling)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_4.gif?alt=media",
+    "id": "1254",
+    "name": "band bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_5.gif?alt=media",
+    "id": "0989",
+    "name": "band one arm twisting chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_6.gif?alt=media",
+    "id": "0025",
+    "name": "barbell bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_7.gif?alt=media",
+    "id": "0033",
+    "name": "barbell decline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_8.gif?alt=media",
+    "id": "1255",
+    "name": "barbell decline pullover",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_9.gif?alt=media",
+    "id": "0036",
+    "name": "barbell decline wide-grip press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_10.gif?alt=media",
+    "id": "0040",
+    "name": "barbell front raise and pullover",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_11.gif?alt=media",
+    "id": "0045",
+    "name": "barbell guillotine bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_12.gif?alt=media",
+    "id": "0047",
+    "name": "barbell incline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_13.gif?alt=media",
+    "id": "0050",
+    "name": "barbell incline shoulder raise",
+    "target": "serratus anterior"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_14.gif?alt=media",
+    "id": "1256",
+    "name": "barbell reverse grip decline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_15.gif?alt=media",
+    "id": "1257",
+    "name": "barbell reverse grip incline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_16.gif?alt=media",
+    "id": "0122",
+    "name": "barbell wide bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_17.gif?alt=media",
+    "id": "1258",
+    "name": "barbell wide reverse grip bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_18.gif?alt=media",
+    "id": "1259",
+    "name": "behind head chest stretch",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_19.gif?alt=media",
+    "id": "0151",
+    "name": "cable bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_20.gif?alt=media",
+    "id": "0155",
+    "name": "cable cross-over variation",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_21.gif?alt=media",
+    "id": "0158",
+    "name": "cable decline fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_22.gif?alt=media",
+    "id": "1260",
+    "name": "cable decline one arm press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_23.gif?alt=media",
+    "id": "1261",
+    "name": "cable decline press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_24.gif?alt=media",
+    "id": "0169",
+    "name": "cable incline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_25.gif?alt=media",
+    "id": "0171",
+    "name": "cable incline fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_26.gif?alt=media",
+    "id": "0170",
+    "name": "cable incline fly (on stability ball)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_27.gif?alt=media",
+    "id": "0179",
+    "name": "cable low fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_28.gif?alt=media",
+    "id": "0185",
+    "name": "cable lying fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_29.gif?alt=media",
+    "id": "0188",
+    "name": "cable middle fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_30.gif?alt=media",
+    "id": "1262",
+    "name": "cable one arm decline chest fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_31.gif?alt=media",
+    "id": "1263",
+    "name": "cable one arm fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_32.gif?alt=media",
+    "id": "1264",
+    "name": "cable one arm incline fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_33.gif?alt=media",
+    "id": "1265",
+    "name": "cable one arm incline press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_34.gif?alt=media",
+    "id": "1266",
+    "name": "cable one arm incline press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_35.gif?alt=media",
+    "id": "0191",
+    "name": "cable one arm lateral bent-over",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_36.gif?alt=media",
+    "id": "1267",
+    "name": "cable one arm press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_37.gif?alt=media",
+    "id": "1268",
+    "name": "cable press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_38.gif?alt=media",
+    "id": "2144",
+    "name": "cable seated chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_39.gif?alt=media",
+    "id": "0227",
+    "name": "cable standing fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_40.gif?alt=media",
+    "id": "1269",
+    "name": "cable standing up straight crossovers",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_41.gif?alt=media",
+    "id": "1270",
+    "name": "cable upper chest crossovers",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_42.gif?alt=media",
+    "id": "1271",
+    "name": "chest and front of shoulder stretch",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_43.gif?alt=media",
+    "id": "0251",
+    "name": "chest dip",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_44.gif?alt=media",
+    "id": "1430",
+    "name": "chest dip (on dip-pull-up cage)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_45.gif?alt=media",
+    "id": "2462",
+    "name": "chest dip on straight bar",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_46.gif?alt=media",
+    "id": "1272",
+    "name": "chest stretch with exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_47.gif?alt=media",
+    "id": "3216",
+    "name": "chest tap push-up (male)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_48.gif?alt=media",
+    "id": "1273",
+    "name": "clap push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_49.gif?alt=media",
+    "id": "0258",
+    "name": "clock push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_50.gif?alt=media",
+    "id": "0279",
+    "name": "decline push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_51.gif?alt=media",
+    "id": "1274",
+    "name": "deep push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_52.gif?alt=media",
+    "id": "1275",
+    "name": "drop push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_53.gif?alt=media",
+    "id": "0288",
+    "name": "dumbbell around pullover",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_54.gif?alt=media",
+    "id": "0289",
+    "name": "dumbbell bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_55.gif?alt=media",
+    "id": "0301",
+    "name": "dumbbell decline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_56.gif?alt=media",
+    "id": "0302",
+    "name": "dumbbell decline fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_57.gif?alt=media",
+    "id": "0303",
+    "name": "dumbbell decline hammer press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_58.gif?alt=media",
+    "id": "1276",
+    "name": "dumbbell decline one arm fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_59.gif?alt=media",
+    "id": "0307",
+    "name": "dumbbell decline twist fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_60.gif?alt=media",
+    "id": "0308",
+    "name": "dumbbell fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_61.gif?alt=media",
+    "id": "1277",
+    "name": "dumbbell fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_62.gif?alt=media",
+    "id": "3545",
+    "name": "dumbbell incline alternate press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_63.gif?alt=media",
+    "id": "0314",
+    "name": "dumbbell incline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_64.gif?alt=media",
+    "id": "0316",
+    "name": "dumbbell incline breeding",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_65.gif?alt=media",
+    "id": "0319",
+    "name": "dumbbell incline fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_66.gif?alt=media",
+    "id": "1278",
+    "name": "dumbbell incline fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_67.gif?alt=media",
+    "id": "0321",
+    "name": "dumbbell incline hammer press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_68.gif?alt=media",
+    "id": "1279",
+    "name": "dumbbell incline one arm fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_69.gif?alt=media",
+    "id": "1280",
+    "name": "dumbbell incline one arm fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_70.gif?alt=media",
+    "id": "1281",
+    "name": "dumbbell incline one arm press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_71.gif?alt=media",
+    "id": "1282",
+    "name": "dumbbell incline one arm press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_72.gif?alt=media",
+    "id": "0324",
+    "name": "dumbbell incline palm-in press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_73.gif?alt=media",
+    "id": "1283",
+    "name": "dumbbell incline press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_74.gif?alt=media",
+    "id": "0328",
+    "name": "dumbbell incline shoulder raise",
+    "target": "serratus anterior"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_75.gif?alt=media",
+    "id": "0331",
+    "name": "dumbbell incline twisted flyes",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_76.gif?alt=media",
+    "id": "0340",
+    "name": "dumbbell lying hammer press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_77.gif?alt=media",
+    "id": "0343",
+    "name": "dumbbell lying one arm press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_78.gif?alt=media",
+    "id": "0342",
+    "name": "dumbbell lying one arm press v. 2",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_79.gif?alt=media",
+    "id": "1284",
+    "name": "dumbbell lying pullover on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_80.gif?alt=media",
+    "id": "1285",
+    "name": "dumbbell one arm bench fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_81.gif?alt=media",
+    "id": "1286",
+    "name": "dumbbell one arm chest fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_82.gif?alt=media",
+    "id": "1287",
+    "name": "dumbbell one arm decline chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_83.gif?alt=media",
+    "id": "1288",
+    "name": "dumbbell one arm fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_84.gif?alt=media",
+    "id": "1289",
+    "name": "dumbbell one arm incline chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_85.gif?alt=media",
+    "id": "1290",
+    "name": "dumbbell one arm press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_86.gif?alt=media",
+    "id": "1291",
+    "name": "dumbbell one arm pullover on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_87.gif?alt=media",
+    "id": "1622",
+    "name": "dumbbell one arm reverse grip press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_88.gif?alt=media",
+    "id": "1292",
+    "name": "dumbbell one leg fly on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_89.gif?alt=media",
+    "id": "1293",
+    "name": "dumbbell press on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_90.gif?alt=media",
+    "id": "0375",
+    "name": "dumbbell pullover",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_91.gif?alt=media",
+    "id": "1294",
+    "name": "dumbbell pullover hip extension on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_92.gif?alt=media",
+    "id": "1295",
+    "name": "dumbbell pullover on exercise ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_93.gif?alt=media",
+    "id": "1624",
+    "name": "dumbbell reverse bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_94.gif?alt=media",
+    "id": "0433",
+    "name": "dumbbell straight arm pullover",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_95.gif?alt=media",
+    "id": "1167",
+    "name": "dynamic chest stretch (male)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_96.gif?alt=media",
+    "id": "1296",
+    "name": "exercise ball pike push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_97.gif?alt=media",
+    "id": "0458",
+    "name": "floor fly (with barbell)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_98.gif?alt=media",
+    "id": "3327",
+    "name": "full planche push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "upper body ergometer",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_99.gif?alt=media",
+    "id": "2139",
+    "name": "hands bike",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_100.gif?alt=media",
+    "id": "3234",
+    "name": "hyght dumbbell fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_101.gif?alt=media",
+    "id": "0492",
+    "name": "incline push up depth jump",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_102.gif?alt=media",
+    "id": "0493",
+    "name": "incline push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_103.gif?alt=media",
+    "id": "3785",
+    "name": "incline push-up (on box)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_104.gif?alt=media",
+    "id": "0494",
+    "name": "incline reverse grip push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_105.gif?alt=media",
+    "id": "3011",
+    "name": "incline scapula push up",
+    "target": "serratus anterior"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_106.gif?alt=media",
+    "id": "1297",
+    "name": "isometric chest squeeze",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_107.gif?alt=media",
+    "id": "0500",
+    "name": "isometric wipers",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_108.gif?alt=media",
+    "id": "0519",
+    "name": "kettlebell alternating press on floor",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_109.gif?alt=media",
+    "id": "0531",
+    "name": "kettlebell extended range one arm press on floor",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_110.gif?alt=media",
+    "id": "1298",
+    "name": "kettlebell one arm floor press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_111.gif?alt=media",
+    "id": "0545",
+    "name": "kettlebell plyo push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_112.gif?alt=media",
+    "id": "3211",
+    "name": "kneeling push-up (male)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_113.gif?alt=media",
+    "id": "3288",
+    "name": "korean dips",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_114.gif?alt=media",
+    "id": "0577",
+    "name": "lever chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_115.gif?alt=media",
+    "id": "0576",
+    "name": "lever chest press ",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_116.gif?alt=media",
+    "id": "1300",
+    "name": "lever decline chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_117.gif?alt=media",
+    "id": "1299",
+    "name": "lever incline chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_118.gif?alt=media",
+    "id": "1479",
+    "name": "lever incline chest press v. 2",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_119.gif?alt=media",
+    "id": "0596",
+    "name": "lever seated fly",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_120.gif?alt=media",
+    "id": "3758",
+    "name": "lever standing chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_121.gif?alt=media",
+    "id": "1301",
+    "name": "machine inner chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_122.gif?alt=media",
+    "id": "1302",
+    "name": "medicine ball chest pass",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_123.gif?alt=media",
+    "id": "1303",
+    "name": "medicine ball chest push from 3 point stance",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_124.gif?alt=media",
+    "id": "1304",
+    "name": "medicine ball chest push multiple response",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_125.gif?alt=media",
+    "id": "1305",
+    "name": "medicine ball chest push single response",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_126.gif?alt=media",
+    "id": "1312",
+    "name": "medicine ball chest push with run release",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_127.gif?alt=media",
+    "id": "3217",
+    "name": "modified hindu push-up (male)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_128.gif?alt=media",
+    "id": "1306",
+    "name": "plyo push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_129.gif?alt=media",
+    "id": "1689",
+    "name": "push and pull bodyweight",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "bosu ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_130.gif?alt=media",
+    "id": "1307",
+    "name": "push up on bosu ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_131.gif?alt=media",
+    "id": "0662",
+    "name": "push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "bosu ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_132.gif?alt=media",
+    "id": "0653",
+    "name": "push-up (bosu ball)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_133.gif?alt=media",
+    "id": "0655",
+    "name": "push-up (on stability ball)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_134.gif?alt=media",
+    "id": "0656",
+    "name": "push-up (on stability ball)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_135.gif?alt=media",
+    "id": "0659",
+    "name": "push-up (wall)",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_136.gif?alt=media",
+    "id": "0658",
+    "name": "push-up (wall) v. 2",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_137.gif?alt=media",
+    "id": "0663",
+    "name": "push-up medicine ball",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_138.gif?alt=media",
+    "id": "3145",
+    "name": "push-up plus",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_139.gif?alt=media",
+    "id": "0666",
+    "name": "raise single arm push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "resistance band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_140.gif?alt=media",
+    "id": "3124",
+    "name": "resistance band seated chest press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_141.gif?alt=media",
+    "id": "2203",
+    "name": "roller seated shoulder flexor depresor retractor",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_142.gif?alt=media",
+    "id": "2209",
+    "name": "roller seated single leg shoulder flexor depresor retractor",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_143.gif?alt=media",
+    "id": "3021",
+    "name": "scapula push-up",
+    "target": "serratus anterior"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_144.gif?alt=media",
+    "id": "0699",
+    "name": "shoulder tap push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_145.gif?alt=media",
+    "id": "0725",
+    "name": "single arm push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_146.gif?alt=media",
+    "id": "0748",
+    "name": "smith bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_147.gif?alt=media",
+    "id": "0753",
+    "name": "smith decline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_148.gif?alt=media",
+    "id": "0754",
+    "name": "smith decline reverse-grip press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_149.gif?alt=media",
+    "id": "0757",
+    "name": "smith incline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_150.gif?alt=media",
+    "id": "0758",
+    "name": "smith incline reverse-grip press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_151.gif?alt=media",
+    "id": "0759",
+    "name": "smith incline shoulder raises",
+    "target": "serratus anterior"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_152.gif?alt=media",
+    "id": "1626",
+    "name": "smith machine reverse decline close grip bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_153.gif?alt=media",
+    "id": "0764",
+    "name": "smith reverse-grip press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_154.gif?alt=media",
+    "id": "1308",
+    "name": "smith wide grip bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_155.gif?alt=media",
+    "id": "1309",
+    "name": "smith wide grip decline bench press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_156.gif?alt=media",
+    "id": "0803",
+    "name": "superman push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_157.gif?alt=media",
+    "id": "0806",
+    "name": "suspended push-up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_158.gif?alt=media",
+    "id": "1310",
+    "name": "weighted drop push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_159.gif?alt=media",
+    "id": "3313",
+    "name": "weighted straight bar dip",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_160.gif?alt=media",
+    "id": "0856",
+    "name": "weighted svend press",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_161.gif?alt=media",
+    "id": "1311",
+    "name": "wide hand push up",
+    "target": "pectorals"
+  },
+  {
+    "bodyPart": "chest",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fchest%2Fchest_162.gif?alt=media",
+    "id": "2363",
+    "name": "wide-grip chest dip on high parallel bars",
+    "target": "pectorals"
+  }
+]

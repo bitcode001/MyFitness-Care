@@ -6,7 +6,7 @@ import {
   IExerciseRoutineInterface,
   WEEKDAYS,
 } from '@/screens/internal/Routine/routine.setup.screen';
-import calculateUserLevel from '@/constant/utils';
+import {calculateUserLevel} from '@/constant/utils';
 
 const useGetAllExerciseDetails = () => {
   const exerciseCollection = firestore().collection('exercise-details');

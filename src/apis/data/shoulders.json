@@ -1,0 +1,1146 @@
+[
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_0.gif?alt=media",
+    "id": "0977",
+    "name": "band front lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_1.gif?alt=media",
+    "id": "0978",
+    "name": "band front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_2.gif?alt=media",
+    "id": "0993",
+    "name": "band reverse fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_3.gif?alt=media",
+    "id": "0997",
+    "name": "band shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_4.gif?alt=media",
+    "id": "1022",
+    "name": "band standing rear delt row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_5.gif?alt=media",
+    "id": "1012",
+    "name": "band twisting overhead press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_6.gif?alt=media",
+    "id": "1017",
+    "name": "band y-raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_7.gif?alt=media",
+    "id": "0041",
+    "name": "barbell front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_8.gif?alt=media",
+    "id": "0067",
+    "name": "barbell one arm snatch",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_9.gif?alt=media",
+    "id": "0075",
+    "name": "barbell rear delt raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_10.gif?alt=media",
+    "id": "0076",
+    "name": "barbell rear delt row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_11.gif?alt=media",
+    "id": "0086",
+    "name": "barbell seated behind head military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_12.gif?alt=media",
+    "id": "0087",
+    "name": "barbell seated bradford rocky press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_13.gif?alt=media",
+    "id": "0091",
+    "name": "barbell seated overhead press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_14.gif?alt=media",
+    "id": "0100",
+    "name": "barbell skier",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_15.gif?alt=media",
+    "id": "0105",
+    "name": "barbell standing bradford press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_16.gif?alt=media",
+    "id": "1456",
+    "name": "barbell standing close grip military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_17.gif?alt=media",
+    "id": "0107",
+    "name": "barbell standing front raise over head",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_18.gif?alt=media",
+    "id": "1457",
+    "name": "barbell standing wide military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_19.gif?alt=media",
+    "id": "3305",
+    "name": "barbell thruster",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_20.gif?alt=media",
+    "id": "0120",
+    "name": "barbell upright row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_21.gif?alt=media",
+    "id": "0119",
+    "name": "barbell upright row v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_22.gif?alt=media",
+    "id": "0121",
+    "name": "barbell upright row v. 3",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_23.gif?alt=media",
+    "id": "0123",
+    "name": "barbell wide-grip upright row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "rope",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_24.gif?alt=media",
+    "id": "0128",
+    "name": "battling ropes",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_25.gif?alt=media",
+    "id": "0148",
+    "name": "cable alternate shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_26.gif?alt=media",
+    "id": "0154",
+    "name": "cable cross-over revers fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_27.gif?alt=media",
+    "id": "0161",
+    "name": "cable forward raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_28.gif?alt=media",
+    "id": "0162",
+    "name": "cable front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_29.gif?alt=media",
+    "id": "0164",
+    "name": "cable front shoulder raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_30.gif?alt=media",
+    "id": "3697",
+    "name": "cable kneeling rear delt row (with rope) (male)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_31.gif?alt=media",
+    "id": "0178",
+    "name": "cable lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_32.gif?alt=media",
+    "id": "0192",
+    "name": "cable one arm lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_33.gif?alt=media",
+    "id": "0202",
+    "name": "cable rear delt row (stirrups)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_34.gif?alt=media",
+    "id": "0203",
+    "name": "cable rear delt row (with rope)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_35.gif?alt=media",
+    "id": "0215",
+    "name": "cable seated rear lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_36.gif?alt=media",
+    "id": "0216",
+    "name": "cable seated shoulder internal rotation",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_37.gif?alt=media",
+    "id": "0219",
+    "name": "cable shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_38.gif?alt=media",
+    "id": "0225",
+    "name": "cable standing cross-over high reverse fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_39.gif?alt=media",
+    "id": "0233",
+    "name": "cable standing rear delt row (with rope)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_40.gif?alt=media",
+    "id": "0235",
+    "name": "cable standing shoulder external rotation",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_41.gif?alt=media",
+    "id": "0240",
+    "name": "cable supine reverse fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_42.gif?alt=media",
+    "id": "0246",
+    "name": "cable upright row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_43.gif?alt=media",
+    "id": "0286",
+    "name": "dumbbell alternate side press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_44.gif?alt=media",
+    "id": "2137",
+    "name": "dumbbell arnold press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_45.gif?alt=media",
+    "id": "0287",
+    "name": "dumbbell arnold press v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_46.gif?alt=media",
+    "id": "0290",
+    "name": "dumbbell bench seated press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_47.gif?alt=media",
+    "id": "0299",
+    "name": "dumbbell cuban press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_48.gif?alt=media",
+    "id": "2136",
+    "name": "dumbbell cuban press v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_49.gif?alt=media",
+    "id": "0310",
+    "name": "dumbbell front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_50.gif?alt=media",
+    "id": "0309",
+    "name": "dumbbell front raise v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_51.gif?alt=media",
+    "id": "0311",
+    "name": "dumbbell full can lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_52.gif?alt=media",
+    "id": "0323",
+    "name": "dumbbell incline one arm lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_53.gif?alt=media",
+    "id": "0325",
+    "name": "dumbbell incline raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_54.gif?alt=media",
+    "id": "0326",
+    "name": "dumbbell incline rear lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_55.gif?alt=media",
+    "id": "3542",
+    "name": "dumbbell incline t-raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_56.gif?alt=media",
+    "id": "0332",
+    "name": "dumbbell iron cross",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_57.gif?alt=media",
+    "id": "0334",
+    "name": "dumbbell lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_58.gif?alt=media",
+    "id": "0335",
+    "name": "dumbbell lateral to front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_59.gif?alt=media",
+    "id": "0863",
+    "name": "dumbbell lying external shoulder rotation",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_60.gif?alt=media",
+    "id": "2470",
+    "name": "dumbbell lying on floor rear delt raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_61.gif?alt=media",
+    "id": "0341",
+    "name": "dumbbell lying one arm deltoid rear",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_62.gif?alt=media",
+    "id": "0345",
+    "name": "dumbbell lying one arm rear lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_63.gif?alt=media",
+    "id": "0348",
+    "name": "dumbbell lying rear lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_64.gif?alt=media",
+    "id": "0355",
+    "name": "dumbbell one arm lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_65.gif?alt=media",
+    "id": "0356",
+    "name": "dumbbell one arm lateral raise with support",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_66.gif?alt=media",
+    "id": "0359",
+    "name": "dumbbell one arm reverse fly (with support)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_67.gif?alt=media",
+    "id": "0361",
+    "name": "dumbbell one arm shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_68.gif?alt=media",
+    "id": "0360",
+    "name": "dumbbell one arm shoulder press v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_69.gif?alt=media",
+    "id": "0363",
+    "name": "dumbbell one arm upright row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_70.gif?alt=media",
+    "id": "1700",
+    "name": "dumbbell push press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_71.gif?alt=media",
+    "id": "0376",
+    "name": "dumbbell raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_72.gif?alt=media",
+    "id": "2292",
+    "name": "dumbbell rear delt raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_73.gif?alt=media",
+    "id": "0377",
+    "name": "dumbbell rear delt row_shoulder",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_74.gif?alt=media",
+    "id": "0378",
+    "name": "dumbbell rear fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_75.gif?alt=media",
+    "id": "0380",
+    "name": "dumbbell rear lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_76.gif?alt=media",
+    "id": "0379",
+    "name": "dumbbell rear lateral raise (support head)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_77.gif?alt=media",
+    "id": "0383",
+    "name": "dumbbell reverse fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_78.gif?alt=media",
+    "id": "0386",
+    "name": "dumbbell rotation reverse fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_79.gif?alt=media",
+    "id": "2397",
+    "name": "dumbbell scott press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_80.gif?alt=media",
+    "id": "0387",
+    "name": "dumbbell seated alternate front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_81.gif?alt=media",
+    "id": "0388",
+    "name": "dumbbell seated alternate press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_82.gif?alt=media",
+    "id": "3546",
+    "name": "dumbbell seated alternate shoulder",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_83.gif?alt=media",
+    "id": "2317",
+    "name": "dumbbell seated bent arm lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_84.gif?alt=media",
+    "id": "0392",
+    "name": "dumbbell seated front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_85.gif?alt=media",
+    "id": "0396",
+    "name": "dumbbell seated lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_86.gif?alt=media",
+    "id": "0395",
+    "name": "dumbbell seated lateral raise v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_87.gif?alt=media",
+    "id": "0405",
+    "name": "dumbbell seated shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_88.gif?alt=media",
+    "id": "0404",
+    "name": "dumbbell seated shoulder press (parallel grip)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_89.gif?alt=media",
+    "id": "0408",
+    "name": "dumbbell side lying one hand raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_90.gif?alt=media",
+    "id": "3548",
+    "name": "dumbbell single arm overhead carry",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_91.gif?alt=media",
+    "id": "0414",
+    "name": "dumbbell standing alternate overhead press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_92.gif?alt=media",
+    "id": "0415",
+    "name": "dumbbell standing alternate raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_93.gif?alt=media",
+    "id": "2143",
+    "name": "dumbbell standing around world",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_94.gif?alt=media",
+    "id": "0419",
+    "name": "dumbbell standing front raise above head",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_95.gif?alt=media",
+    "id": "0424",
+    "name": "dumbbell standing one arm palm in press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_96.gif?alt=media",
+    "id": "0426",
+    "name": "dumbbell standing overhead press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_97.gif?alt=media",
+    "id": "0427",
+    "name": "dumbbell standing palms in press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_98.gif?alt=media",
+    "id": "0437",
+    "name": "dumbbell upright row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_99.gif?alt=media",
+    "id": "1765",
+    "name": "dumbbell upright row (back pov)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_100.gif?alt=media",
+    "id": "0864",
+    "name": "dumbbell upright shoulder external rotation",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_101.gif?alt=media",
+    "id": "0438",
+    "name": "dumbbell w-press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "ez barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_102.gif?alt=media",
+    "id": "0445",
+    "name": "ez barbell anti gravity press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_103.gif?alt=media",
+    "id": "0520",
+    "name": "kettlebell alternating press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_104.gif?alt=media",
+    "id": "0523",
+    "name": "kettlebell arnold press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_105.gif?alt=media",
+    "id": "0527",
+    "name": "kettlebell double jerk",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_106.gif?alt=media",
+    "id": "0528",
+    "name": "kettlebell double push press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_107.gif?alt=media",
+    "id": "0529",
+    "name": "kettlebell double snatch",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_108.gif?alt=media",
+    "id": "0537",
+    "name": "kettlebell one arm clean and jerk",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_109.gif?alt=media",
+    "id": "0538",
+    "name": "kettlebell one arm jerk",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_110.gif?alt=media",
+    "id": "0539",
+    "name": "kettlebell one arm military press to the side",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_111.gif?alt=media",
+    "id": "0540",
+    "name": "kettlebell one arm push press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_112.gif?alt=media",
+    "id": "0542",
+    "name": "kettlebell one arm snatch",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_113.gif?alt=media",
+    "id": "0543",
+    "name": "kettlebell pirate supper legs",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_114.gif?alt=media",
+    "id": "0546",
+    "name": "kettlebell seated press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_115.gif?alt=media",
+    "id": "1438",
+    "name": "kettlebell seated two arm military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_116.gif?alt=media",
+    "id": "0547",
+    "name": "kettlebell seesaw press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_117.gif?alt=media",
+    "id": "0550",
+    "name": "kettlebell thruster",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_118.gif?alt=media",
+    "id": "0552",
+    "name": "kettlebell two arm clean",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_119.gif?alt=media",
+    "id": "0553",
+    "name": "kettlebell two arm military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_120.gif?alt=media",
+    "id": "3237",
+    "name": "landmine lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_121.gif?alt=media",
+    "id": "2271",
+    "name": "left hook. boxing",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_122.gif?alt=media",
+    "id": "0584",
+    "name": "lever lateral raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_123.gif?alt=media",
+    "id": "0587",
+    "name": "lever military press ",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_124.gif?alt=media",
+    "id": "0590",
+    "name": "lever one arm shoulder press ",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_125.gif?alt=media",
+    "id": "0602",
+    "name": "lever seated reverse fly",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_126.gif?alt=media",
+    "id": "0601",
+    "name": "lever seated reverse fly (parallel grip)",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_127.gif?alt=media",
+    "id": "0603",
+    "name": "lever shoulder press ",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_128.gif?alt=media",
+    "id": "0869",
+    "name": "lever shoulder press  v. 2",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_129.gif?alt=media",
+    "id": "2318",
+    "name": "lever shoulder press  v. 3",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_130.gif?alt=media",
+    "id": "0669",
+    "name": "rear deltoid stretch",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "resistance band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_131.gif?alt=media",
+    "id": "3122",
+    "name": "resistance band seated shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_132.gif?alt=media",
+    "id": "0747",
+    "name": "smith behind neck press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_133.gif?alt=media",
+    "id": "0762",
+    "name": "smith rear delt row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_134.gif?alt=media",
+    "id": "0765",
+    "name": "smith seated shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_135.gif?alt=media",
+    "id": "0766",
+    "name": "smith shoulder press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_136.gif?alt=media",
+    "id": "0772",
+    "name": "smith standing behind head military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_137.gif?alt=media",
+    "id": "0774",
+    "name": "smith standing military press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_138.gif?alt=media",
+    "id": "0775",
+    "name": "smith upright row",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_139.gif?alt=media",
+    "id": "0788",
+    "name": "standing behind neck press",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_140.gif?alt=media",
+    "id": "0834",
+    "name": "weighted front raise",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_141.gif?alt=media",
+    "id": "3641",
+    "name": "weighted kneeling step with swing",
+    "target": "delts"
+  },
+  {
+    "bodyPart": "shoulders",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_142.gif?alt=media",
+    "id": "0844",
+    "name": "weighted round arm",
+    "target": "delts"
+  }
+]

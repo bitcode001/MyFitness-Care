@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import {Image, View} from 'react-native';
 import {Button, Text} from 'react-native-paper';
 import UserIntro from '@/components/UserIntro';
@@ -10,16 +10,17 @@ import {MThemeColors} from '@/constant/colors';
 import {
   IUserExerciseDetails,
   initialUserExerciseRecords,
-  useGetAllExerciseDetails,
+  // useGetAllExerciseDetails,
   useSetUserExerciseDetails,
   useSetUserExerciseRecords,
 } from '@/apis/exercise.db';
 import {useDispatch, useSelector} from 'react-redux';
 import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
-import {useExtractQuery} from '@/hooks/useExtractFirebaseData';
+// import {useExtractQuery} from '@/hooks/useExtractFirebaseData';
 import {RootState} from '@/redux/store';
 import Toast from 'react-native-toast-message';
 import {invalidateExerciseSlice} from '@/redux/slice/exercise.slice';
+import GeneralInformation from './general.info';
 
 export type WEEKDAYS =
   | 'sunday'
@@ -37,11 +38,18 @@ export interface DaysInterface {
 }
 
 export interface ExerciseInterface {
-  id: number;
+  // id: number;
+  // name: string;
+  // gifUrl?: string;
+  // timer?: number;
+  // sets: number;
+  // reps: number;
+  bodyPart: string;
+  equipment: string;
+  gifUrl: string;
+  id: string;
   name: string;
-  gifUrl?: string;
-  sets: number;
-  reps: number;
+  target: string;
 }
 
 export type ExerciseRoutineInterface = {
@@ -51,6 +59,7 @@ export type ExerciseRoutineInterface = {
     dropdownStat?: false;
     targetMusclegroup: string;
     exercises: ExerciseInterface[] | [];
+    timeLimit: number;
   };
 };
 
@@ -59,6 +68,7 @@ export type IExerciseRoutineInterface = {
     id: number;
     targetMusclegroup: string;
     exercises: ExerciseInterface[] | [];
+    timeLimit: number;
   };
 };
 
@@ -92,17 +102,101 @@ const DAYS_SELECTION_AND_STAT: DaysInterface[] = [
   {id: 7, day: 'saturday', stat: null},
 ];
 
+export type ExData = {
+  _id: string;
+  bodyPart: string;
+  imgUrl: string | string[];
+};
+
+export type IExerciseData = Array<ExData>;
+const internalExerciseData: IExerciseData = [
+  {
+    _id: '0',
+    bodyPart: 'back',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fback.png?alt=media&token=d833e343-3308-4ac2-a027-94d372050291',
+  },
+  {
+    _id: '1',
+    bodyPart: 'cardio',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fcardio.png?alt=media&token=0fa20aa8-9348-4528-b57f-b0fe1c689f2a',
+  },
+  {
+    _id: '2',
+    bodyPart: 'chest',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fchest.png?alt=media&token=652147b6-b99c-4457-936b-ae8f92bb21aa',
+  },
+  {
+    _id: '3',
+    bodyPart: 'lower arms',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Flower-arms.png?alt=media&token=8c54e178-f34b-4d06-ac1d-e68fb1f6e18b',
+  },
+  {
+    _id: '4',
+    bodyPart: 'lower legs',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Flower-legs.png?alt=media&token=831c41e5-99af-4152-ae0c-6c542e8063e4',
+  },
+  {
+    _id: '5',
+    bodyPart: 'neck',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fneck.png?alt=media&token=8bafc449-7543-425a-917d-2d6527ebc8f8',
+  },
+  {
+    _id: '6',
+    bodyPart: 'shoulders',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fshoulders.png?alt=media&token=8b3e98d5-96e7-4c9b-8b41-7c3b82812c83',
+  },
+  {
+    _id: '7',
+    bodyPart: 'upper arms',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fupper-arms.png?alt=media&token=e5dfecaa-f2d1-4405-b2da-2e9d9dd31d50',
+  },
+  {
+    _id: '8',
+    bodyPart: 'upper legs',
+    imgUrl:
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fupper-legs.png?alt=media&token=9310e2f0-1792-47c3-97ad-b58b3dd084f4',
+  },
+  {
+    _id: '9',
+    bodyPart: 'waist',
+    imgUrl: [
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fwaist-m.png?alt=media&token=0eef2709-5338-4175-965f-d7b9bb542495',
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fwaist-f.png?alt=media&token=28295ac2-64ba-4576-aed0-091053d3aa4c',
+    ],
+  },
+];
+
+// General Info intefaces and data
+export type GGender = 'male' | 'female' | 'prefer not to say';
+export type GAgeGroup = '18-25' | '26-35' | '36-45' | '46+';
+export type GGoal = 'weight loss' | 'muscle gain';
+export type GLevelOfFitness = 'beginner' | 'intermediate' | 'advanced';
+export interface GeneralInfoType {
+  gender: GGender;
+  ageGroup: GAgeGroup;
+  goal: GGoal;
+  levelOfFitness: GLevelOfFitness;
+}
+
 export default function RoutineSetupScreen({
   handleUpdateComplete,
 }: {
   handleUpdateComplete: React.Dispatch<React.SetStateAction<boolean | null>>;
 }): JSX.Element {
-  const {
-    data: exerciseData,
-    isLoading,
-    isFetching,
-  } = useGetAllExerciseDetails();
-  const {mappedData} = useExtractQuery<FetchedExerciseData>(exerciseData);
+  // const {
+  //   data: exerciseData,
+  //   isLoading,
+  //   isFetching,
+  // } = useGetAllExerciseDetails();
+  // const {mappedData} = useExtractQuery<FetchedExerciseData>(exerciseData);
 
   const authState = useSelector((state: RootState) => state.auth);
 
@@ -125,6 +219,24 @@ export default function RoutineSetupScreen({
   } = useSetUserExerciseRecords(authState.frUser?.uid! ?? '');
 
   const dispatch = useDispatch();
+
+  // User General Information - Unit 0
+  const [generalInfo, setGeneralInfo] = useReducer<
+    (prev: GeneralInfoType, next: GeneralInfoType) => GeneralInfoType
+  >(
+    (prev, next) => {
+      return {
+        ...prev,
+        ...next,
+      };
+    },
+    {
+      gender: 'male',
+      ageGroup: '18-25',
+      goal: 'weight loss',
+      levelOfFitness: 'beginner',
+    } as GeneralInfoType,
+  );
 
   const [days, setDays] = React.useState<DaysInterface[]>(
     DAYS_SELECTION_AND_STAT,
@@ -154,7 +266,7 @@ export default function RoutineSetupScreen({
     setExerciseRoutine(cp);
   };
 
-  const [step, setStep] = React.useState<number>(1);
+  const [step, setStep] = React.useState<number>(0);
 
   // FOR STEP 3
   const [date, setDate] = React.useState<Date>(new Date());
@@ -240,31 +352,13 @@ export default function RoutineSetupScreen({
             accordionStat: false,
             dropdownStat: false,
             targetMusclegroup: '',
-            exercises: [
-              {
-                id: Date.now(),
-                name: '',
-                // gifUrl: '',
-                sets: 0,
-                reps: 0,
-              },
-            ],
+            exercises: [],
           },
         }));
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [days]);
-
-  React.useEffect(() => {
-    if (isLoading && isFetching) {
-      dispatch(startSpinner());
-    } else {
-      dispatch(stopSpinner());
-      // console.log('Ex Data: ', mappedData);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isLoading]);
 
   return (
     <SafeAreaScrollView>
@@ -283,6 +377,13 @@ export default function RoutineSetupScreen({
       {/* Stepper Section */}
       <View className="flex flex-col justify-between items-start mt-10">
         {/* <View className="absolute left-6 top-0 h-full w-0.5 bg-slate-300" /> */}
+        <GeneralInformation
+          step={step}
+          setStep={setStep}
+          generalInfo={generalInfo}
+          setGeneralInfo={setGeneralInfo}
+        />
+
         {/* Step one of the stepper */}
         <StepOne
           days={days}
@@ -297,9 +398,10 @@ export default function RoutineSetupScreen({
           days={days}
           exerciseRoutine={exerciseRoutine}
           setExerciseRoutine={setExerciseRoutine}
-          fetchedExerciseData={mappedData ?? []}
+          fetchedExerciseData={internalExerciseData ?? []}
           step={step}
           setStep={setStep}
+          generalInfo={generalInfo}
         />
 
         {/* Step three of the stepper */}
