@@ -307,17 +307,18 @@ export default function ExerciseScreen(): JSX.Element {
                 style={customizeExerciseStat(index)}>
                 <Image
                   className="w-16 h-16 rounded-full"
-                  source={{uri: 'https://picsum.photos/200/200'}}
+                  source={{uri: item.gifUrl}}
                 />
-                <View className="flex flex-col">
-                  <Text className="text-base font-bold">{item.name}</Text>
-                  <View className="flex flex-row mb-2">
+                <View className="flex flex-1 flex-col ml-4">
+                  <Text className="text-base font-bold capitalize">
+                    {item.name}
+                  </Text>
+                  <View className="flex flex-col items-start my-2 mb-4">
                     <Text className="text-sm leading-5 text-center font-medium">
-                      Sets: {item.sets}
+                      Target: {item.target}
                     </Text>
-                    <Text className="mx-2">::</Text>
                     <Text className="text-xs leading-5 text-center font-medium">
-                      Reps: {item.reps}
+                      Equipment: {item.equipment}
                     </Text>
                   </View>
                   <View className="flex flex-row flex-wrap gap-2">

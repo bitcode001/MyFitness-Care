@@ -68,7 +68,7 @@ export default function GeneralInformation({
 }: GeneralInfoSectionInterface) {
   const handleNavigateNext = () => {
     setStep(1);
-    console.log('General Info', generalInfo);
+    // console.log('General Info', generalInfo);
   };
 
   return (

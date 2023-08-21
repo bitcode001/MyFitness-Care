@@ -492,7 +492,7 @@ export default function StepTwo({
     //   return false;
     // });
 
-    console.log('exerciseRoutine: ', JSON.stringify(exerciseRoutine));
+    // console.log('exerciseRoutine: ', JSON.stringify(exerciseRoutine));
     if (isEveryExNonEmpty) {
       setStep(3);
     } else {
