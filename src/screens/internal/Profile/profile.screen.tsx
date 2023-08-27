@@ -1,4 +1,4 @@
-import ProgressPie from '@/components/ProgressPie';
+import AnimatedProgressPie from '@/components/AnimatedProgressPie';
 import SafeAreaScrollView from '@/components/SafeAreaScrollView';
 import UserIntro from '@/components/UserIntro';
 import React from 'react';
@@ -59,7 +59,7 @@ export default function ProfileScreen(): JSX.Element {
     }
     return total;
   })();
-  const progressBar = (myExp / totalExp) * 100;
+  const progressBar = Number((myExp / totalExp).toFixed(2));
 
   React.useEffect(() => {
     // console.log('mapped Data', mappedData);
@@ -163,7 +163,11 @@ export default function ProfileScreen(): JSX.Element {
       <Text className="text-2xl font-normal mt-10 mb-5">Economy</Text>
       <View className="flex flex-row gap-4">
         <TouchableOpacity className="bg-white flex-1 flex-col justify-center items-center px-2 py-6 rounded-xl">
-          <ProgressPie percentage={progressBar} radius={37} strokeWidth={0} />
+          <AnimatedProgressPie
+            percentage={progressBar}
+            strokeWidth={10}
+            label={myExp}
+          />
           <Text className="text-base font-medium mt-2">For Next Level</Text>
           <Text className="text-2xl font-normal">
             {totalExp - mappedData.economy.m_exp} exp

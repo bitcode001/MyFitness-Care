@@ -53,21 +53,21 @@ export default function HomeScreen(): JSX.Element {
   const haveExerciseToday = !!mappedData?.exercise[W_DAYS[new Date().getDay()]];
   const todaysExercise = mappedData?.exercise[W_DAYS[new Date().getDay()]];
 
-  const totalSets = (() => {
-    let total = 0;
-    todaysExercise?.exercises.forEach(exercise => {
-      total += exercise.sets;
-    });
-    return total;
-  })();
+  // const totalSets = (() => {
+  //   let total = 0;
+  //   todaysExercise?.exercises.forEach(exercise => {
+  //     total += exercise.sets;
+  //   });
+  //   return total;
+  // })();
 
-  const totalReps = (() => {
-    let total = 0;
-    todaysExercise?.exercises.forEach(exercise => {
-      total += exercise.reps;
-    });
-    return total;
-  })();
+  // const totalReps = (() => {
+  //   let total = 0;
+  //   todaysExercise?.exercises.forEach(exercise => {
+  //     total += exercise.reps;
+  //   });
+  //   return total;
+  // })();
 
   React.useEffect(() => {
     // console.log('mapped Data', mappedData);
@@ -141,13 +141,17 @@ export default function HomeScreen(): JSX.Element {
                 color={MThemeColors.lightPurple}
               /> */}
               <CustomLabel
-                label={`Total Sets: ${totalSets}`}
+                label={`Time: ${Math.round(
+                  ((todaysExercise?.timeLimit ?? 0) *
+                    (todaysExercise?.exercises.length ?? 0)) /
+                    60,
+                )} min`}
                 color={MThemeColors.lightPink}
               />
-              <CustomLabel
+              {/* <CustomLabel
                 label={`Total Reps: ${totalReps}`}
                 color={MThemeColors.baseOrange}
-              />
+              /> */}
             </>
           ) : (
             <View>

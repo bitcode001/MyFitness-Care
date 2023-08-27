@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Image,
   ScrollView,
@@ -10,9 +10,9 @@ import {
 
 import {MThemeColors} from '@/constant/colors';
 import {MSpacing} from '@/constant/measurements';
-// import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {Button, IconButton} from 'react-native-paper';
+import {Button} from 'react-native-paper';
 
 // Data fetching utilities
 import {useDispatch, useSelector} from 'react-redux';
@@ -32,10 +32,11 @@ import {
 } from '@/redux/slice/exercise.slice';
 // import {WEEKDAYS} from '../Routine/routine.setup.screen';
 import Toast from 'react-native-toast-message';
+import AnimatedProgressPie from '@/components/AnimatedProgressPie';
 
 export default function ExerciseScreen(): JSX.Element {
-  // const insets = useSafeAreaInsets();
-  // const statusBarHeight = insets.top;
+  const insets = useSafeAreaInsets();
+  const statusBarHeight = insets.top;
   const isDarkMode = useColorScheme() === 'dark';
   const [startExercise, setStartExercise] = React.useState(false);
 
@@ -114,6 +115,93 @@ export default function ExerciseScreen(): JSX.Element {
           ? 0.5
           : 1,
     };
+  };
+
+  // Animated timer
+  const [animatedSeconds, setAnimatedSeconds] = useState(
+    () => todaysExercise?.timeLimit ?? 0,
+    // () => 3 ?? 0,
+  );
+  React.useEffect(() => {
+    if (!startExercise) {
+      return;
+    }
+
+    if (animatedSeconds <= 0) {
+      setAnimatedSeconds(_ => todaysExercise?.timeLimit ?? 0);
+      // setAnimatedSeconds(_ => 3 ?? 0);
+      handleExerciseStop();
+    }
+    const timeout = setTimeout(() => {
+      // console.log('SEC: ', animatedSeconds);
+      setAnimatedSeconds(prev => prev - 1);
+    }, 1000);
+    return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [startExercise, animatedSeconds]);
+
+  // Render Exercise Banner
+  const renderExerciseBanner = () => {
+    if (
+      Number(completedExerciseIndex) <
+      (todaysExercise?.exercises.length
+        ? todaysExercise.exercises.length - 1
+        : 0)
+    ) {
+      return (
+        <>
+          <Text className="text-base font-semibold capitalize text-center mb-4">
+            Your next exercise
+          </Text>
+          <View className="flex flex-col justify-center items-center">
+            <Image
+              className="w-40 h-40 rounded-full"
+              source={{
+                uri:
+                  todaysExercise?.exercises[
+                    completedExerciseIndex !== null
+                      ? completedExerciseIndex + 1
+                      : 0
+                  ].gifUrl ?? '',
+              }}
+            />
+            <View className="flex flex-col items-center mt-4">
+              <Text className="text-base font-bold capitalize">
+                {
+                  todaysExercise?.exercises[
+                    completedExerciseIndex !== null
+                      ? completedExerciseIndex + 1
+                      : 0
+                  ].name
+                }
+              </Text>
+              <View className="flex flex-row my-2">
+                <Text className="text-sm leading-5 text-center font-medium mr-4">
+                  Target:{' '}
+                  {
+                    todaysExercise?.exercises[
+                      completedExerciseIndex !== null
+                        ? completedExerciseIndex + 1
+                        : 0
+                    ].target
+                  }
+                </Text>
+                <Text className="text-xs leading-5 text-center font-medium">
+                  Equipment:{' '}
+                  {
+                    todaysExercise?.exercises[
+                      completedExerciseIndex !== null
+                        ? completedExerciseIndex + 1
+                        : 0
+                    ].equipment
+                  }
+                </Text>
+              </View>
+            </View>
+          </View>
+        </>
+      );
+    }
   };
 
   React.useEffect(() => {
@@ -210,58 +298,65 @@ export default function ExerciseScreen(): JSX.Element {
       />
       {/* TOP OVERFLOWING SECTION */}
       <View
-        className="flex flex-col justify-center items-center h-80"
+        className="flex flex-col justify-center items-center"
         style={{
           backgroundColor: MThemeColors.black,
-          // paddingTop: statusBarHeight,
+          paddingTop: statusBarHeight,
         }}>
-        <View className="pb-6 justify-center items-center">
-          {haveExerciseToday ? (
-            <>
-              <Text className="text-2xl text-white font-semibold">
-                Todays Exercise
-              </Text>
-              <Text className="text-lg text-white font-bold capitalize">
-                {todaysExercise?.targetMusclegroup
-                  .split(',')
-                  .filter(Boolean)
-                  .join(' ')}
-              </Text>
-            </>
-          ) : (
-            <Text className="text-2xl text-white font-semibold text-center px-10">
-              Rest is essential for a body growth as well
-            </Text>
-          )}
-        </View>
         <View
-          className="bg-white shadow-md p-8 rounded-2xl h-72 flex flex-col justify-center items-center absolute -bottom-48"
+          className="bg-white shadow-md p-4 my-8 rounded-2xl flex flex-col justify-center items-center"
           style={{
             width: MSpacing.screenWidth - 40 * 2,
           }}>
           {haveExerciseToday ? (
             <>
-              <Text className="text-base leading-5 text-center font-medium">
-                {tallyLastCompletedExerciseDay()
-                  ? 'You have completed todays exercise'
-                  : 'Start your timer and stop it after you complete your exercise'}
-              </Text>
-              <Image
-                className="w-24 h-24 my-6"
-                source={require('@/assets/icons/start-exercise.png')}
-              />
+              <View className="flex w-full flex-col bg-blue-50 py-4 rounded-xl">
+                {tallyLastCompletedExerciseDay() ? (
+                  <>
+                    <Text className="text-base leading-5 text-center font-medium">
+                      {tallyLastCompletedExerciseDay()
+                        ? 'You have completed todays exercise'
+                        : 'Start your timer and stop it after you complete your exercise'}
+                    </Text>
 
-              <View className="flex flex-row mt-5">
-                <Button
-                  mode="contained"
-                  className="self-center"
-                  loading={startExercise}
-                  disabled={shouldDisable(startExercise)}
-                  onPress={handleExerciseStart}>
-                  <Text>Start Timer</Text>
-                </Button>
+                    <Text className="text-center mt-1">Take some rest</Text>
+                    <Image
+                      className="w-24 h-24 mt-6 self-center"
+                      source={require('@/assets/icons/athlete.png')}
+                    />
+                  </>
+                ) : (
+                  renderExerciseBanner()
+                )}
+              </View>
 
-                <IconButton
+              {!tallyLastCompletedExerciseDay() && (
+                <View className="flex flex-row justify-center items-center mt-4">
+                  <AnimatedProgressPie
+                    percentage={
+                      todaysExercise?.timeLimit
+                        ? Number(
+                            (
+                              animatedSeconds / todaysExercise.timeLimit
+                            ).toFixed(2),
+                          )
+                        : 0
+                    }
+                    circleLength={300}
+                    strokeWidth={15}
+                    label={animatedSeconds ?? 0}
+                    customColorCode="rgb(0,168,229)"
+                  />
+                  <Button
+                    mode="contained"
+                    className="self-center ml-4"
+                    // loading={startExercise}
+                    disabled={shouldDisable(startExercise)}
+                    onPress={handleExerciseStart}>
+                    <Text>Start Timer</Text>
+                  </Button>
+
+                  {/* <IconButton
                   icon="pause"
                   disabled={shouldDisable(!startExercise)}
                   animated
@@ -270,8 +365,9 @@ export default function ExerciseScreen(): JSX.Element {
                   // style={{
                   //   backgroundColor: MThemeColors.white,
                   // }}
-                />
-              </View>
+                /> */}
+                </View>
+              )}
             </>
           ) : (
             <View className="flex flex-col justify-center items-center">
@@ -281,10 +377,15 @@ export default function ExerciseScreen(): JSX.Element {
               <Text className="text-sm text-center font-normal">
                 Enjoy your rest day champ !
               </Text>
+
               <Image
                 className="w-24 h-24 my-6"
-                source={require('@/assets/icons/tired.png')}
+                source={require('@/assets/icons/achievement.png')}
               />
+
+              <Text className="text-sm font-semibold text-center px-10">
+                Rest is essential for a body growth as well
+              </Text>
             </View>
           )}
         </View>
@@ -293,7 +394,6 @@ export default function ExerciseScreen(): JSX.Element {
       {/* BOTTOM SCROLL SECTION */}
       {haveExerciseToday && (
         <ScrollView
-          className="mt-56"
           contentContainerStyle={{
             paddingHorizontal: MSpacing.screenPadding,
             paddingBottom:

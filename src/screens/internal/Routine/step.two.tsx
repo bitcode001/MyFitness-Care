@@ -16,7 +16,7 @@ import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 // import DropDown from 'react-native-paper-dropdown';
 import StepNavigator from './step.navigator';
 import Toast from 'react-native-toast-message';
-import {useDispatch} from 'react-redux';
+// import {useDispatch} from 'react-redux';
 // import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
 import DropDown from 'react-native-paper-dropdown';
 import {generateUserExercisePlan} from '@/constant/utils';
