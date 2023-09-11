@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import {
   GAgeGroup,
   GGender,
-  GGoal,
+  // GGoal,
   GLevelOfFitness,
   GeneralInfoType,
 } from './routine.setup.screen';
@@ -11,11 +11,11 @@ import {Checkbox} from 'react-native-paper';
 import StepNavigator from './step.navigator';
 
 const g_gender: Array<GGender> = ['male', 'female', 'prefer not to say'];
-const g_ageGroup: Array<GAgeGroup> = ['18-25', '25-35', '35-45', '45+'];
-const g_goal: Array<GGoal> = ['weight loss', 'muscle gain'];
+const g_ageGroup: Array<GAgeGroup> = ['18-25', '26-35', '36-45', '46+'];
+// const g_goal: Array<GGoal> = ['weight loss', 'muscle gain'];
 const g_levelOfFitness: Array<GLevelOfFitness> = [
   'beginner',
-  'intermeddiate',
+  'intermediate',
   'advanced',
 ];
 
@@ -104,13 +104,13 @@ export default function GeneralInformation({
                 updateKey="ageGroup"
               />
 
-              <GenerateQuestionGroup
+              {/* <GenerateQuestionGroup
                 title="Please specify your goal"
                 options={g_goal}
                 generalInfo={generalInfo}
                 setGeneralInfo={setGeneralInfo}
                 updateKey="goal"
-              />
+              /> */}
 
               <GenerateQuestionGroup
                 title="Please specify your level of fitness"

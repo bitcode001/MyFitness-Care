@@ -3,8 +3,8 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import {Checkbox} from 'react-native-paper';
 import {DaysInterface} from './routine.setup.screen';
 import StepNavigator from './step.navigator';
-import DropDown from 'react-native-paper-dropdown';
-import {MThemeColors} from '@/constant/colors';
+// import DropDown from 'react-native-paper-dropdown';
+// import {MThemeColors} from '@/constant/colors';
 
 import Toast from 'react-native-toast-message';
 
@@ -16,12 +16,12 @@ const RenderDaysSelection = ({
   days,
   updateDays,
 }: RenderDaysSelectionInterface) => {
-  const handleCheckboxPress = (id: number, type: number) => {
+  const toggleExerciseDay = (id: number) => {
     updateDays(dd => {
       const temp = [...dd];
       const sItem = temp.find(dy => dy.id === id);
       if (sItem) {
-        sItem.stat = sItem.stat === type ? null : type;
+        sItem.stat = sItem.stat === 0 ? 1 : 0;
       }
       return temp;
     });
@@ -34,7 +34,7 @@ const RenderDaysSelection = ({
           className="flex flex-row justify-between items-center my-1.5">
           <Text className="text-sm font-normal capitalize">{d.day}</Text>
           <View className="flex flex-row gap-6 bg-pink">
-            <TouchableOpacity
+            {/* <TouchableOpacity
               className="flex flex-row items-center"
               onPress={() => handleCheckboxPress(d.id, 0)}>
               <React.Fragment>
@@ -43,16 +43,16 @@ const RenderDaysSelection = ({
                   status={d.stat === 0 ? 'checked' : 'unchecked'}
                 />
               </React.Fragment>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
 
             <TouchableOpacity
               className="flex flex-row items-center"
-              onPress={() => handleCheckboxPress(d.id, 1)}>
+              onPress={() => toggleExerciseDay(d.id)}>
               <React.Fragment>
-                <Text>Exercise</Text>
                 <Checkbox.Android
                   status={d.stat === 1 ? 'checked' : 'unchecked'}
                 />
+                <Text>Exercise</Text>
               </React.Fragment>
             </TouchableOpacity>
           </View>
@@ -71,24 +71,24 @@ interface StepOneInterface {
 }
 
 // For Dropdown Exercise Day
-const exerciseDayOption = [
-  {label: '1', value: 1},
-  {label: '2', value: 2},
-  {label: '3', value: 3},
-  {label: '4', value: 4},
-  {label: '5', value: 5},
-  {label: '6', value: 6},
-];
-const findNumLabel = (num: string): number => {
-  if (num === '') {
-    return 1;
-  }
-  const found = exerciseDayOption.find(d => d.label === String(num));
-  if (found) {
-    return found.value;
-  }
-  return 1;
-};
+// const exerciseDayOption = [
+//   {label: '1', value: 1},
+//   {label: '2', value: 2},
+//   {label: '3', value: 3},
+//   {label: '4', value: 4},
+//   {label: '5', value: 5},
+//   {label: '6', value: 6},
+// ];
+// const findNumLabel = (num: string): number => {
+//   if (num === '') {
+//     return 1;
+//   }
+//   const found = exerciseDayOption.find(d => d.label === String(num));
+//   if (found) {
+//     return found.value;
+//   }
+//   return 1;
+// };
 
 export default function StepOne({
   days,
@@ -97,47 +97,60 @@ export default function StepOne({
   setStep,
   treeShakeExerciseRoutine,
 }: StepOneInterface): JSX.Element {
-  const [exerciseDay, setExerciseDay] = React.useState<string>('');
-  const [exerciseDayDropdownVis, setExerciseDayDropdownVis] =
-    React.useState<boolean>(false);
+  // const [exerciseDay, setExerciseDay] = React.useState<string>('');
+  // const [exerciseDayDropdownVis, setExerciseDayDropdownVis] =
+  //   React.useState<boolean>(false);
 
-  const updateRestDayValue = (value: string) => {
-    setExerciseDay(value);
-  };
+  // const updateRestDayValue = (value: string) => {
+  //   setExerciseDay(value);
+  // };
 
   const handleNextStep = () => {
     // PRE CONDITION CHECK
-    if (exerciseDay === '') {
-      Toast.show({
-        type: 'warning',
-        text1: 'Warning',
-        text2:
-          'Please select exercise day and corresponding exercise pattern first',
-      });
-      return;
+    // if (exerciseDay === '') {
+    //   Toast.show({
+    //     type: 'warning',
+    //     text1: 'Warning',
+    //     text2:
+    //       'Please select exercise day and corresponding exercise pattern first',
+    //   });
+    //   return;
+    // } else {
+    //   const exerciseDayNum = findNumLabel(exerciseDay);
+    //   const grindDays = days.filter(d => d.stat === 1);
+    //   const restDays = days.filter(d => d.stat === 0);
+    //   if (grindDays.length < exerciseDayNum) {
+    //     Toast.show({
+    //       type: 'error',
+    //       text1: 'Missing exercise pattern',
+    //       text2: `Please select atleast ${exerciseDayNum} days for exercise pattern`,
+    //     });
+    //     return;
+    //   } else if (restDays.length < 7 - exerciseDayNum) {
+    //     Toast.show({
+    //       type: 'error',
+    //       text1: 'Mising exercise days',
+    //       text2: `Please select atleast ${7 - exerciseDayNum} days for rest`,
+    //     });
+    //     return;
+    //   } else {
+    //     // PERFORM TREE SHAKING
+    //     treeShakeExerciseRoutine();
+    //     setStep(2);
+    //   }
+    // }
+
+    if (days.some(el => el.stat === 1)) {
+      // console.log('Here is your data: ', days);
+      // PERFORM TREE SHAKING
+      treeShakeExerciseRoutine();
+      setStep(2);
     } else {
-      const exerciseDayNum = findNumLabel(exerciseDay);
-      const grindDays = days.filter(d => d.stat === 1);
-      const restDays = days.filter(d => d.stat === 0);
-      if (grindDays.length < exerciseDayNum) {
-        Toast.show({
-          type: 'error',
-          text1: 'Missing exercise pattern',
-          text2: `Please select atleast ${exerciseDayNum} days for exercise pattern`,
-        });
-        return;
-      } else if (restDays.length < 7 - exerciseDayNum) {
-        Toast.show({
-          type: 'error',
-          text1: 'Mising exercise days',
-          text2: `Please select atleast ${7 - exerciseDayNum} days for rest`,
-        });
-        return;
-      } else {
-        // PERFORM TREE SHAKING
-        treeShakeExerciseRoutine();
-        setStep(2);
-      }
+      Toast.show({
+        type: 'error',
+        text1: 'Missing days !',
+        text2: 'Please select atleast one exercise day for the week.',
+      });
     }
   };
   const handleNavigateBack = () => {
@@ -164,7 +177,7 @@ export default function StepOne({
                 We usually recommend atleast 3 days a week for beginners or
                 better results.
               </Text>
-              <DropDown
+              {/* <DropDown
                 label={'Select your exercise days'}
                 mode={'outlined'}
                 value={exerciseDay}
@@ -178,15 +191,15 @@ export default function StepOne({
                     backgroundColor: MThemeColors.white,
                   },
                 }}
-              />
-              <Text className="text-sm font-normal mt-2 text-gray-500">
+              /> */}
+              {/* <Text className="text-sm font-normal mt-2 text-gray-500">
                 Choose number between 1-6
-              </Text>
+              </Text> */}
 
-              <View className="mt-3">
-                <Text className="text-base font-normal mt-6 mb-2">
+              <View className="mt-2">
+                {/* <Text className="text-base font-normal mt-6 mb-2">
                   Select your exercise pattern
-                </Text>
+                </Text> */}
 
                 <RenderDaysSelection days={days} updateDays={setDays} />
               </View>

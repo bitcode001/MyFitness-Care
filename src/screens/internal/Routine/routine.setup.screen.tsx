@@ -34,7 +34,7 @@ export type WEEKDAYS =
 export interface DaysInterface {
   id: number;
   day: WEEKDAYS;
-  stat: number | null;
+  stat: number;
 }
 
 export interface ExerciseInterface {
@@ -93,13 +93,13 @@ export interface FetchedExerciseData {
 //   },
 // ];
 const DAYS_SELECTION_AND_STAT: DaysInterface[] = [
-  {id: 1, day: 'sunday', stat: null},
-  {id: 2, day: 'monday', stat: null},
-  {id: 3, day: 'tuesday', stat: null},
-  {id: 4, day: 'wednesday', stat: null},
-  {id: 5, day: 'thursday', stat: null},
-  {id: 6, day: 'friday', stat: null},
-  {id: 7, day: 'saturday', stat: null},
+  {id: 1, day: 'sunday', stat: 0},
+  {id: 2, day: 'monday', stat: 0},
+  {id: 3, day: 'tuesday', stat: 0},
+  {id: 4, day: 'wednesday', stat: 0},
+  {id: 5, day: 'thursday', stat: 0},
+  {id: 6, day: 'friday', stat: 0},
+  {id: 7, day: 'saturday', stat: 0},
 ];
 
 export type ExData = {
@@ -177,12 +177,12 @@ const internalExerciseData: IExerciseData = [
 // General Info intefaces and data
 export type GGender = 'male' | 'female' | 'prefer not to say';
 export type GAgeGroup = '18-25' | '26-35' | '36-45' | '46+';
-export type GGoal = 'weight loss' | 'muscle gain';
+// export type GGoal = 'weight loss' | 'muscle gain';
 export type GLevelOfFitness = 'beginner' | 'intermediate' | 'advanced';
 export interface GeneralInfoType {
   gender: GGender;
   ageGroup: GAgeGroup;
-  goal: GGoal;
+  // goal: GGoal;
   levelOfFitness: GLevelOfFitness;
 }
 
@@ -233,7 +233,7 @@ export default function RoutineSetupScreen({
     {
       gender: 'male',
       ageGroup: '18-25',
-      goal: 'weight loss',
+      // goal: 'weight loss',
       levelOfFitness: 'beginner',
     } as GeneralInfoType,
   );
