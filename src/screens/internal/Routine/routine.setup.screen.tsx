@@ -182,11 +182,25 @@ export interface GeneralInfoType {
   levelOfFitness: GLevelOfFitness;
 }
 
+interface RoutineSetupScreenInterface {
+  handleUpdateComplete?: React.Dispatch<React.SetStateAction<boolean | null>>;
+  isReupdatingEx?: boolean;
+  updateCb?: () => void;
+  defaultDateTime?: {
+    default_date: string;
+    default_time: {
+      hours: string;
+      minutes: string;
+    };
+  };
+}
+
 export default function RoutineSetupScreen({
   handleUpdateComplete,
-}: {
-  handleUpdateComplete: React.Dispatch<React.SetStateAction<boolean | null>>;
-}): JSX.Element {
+  isReupdatingEx,
+  updateCb,
+  defaultDateTime,
+}: RoutineSetupScreenInterface): JSX.Element {
   // const {
   //   data: exerciseData,
   //   isLoading,
@@ -198,7 +212,7 @@ export default function RoutineSetupScreen({
 
   const {
     mutate: mutateFinalUserData,
-    isIdle: mutationIdle,
+    // isIdle: mutationIdle,
     isLoading: mutationOngoing,
     isError: mutationError,
     isSuccess: mutationSuccess,
@@ -207,7 +221,7 @@ export default function RoutineSetupScreen({
 
   const {
     mutate: mutateUserExerciseRecords,
-    isIdle: mutationIdle2,
+    // isIdle: mutationIdle2,
     isLoading: mutationOngoing2,
     isError: mutationError2,
     isSuccess: mutationSuccess2,
@@ -293,16 +307,17 @@ export default function RoutineSetupScreen({
       };
     }, {});
 
-    const finalData: IUserExerciseDetails = {
+    let finalData: IUserExerciseDetails = {
       exercise: refinedRoutine,
       m_badges: [],
       m_challenges: [],
       m_id: String(Date.now()),
-      start_date: String(date),
-      start_time: time,
+      start_date: isReupdatingEx ? defaultDateTime?.default_date : String(date),
+      start_time: isReupdatingEx ? defaultDateTime?.default_time : time,
       rest_days: r_days,
       workout_days: g_days,
     };
+    // Only and only if user is registering for the first time and is not updating it again we record the date andtime
     // console.log('Final Data: ', JSON.stringify(finalData, null, 2));
     // MUTATE USER DATA NOW
     mutateFinalUserData(finalData);
@@ -314,19 +329,22 @@ export default function RoutineSetupScreen({
     if (mutationOngoing || mutationOngoing2) {
       dispatch(startSpinner());
     } else {
-      if (mutationIdle && mutationIdle2) {
-        dispatch(stopSpinner());
-      }
+      // if (mutationIdle && mutationIdle2) {
+      // }
 
       if (mutationSuccess && mutationSuccess2) {
+        dispatch(stopSpinner());
         Toast.show({
           type: 'success',
           text1: 'Routine Setup',
           text2: 'Routine setup completed successfully!',
         });
-        handleUpdateComplete(true);
         resetExerciseDays();
-        dispatch(invalidateExerciseSlice());
+        if (!isReupdatingEx) {
+          dispatch(invalidateExerciseSlice());
+        }
+        handleUpdateComplete && handleUpdateComplete(true);
+        updateCb && updateCb();
       }
       if (mutationError || mutationError2) {
         Toast.show({
@@ -359,15 +377,21 @@ export default function RoutineSetupScreen({
 
   return (
     <SafeAreaScrollView>
-      <UserIntro profileLabel="Lets get started !" />
+      <UserIntro
+        profileLabel={
+          isReupdatingEx ? 'Lets plan again !' : 'Lets get started !'
+        }
+      />
 
       <View className="flex flex-row justify-between items-center mt-10">
         <Image
           className="w-12 h-12"
           source={require('@/assets/icons/on-fire.png')}
         />
-        <Text className="text-lg font-medium leading-5 px-6">
-          Here we will design your workout routine!
+        <Text className="text-lg font-medium px-6">
+          {isReupdatingEx
+            ? 'Great to have you here again ! Your can reset your plan again from here'
+            : 'Here we will design your workout routine!'}
         </Text>
       </View>
 

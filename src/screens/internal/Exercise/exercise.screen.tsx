@@ -11,7 +11,7 @@ import {
 import {MThemeColors} from '@/constant/colors';
 import {MSpacing} from '@/constant/measurements';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+// import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Button} from 'react-native-paper';
 
 // Data fetching utilities
@@ -69,9 +69,12 @@ export default function ExerciseScreen(): JSX.Element {
     number | null
   >(null);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.lighter : MThemeColors.white,
-  };
+  const [completedExerciseCount, setCompletedExerciseCount] =
+    React.useState<number>(0);
+
+  // const backgroundStyle = {
+  //   backgroundColor: isDarkMode ? Colors.lighter : MThemeColors.white,
+  // };
 
   const tallyLastCompletedExerciseDay: () => boolean = () => {
     if (exerciseState.todaysDay === W_DAYS[new Date().getDay()]) {
@@ -100,6 +103,12 @@ export default function ExerciseScreen(): JSX.Element {
 
   const handleExerciseStop = () => {
     setStartExercise(!startExercise);
+    setCompletedExerciseIndex(val => (val !== null ? val + 1 : 0));
+    setCompletedExerciseCount(val => val + 1);
+  };
+
+  const handleExerciseSkip = () => {
+    setStartExercise(false);
     setCompletedExerciseIndex(val => (val !== null ? val + 1 : 0));
   };
 
@@ -150,12 +159,12 @@ export default function ExerciseScreen(): JSX.Element {
     ) {
       return (
         <>
-          <Text className="text-base font-semibold capitalize text-center mb-4">
+          <Text className="text-base text-center font-bold capitalize mb-6">
             Your next exercise
           </Text>
-          <View className="flex flex-col justify-center items-center">
+          <View className="flex flex-row justify-center items-center">
             <Image
-              className="w-40 h-40 rounded-full"
+              className="w-48 h-48 flex-1"
               source={{
                 uri:
                   todaysExercise?.exercises[
@@ -165,7 +174,7 @@ export default function ExerciseScreen(): JSX.Element {
                   ].gifUrl ?? '',
               }}
             />
-            <View className="flex flex-col items-center mt-4">
+            <View className="flex flex-1 flex-col items-start mt-4">
               <Text className="text-base font-bold capitalize">
                 {
                   todaysExercise?.exercises[
@@ -175,8 +184,8 @@ export default function ExerciseScreen(): JSX.Element {
                   ].name
                 }
               </Text>
-              <View className="flex flex-row my-2">
-                <Text className="text-sm leading-5 text-center font-medium mr-4">
+              <View className="flex flex-col items-start my-2">
+                <Text className="text-sm leading-5 font-medium mr-4">
                   Target:{' '}
                   {
                     todaysExercise?.exercises[
@@ -186,7 +195,7 @@ export default function ExerciseScreen(): JSX.Element {
                     ].target
                   }
                 </Text>
-                <Text className="text-xs leading-5 text-center font-medium">
+                <Text className="text-xs leading-5 font-medium">
                   Equipment:{' '}
                   {
                     todaysExercise?.exercises[
@@ -219,20 +228,20 @@ export default function ExerciseScreen(): JSX.Element {
       mutateUserExerciseRecords({
         date: String(new Date().toISOString()),
         day: W_DAYS[new Date().getDay()],
-        exerciseCount: exerciseList,
-        m_coin: exerciseList * 2,
-        m_exp: exerciseList * 10,
-        m_trophies: exerciseList * 5,
+        exerciseCount: completedExerciseCount,
+        m_coin: completedExerciseCount * 2,
+        m_exp: completedExerciseCount * 10,
+        m_trophies: completedExerciseCount * 5,
         m_streak: 1,
         // m_level: calculateUserLevel(exerciseList * 10),
       });
       console.log('final data: ', {
         date: String(new Date().toISOString()),
         day: W_DAYS[new Date().getDay()],
-        exerciseCount: exerciseList,
-        m_coin: exerciseList * 2,
-        m_exp: exerciseList * 10,
-        m_trophies: exerciseList * 5,
+        exerciseCount: completedExerciseCount,
+        m_coin: completedExerciseCount * 2,
+        m_exp: completedExerciseCount * 10,
+        m_trophies: completedExerciseCount * 5,
         m_streak: 1,
         // m_level: calculateUserLevel(exerciseList * 10),
       });
@@ -292,25 +301,24 @@ export default function ExerciseScreen(): JSX.Element {
       style={{
         backgroundColor: MThemeColors.defaultScreenBG,
       }}>
-      <StatusBar
-        barStyle={isDarkMode ? 'dark-content' : 'light-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       {/* TOP OVERFLOWING SECTION */}
       <View
         className="flex flex-col justify-center items-center"
         style={{
-          backgroundColor: MThemeColors.black,
+          // backgroundColor: MThemeColors.black,
           paddingTop: statusBarHeight,
         }}>
         <View
-          className="bg-white shadow-md p-4 my-8 rounded-2xl flex flex-col justify-center items-center"
-          style={{
-            width: MSpacing.screenWidth - 40 * 2,
-          }}>
+          className="bg-white w-screen p-4 my-8 flex flex-col justify-center items-center"
+          style={
+            {
+              // width: MSpacing.screenWidth - 40 * 2,
+            }
+          }>
           {haveExerciseToday ? (
             <>
-              <View className="flex w-full flex-col bg-blue-50 py-4 rounded-xl">
+              <View className="flex w-full flex-col py-1 rounded-xl">
                 {tallyLastCompletedExerciseDay() ? (
                   <>
                     <Text className="text-base leading-5 text-center font-medium">
@@ -342,19 +350,31 @@ export default function ExerciseScreen(): JSX.Element {
                           )
                         : 0
                     }
-                    circleLength={300}
+                    // todaysExercise.timeLimit
+                    circleLength={200}
                     strokeWidth={15}
                     label={animatedSeconds ?? 0}
                     customColorCode="rgb(0,168,229)"
                   />
-                  <Button
-                    mode="contained"
-                    className="self-center ml-4"
-                    // loading={startExercise}
-                    disabled={shouldDisable(startExercise)}
-                    onPress={handleExerciseStart}>
-                    <Text>Start Timer</Text>
-                  </Button>
+
+                  <View className="flex flex-row gap-2 ml-4">
+                    <Button
+                      mode="contained"
+                      className="self-center"
+                      // loading={startExercise}
+                      disabled={shouldDisable(startExercise)}
+                      onPress={handleExerciseStart}>
+                      <Text>Start</Text>
+                    </Button>
+                    <Button
+                      mode="outlined"
+                      className="self-center"
+                      // loading={startExercise}
+                      disabled={shouldDisable(startExercise)}
+                      onPress={handleExerciseSkip}>
+                      <Text>Skip</Text>
+                    </Button>
+                  </View>
 
                   {/* <IconButton
                   icon="pause"
@@ -385,6 +405,12 @@ export default function ExerciseScreen(): JSX.Element {
 
               <Text className="text-sm font-semibold text-center px-10">
                 Rest is essential for a body growth as well
+              </Text>
+
+              <Text className="text-base font-semibold text-center px-10 mt-8">
+                But wait, you can still view your all exercise routines and even
+                update them from the profile section. Just visit the profile
+                section and press "My Routines"
               </Text>
             </View>
           )}

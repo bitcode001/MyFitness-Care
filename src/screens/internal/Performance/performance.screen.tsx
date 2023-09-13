@@ -1,10 +1,10 @@
-import ChartOne from '@/components/ChartOne';
+// import ChartOne from '@/components/ChartOne';
 import SafeAreaScrollView from '@/components/SafeAreaScrollView';
 import UserIntro from '@/components/UserIntro';
 import {MThemeColors} from '@/constant/colors';
 import {MSpacing} from '@/constant/measurements';
-import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import React from 'react';
+import {View, Text, Image} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
 // Data fetching utilities
 import {
@@ -103,26 +103,26 @@ const SummaryGrid = ({
 };
 
 export default function PerformanceScreen(): JSX.Element {
-  const [selected, setSelected] = useState('week');
-  const options = ['week', 'month', 'year'];
-  const renderOptions = () => {
-    return options.map(option => (
-      <TouchableOpacity
-        key={option}
-        className="flex-1 rounded-lg"
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={{
-          backgroundColor:
-            selected === option ? MThemeColors.white : 'transparent',
-        }}
-        onPress={() => {
-          setSelected(option);
-          console.log('selected', option);
-        }}>
-        <Text className="text-center capitalize p-2">{option}</Text>
-      </TouchableOpacity>
-    ));
-  };
+  // const [selected, setSelected] = useState('week');
+  // const options = ['week', 'month', 'year'];
+  // const renderOptions = () => {
+  //   return options.map(option => (
+  //     <TouchableOpacity
+  //       key={option}
+  //       className="flex-1 rounded-lg"
+  //       // eslint-disable-next-line react-native/no-inline-styles
+  //       style={{
+  //         backgroundColor:
+  //           selected === option ? MThemeColors.white : 'transparent',
+  //       }}
+  //       onPress={() => {
+  //         setSelected(option);
+  //         console.log('selected', option);
+  //       }}>
+  //       <Text className="text-center capitalize p-2">{option}</Text>
+  //     </TouchableOpacity>
+  //   ));
+  // };
   // Data fetching logic
   const authState = useSelector((state: RootState) => state.auth);
   const dispatch = useDispatch();
@@ -157,14 +157,14 @@ export default function PerformanceScreen(): JSX.Element {
       <UserIntro profileLabel="Progress Summary" />
 
       {/* MENU SELECTION SECTION */}
-      <View
+      {/* <View
         className="p-2 flex flex-row justify-between items-center mt-10 rounded-lg"
         style={{backgroundColor: MThemeColors.tabBg}}>
         {renderOptions()}
-      </View>
+      </View> */}
 
       {/* CHART SECTION */}
-      <ChartOne />
+      {/* <ChartOne /> */}
 
       {/* Experience display section */}
       <Text className="text-2xl font-normal mt-16 mb-5">Experience Points</Text>

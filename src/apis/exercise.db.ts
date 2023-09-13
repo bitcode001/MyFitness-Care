@@ -27,8 +27,9 @@ export interface IUserExerciseDetails {
   m_badges: string[];
   m_challenges: string[];
   m_id: string;
-  start_date: string;
-  start_time: {
+  start_date?: string; // Incase of updating data again, we are making these fields optional;
+  start_time?: {
+    // Incase of updating data again, we are making these fields optional;
     hours: string;
     minutes: string;
   };
