@@ -76,13 +76,11 @@ export default function StepThree({
 
       <View className="flex flex-col flex-1 pl-4 pt-1">
         <Text className="text-lg font-bold leading-5">Step 3</Text>
-        <Text className="text-base font-medium">
-          Lets set the date and time to start
-        </Text>
+        <Text className="text-base font-medium">Finalize Everything</Text>
         {step === 3 && (
           <React.Fragment>
             {/* CHOOSEN DATE TIME  */}
-            <View className="flex flex-col items-start gap-4 mt-5">
+            {/* <View className="flex flex-col items-start gap-4 mt-5">
               <View className="flex flex-col">
                 <Text className="text-base font-medium">
                   So you are starting from :{' '}
@@ -97,9 +95,9 @@ export default function StepThree({
                   {time.hours}:{time.minutes}
                 </Text>
               </View>
-            </View>
+            </View> */}
 
-            <View className="flex flex-row justify-between items-center gap-4 mt-10">
+            {/* <View className="flex flex-row justify-between items-center gap-4 mt-10">
               <DatePickerModal
                 locale="en-GB"
                 mode="single"
@@ -132,7 +130,13 @@ export default function StepThree({
                 onPress={() => setVisible(true)}>
                 Pick Time
               </Button>
-            </View>
+            </View> */}
+
+            <Text className="py-4 text-sm font-medium">
+              And thats it 🥳 You are all set to get started. This is the last
+              step. If you want to make any changes you can go back now, or else
+              press Finish setup for completing the registeration process. 🎉
+            </Text>
 
             <StepNavigator step={step} navigateBack={handleNavigateBack} />
           </React.Fragment>

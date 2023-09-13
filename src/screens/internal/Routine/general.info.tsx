@@ -1,17 +1,18 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {
-  GAgeGroup,
-  GGender,
+  // GAgeGroup,
+  // GGender,
   // GGoal,
   GLevelOfFitness,
   GeneralInfoType,
 } from './routine.setup.screen';
 import {Checkbox} from 'react-native-paper';
 import StepNavigator from './step.navigator';
+import {AG_LIST, G_GENDER} from '@/constant/utils';
 
-const g_gender: Array<GGender> = ['male', 'female', 'prefer not to say'];
-const g_ageGroup: Array<GAgeGroup> = ['18-25', '26-35', '36-45', '46+'];
+// const g_gender: Array<GGender> = ['male', 'female', 'prefer not to say'];
+// const g_ageGroup: Array<GAgeGroup> = ['18-25', '26-35', '36-45', '46+'];
 // const g_goal: Array<GGoal> = ['weight loss', 'muscle gain'];
 const g_levelOfFitness: Array<GLevelOfFitness> = [
   'beginner',
@@ -90,7 +91,7 @@ export default function GeneralInformation({
             <React.Fragment>
               <GenerateQuestionGroup
                 title="Please specify your gender"
-                options={g_gender}
+                options={G_GENDER}
                 generalInfo={generalInfo}
                 setGeneralInfo={setGeneralInfo}
                 updateKey="gender"
@@ -98,7 +99,7 @@ export default function GeneralInformation({
 
               <GenerateQuestionGroup
                 title="Please specify your age group"
-                options={g_ageGroup}
+                options={AG_LIST}
                 generalInfo={generalInfo}
                 setGeneralInfo={setGeneralInfo}
                 updateKey="ageGroup"

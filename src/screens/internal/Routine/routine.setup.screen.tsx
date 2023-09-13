@@ -142,30 +142,26 @@ const internalExerciseData: IExerciseData = [
   },
   {
     _id: '5',
-    bodyPart: 'neck',
-    imgUrl:
+    bodyPart: 'neck and shoulders',
+    imgUrl: [
       'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fneck.png?alt=media&token=8bafc449-7543-425a-917d-2d6527ebc8f8',
+      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fshoulders.png?alt=media&token=8b3e98d5-96e7-4c9b-8b41-7c3b82812c83',
+    ],
   },
   {
     _id: '6',
-    bodyPart: 'shoulders',
-    imgUrl:
-      'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fshoulders.png?alt=media&token=8b3e98d5-96e7-4c9b-8b41-7c3b82812c83',
-  },
-  {
-    _id: '7',
     bodyPart: 'upper arms',
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fupper-arms.png?alt=media&token=e5dfecaa-f2d1-4405-b2da-2e9d9dd31d50',
   },
   {
-    _id: '8',
+    _id: '7',
     bodyPart: 'upper legs',
     imgUrl:
       'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fupper-legs.png?alt=media&token=9310e2f0-1792-47c3-97ad-b58b3dd084f4',
   },
   {
-    _id: '9',
+    _id: '8',
     bodyPart: 'waist',
     imgUrl: [
       'https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-assets%2Fwaist-m.png?alt=media&token=0eef2709-5338-4175-965f-d7b9bb542495',
@@ -220,6 +216,7 @@ export default function RoutineSetupScreen({
 
   const dispatch = useDispatch();
 
+  const [step, setStep] = React.useState<number>(0);
   // User General Information - Unit 0
   const [generalInfo, setGeneralInfo] = useReducer<
     (prev: GeneralInfoType, next: GeneralInfoType) => GeneralInfoType
@@ -238,6 +235,8 @@ export default function RoutineSetupScreen({
     } as GeneralInfoType,
   );
 
+  // For step 2
+  const [untrackedChanges, setUntractedChanges] = React.useState(true);
   const [days, setDays] = React.useState<DaysInterface[]>(
     DAYS_SELECTION_AND_STAT,
   );
@@ -248,7 +247,7 @@ export default function RoutineSetupScreen({
   const resetExerciseDays = () => {
     const days_ref = DAYS_SELECTION_AND_STAT.map(el => ({
       ...el,
-      stat: null,
+      stat: 0,
     }));
     setDays(days_ref);
     setExerciseRoutine({});
@@ -265,8 +264,6 @@ export default function RoutineSetupScreen({
 
     setExerciseRoutine(cp);
   };
-
-  const [step, setStep] = React.useState<number>(0);
 
   // FOR STEP 3
   const [date, setDate] = React.useState<Date>(new Date());
@@ -402,6 +399,8 @@ export default function RoutineSetupScreen({
           step={step}
           setStep={setStep}
           generalInfo={generalInfo}
+          untrackedChanges={untrackedChanges}
+          setUntrackedChanges={setUntractedChanges}
         />
 
         {/* Step three of the stepper */}
@@ -419,7 +418,7 @@ export default function RoutineSetupScreen({
         <Button
           mode="contained"
           style={{backgroundColor: MThemeColors.darkGreen}}
-          className="rounded-none my-10 mt-16 ml-12"
+          className="rounded-none mb-10 ml-12"
           onPress={initiateFinalSetup}>
           <Text className="text-white text-lg font-medium">Finish Setup</Text>
         </Button>

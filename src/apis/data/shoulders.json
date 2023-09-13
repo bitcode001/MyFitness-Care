@@ -1,5 +1,21 @@
 [
   {
+    "bodyPart": "neck",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fneck%2Fneck_0.gif?alt=media",
+    "id": "1403",
+    "name": "neck side stretch",
+    "target": "levator scapulae"
+  },
+  {
+    "bodyPart": "neck",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fneck%2Fneck_1.gif?alt=media",
+    "id": "0716",
+    "name": "side push neck stretch",
+    "target": "levator scapulae"
+  },
+  {
     "bodyPart": "shoulders",
     "equipment": "band",
     "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fshoulders%2Fshoulders_0.gif?alt=media",
