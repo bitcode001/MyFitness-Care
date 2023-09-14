@@ -28,6 +28,7 @@ import {
   useExtractQuery,
 } from '@/hooks/useExtractFirebaseData';
 import FallbackUI from '@/components/Fallback/fallback.ui';
+import GymShop from './gym-shop/GymShop';
 
 const styles = StyleSheet.create({
   shadow: {
@@ -196,7 +197,7 @@ export default function InternalBottomStack(): JSX.Element {
         />
         <Tab.Screen
           name="Shop"
-          component={ExerciseScreen}
+          component={GymShop}
           options={{
             tabBarIcon: ({focused}) => GenIcon(focused, 'shop'),
             tabBarItemStyle: {

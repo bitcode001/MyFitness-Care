@@ -235,16 +235,16 @@ export default function ExerciseScreen(): JSX.Element {
         m_streak: 1,
         // m_level: calculateUserLevel(exerciseList * 10),
       });
-      console.log('final data: ', {
-        date: String(new Date().toISOString()),
-        day: W_DAYS[new Date().getDay()],
-        exerciseCount: completedExerciseCount,
-        m_coin: completedExerciseCount * 2,
-        m_exp: completedExerciseCount * 10,
-        m_trophies: completedExerciseCount * 5,
-        m_streak: 1,
-        // m_level: calculateUserLevel(exerciseList * 10),
-      });
+      // console.log('final data: ', {
+      //   date: String(new Date().toISOString()),
+      //   day: W_DAYS[new Date().getDay()],
+      //   exerciseCount: completedExerciseCount,
+      //   m_coin: completedExerciseCount * 2,
+      //   m_exp: completedExerciseCount * 10,
+      //   m_trophies: completedExerciseCount * 5,
+      //   m_streak: 1,
+      //   // m_level: calculateUserLevel(exerciseList * 10),
+      // });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [completedExerciseIndex]);
