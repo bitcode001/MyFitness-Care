@@ -1,0 +1,234 @@
+[
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_0.gif?alt=media",
+    "id": "3220",
+    "name": "astride jumps (male)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_1.gif?alt=media",
+    "id": "3672",
+    "name": "back and forth step",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_2.gif?alt=media",
+    "id": "3360",
+    "name": "bear crawl",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_3.gif?alt=media",
+    "id": "1160",
+    "name": "burpee",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_4.gif?alt=media",
+    "id": "2331",
+    "name": "cycle cross trainer",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_5.gif?alt=media",
+    "id": "1201",
+    "name": "dumbbell burpee",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_6.gif?alt=media",
+    "id": "3221",
+    "name": "half knee bends (male)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_7.gif?alt=media",
+    "id": "3636",
+    "name": "high knee against wall",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_8.gif?alt=media",
+    "id": "0501",
+    "name": "jack burpee",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_9.gif?alt=media",
+    "id": "3224",
+    "name": "jack jump (male)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "rope",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_10.gif?alt=media",
+    "id": "2612",
+    "name": "jump rope",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_11.gif?alt=media",
+    "id": "0630",
+    "name": "mountain climber",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_12.gif?alt=media",
+    "id": "3638",
+    "name": "push to run",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_13.gif?alt=media",
+    "id": "0685",
+    "name": "run",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_14.gif?alt=media",
+    "id": "0684",
+    "name": "run (equipment)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_15.gif?alt=media",
+    "id": "3219",
+    "name": "scissor jumps (male)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_16.gif?alt=media",
+    "id": "3222",
+    "name": "semi squat jump (male)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_17.gif?alt=media",
+    "id": "3656",
+    "name": "short stride run",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_18.gif?alt=media",
+    "id": "3361",
+    "name": "skater hops",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_19.gif?alt=media",
+    "id": "3671",
+    "name": "ski step",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_20.gif?alt=media",
+    "id": "3223",
+    "name": "star jump (male)",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "stationary bike",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_21.gif?alt=media",
+    "id": "2138",
+    "name": "stationary bike run v. 3",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_22.gif?alt=media",
+    "id": "0798",
+    "name": "stationary bike walk",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_23.gif?alt=media",
+    "id": "3318",
+    "name": "swing 360",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "elliptical machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_24.gif?alt=media",
+    "id": "2141",
+    "name": "walk elliptical cross trainer",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_25.gif?alt=media",
+    "id": "3655",
+    "name": "walking high knees lunge",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_26.gif?alt=media",
+    "id": "3666",
+    "name": "walking on incline treadmill",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "stepmill machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_27.gif?alt=media",
+    "id": "2311",
+    "name": "walking on stepmill",
+    "target": "cardiovascular system"
+  },
+  {
+    "bodyPart": "cardio",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fcardio%2Fcardio_28.gif?alt=media",
+    "id": "3637",
+    "name": "wheel run",
+    "target": "cardiovascular system"
+  }
+]

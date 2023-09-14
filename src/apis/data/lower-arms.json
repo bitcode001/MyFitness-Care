@@ -1,0 +1,298 @@
+[
+  {
+    "bodyPart": "lower arms",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_0.gif?alt=media",
+    "id": "0994",
+    "name": "band reverse wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_1.gif?alt=media",
+    "id": "1016",
+    "name": "band wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_2.gif?alt=media",
+    "id": "1411",
+    "name": "barbell palms down wrist curl over a bench",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_3.gif?alt=media",
+    "id": "1412",
+    "name": "barbell palms up wrist curl over a bench",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_4.gif?alt=media",
+    "id": "0079",
+    "name": "barbell revers wrist curl v. 2",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_5.gif?alt=media",
+    "id": "0082",
+    "name": "barbell reverse wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_6.gif?alt=media",
+    "id": "0104",
+    "name": "barbell standing back wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_7.gif?alt=media",
+    "id": "0126",
+    "name": "barbell wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_8.gif?alt=media",
+    "id": "0125",
+    "name": "barbell wrist curl v. 2",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_9.gif?alt=media",
+    "id": "0210",
+    "name": "cable reverse wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_10.gif?alt=media",
+    "id": "0224",
+    "name": "cable standing back wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_11.gif?alt=media",
+    "id": "0247",
+    "name": "cable wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_12.gif?alt=media",
+    "id": "1437",
+    "name": "dumbbell finger curls",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_13.gif?alt=media",
+    "id": "0347",
+    "name": "dumbbell lying pronation",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_14.gif?alt=media",
+    "id": "2705",
+    "name": "dumbbell lying pronation on floor",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_15.gif?alt=media",
+    "id": "0349",
+    "name": "dumbbell lying supination",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_16.gif?alt=media",
+    "id": "2706",
+    "name": "dumbbell lying supination on floor",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_17.gif?alt=media",
+    "id": "0358",
+    "name": "dumbbell one arm revers wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_18.gif?alt=media",
+    "id": "1415",
+    "name": "dumbbell one arm seated neutral wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_19.gif?alt=media",
+    "id": "0364",
+    "name": "dumbbell one arm wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_20.gif?alt=media",
+    "id": "1441",
+    "name": "dumbbell over bench one arm reverse wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_21.gif?alt=media",
+    "id": "0367",
+    "name": "dumbbell over bench one arm wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_22.gif?alt=media",
+    "id": "0368",
+    "name": "dumbbell over bench revers wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_23.gif?alt=media",
+    "id": "0369",
+    "name": "dumbbell over bench wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_24.gif?alt=media",
+    "id": "0385",
+    "name": "dumbbell reverse wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_25.gif?alt=media",
+    "id": "0399",
+    "name": "dumbbell seated one arm rotate",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_26.gif?alt=media",
+    "id": "0401",
+    "name": "dumbbell seated palms up wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_27.gif?alt=media",
+    "id": "0455",
+    "name": "finger curls",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_28.gif?alt=media",
+    "id": "0518",
+    "name": "kettlebell alternating hang clean",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_29.gif?alt=media",
+    "id": "2288",
+    "name": "lever gripper hands ",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_30.gif?alt=media",
+    "id": "1421",
+    "name": "modified push up to lower arms",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_31.gif?alt=media",
+    "id": "0721",
+    "name": "side wrist pull stretch",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_32.gif?alt=media",
+    "id": "1426",
+    "name": "smith seated wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_33.gif?alt=media",
+    "id": "0771",
+    "name": "smith standing back wrist curl",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_34.gif?alt=media",
+    "id": "0854",
+    "name": "weighted standing hand squeeze",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_35.gif?alt=media",
+    "id": "1428",
+    "name": "wrist circles",
+    "target": "forearms"
+  },
+  {
+    "bodyPart": "lower arms",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Flower_arms%2Flower_arms_36.gif?alt=media",
+    "id": "0859",
+    "name": "wrist rollerer",
+    "target": "forearms"
+  }
+]

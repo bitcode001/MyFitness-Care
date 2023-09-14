@@ -1,0 +1,1354 @@
+[
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_0.gif?alt=media",
+    "id": "0001",
+    "name": "3/4 sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_1.gif?alt=media",
+    "id": "0002",
+    "name": "45° side bend",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_2.gif?alt=media",
+    "id": "0003",
+    "name": "air bike",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_3.gif?alt=media",
+    "id": "0006",
+    "name": "alternate heel touchers",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_4.gif?alt=media",
+    "id": "2355",
+    "name": "arm slingers hanging bent knee legs",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_5.gif?alt=media",
+    "id": "2333",
+    "name": "arm slingers hanging straight legs",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_6.gif?alt=media",
+    "id": "3204",
+    "name": "arms overhead full sit-up (male)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_7.gif?alt=media",
+    "id": "0011",
+    "name": "assisted hanging knee raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_8.gif?alt=media",
+    "id": "0010",
+    "name": "assisted hanging knee raise with throw down",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_9.gif?alt=media",
+    "id": "0012",
+    "name": "assisted lying leg raise with lateral throw down",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_10.gif?alt=media",
+    "id": "0013",
+    "name": "assisted lying leg raise with throw down",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_11.gif?alt=media",
+    "id": "0014",
+    "name": "assisted motion russian twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_12.gif?alt=media",
+    "id": "1714",
+    "name": "assisted prone rectus femoris stretch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "assisted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_13.gif?alt=media",
+    "id": "1758",
+    "name": "assisted sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_14.gif?alt=media",
+    "id": "0969",
+    "name": "band alternating v-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_15.gif?alt=media",
+    "id": "0971",
+    "name": "band assisted wheel rollerout",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_16.gif?alt=media",
+    "id": "0972",
+    "name": "band bicycle crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_17.gif?alt=media",
+    "id": "0979",
+    "name": "band horizontal pallof press",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_18.gif?alt=media",
+    "id": "0981",
+    "name": "band jack knife sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_19.gif?alt=media",
+    "id": "0985",
+    "name": "band kneeling twisting crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_20.gif?alt=media",
+    "id": "1002",
+    "name": "band lying straight leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_21.gif?alt=media",
+    "id": "0992",
+    "name": "band push sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_22.gif?alt=media",
+    "id": "1011",
+    "name": "band seated twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_23.gif?alt=media",
+    "id": "1005",
+    "name": "band standing crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_24.gif?alt=media",
+    "id": "1007",
+    "name": "band standing twisting crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_25.gif?alt=media",
+    "id": "1014",
+    "name": "band v-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "band",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_26.gif?alt=media",
+    "id": "1015",
+    "name": "band vertical pallof press",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_27.gif?alt=media",
+    "id": "0071",
+    "name": "barbell press sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_28.gif?alt=media",
+    "id": "0084",
+    "name": "barbell rollerout",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_29.gif?alt=media",
+    "id": "0083",
+    "name": "barbell rollerout from bench",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_30.gif?alt=media",
+    "id": "0094",
+    "name": "barbell seated twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_31.gif?alt=media",
+    "id": "0096",
+    "name": "barbell side bent v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_32.gif?alt=media",
+    "id": "2799",
+    "name": "barbell sitted alternate leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_33.gif?alt=media",
+    "id": "2800",
+    "name": "barbell sitted alternate leg raise (female)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_34.gif?alt=media",
+    "id": "0103",
+    "name": "barbell standing ab rollerout",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_35.gif?alt=media",
+    "id": "0112",
+    "name": "barbell standing twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_36.gif?alt=media",
+    "id": "3544",
+    "name": "bodyweight incline side plank",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_37.gif?alt=media",
+    "id": "0138",
+    "name": "bottoms-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_38.gif?alt=media",
+    "id": "2466",
+    "name": "bridge - mountain climber (cross body)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_39.gif?alt=media",
+    "id": "0870",
+    "name": "butt-ups",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_40.gif?alt=media",
+    "id": "0174",
+    "name": "cable judo flip",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_41.gif?alt=media",
+    "id": "0175",
+    "name": "cable kneeling crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_42.gif?alt=media",
+    "id": "0873",
+    "name": "cable reverse crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_43.gif?alt=media",
+    "id": "0211",
+    "name": "cable russian twists (on stability ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_44.gif?alt=media",
+    "id": "0212",
+    "name": "cable seated crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_45.gif?alt=media",
+    "id": "2399",
+    "name": "cable seated twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_46.gif?alt=media",
+    "id": "0222",
+    "name": "cable side bend",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_47.gif?alt=media",
+    "id": "0221",
+    "name": "cable side bend crunch (bosu ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_48.gif?alt=media",
+    "id": "0223",
+    "name": "cable side crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_49.gif?alt=media",
+    "id": "0226",
+    "name": "cable standing crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_50.gif?alt=media",
+    "id": "0874",
+    "name": "cable standing crunch (with rope attachment)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_51.gif?alt=media",
+    "id": "0230",
+    "name": "cable standing lift",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_52.gif?alt=media",
+    "id": "0242",
+    "name": "cable tuck reverse crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_53.gif?alt=media",
+    "id": "0243",
+    "name": "cable twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "cable",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_54.gif?alt=media",
+    "id": "0862",
+    "name": "cable twist (up-down)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_55.gif?alt=media",
+    "id": "2963",
+    "name": "captains chair straight leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_56.gif?alt=media",
+    "id": "0260",
+    "name": "cocoons",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_57.gif?alt=media",
+    "id": "1468",
+    "name": "crab twist toe touch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_58.gif?alt=media",
+    "id": "0262",
+    "name": "cross body crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_59.gif?alt=media",
+    "id": "0267",
+    "name": "crunch (hands overhead)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_60.gif?alt=media",
+    "id": "0271",
+    "name": "crunch (on stability ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_61.gif?alt=media",
+    "id": "0272",
+    "name": "crunch (on stability ball, arms straight)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_62.gif?alt=media",
+    "id": "0274",
+    "name": "crunch floor",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_63.gif?alt=media",
+    "id": "3016",
+    "name": "curl-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_64.gif?alt=media",
+    "id": "0276",
+    "name": "dead bug",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_65.gif?alt=media",
+    "id": "0277",
+    "name": "decline crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_66.gif?alt=media",
+    "id": "0282",
+    "name": "decline sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_67.gif?alt=media",
+    "id": "0407",
+    "name": "dumbbell side bend",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_68.gif?alt=media",
+    "id": "0443",
+    "name": "elbow-to-knee",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_69.gif?alt=media",
+    "id": "3303",
+    "name": "flag",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_70.gif?alt=media",
+    "id": "0456",
+    "name": "flexion leg sit up (bent knee)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_71.gif?alt=media",
+    "id": "0457",
+    "name": "flexion leg sit up (straight arm)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_72.gif?alt=media",
+    "id": "2429",
+    "name": "frog crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_73.gif?alt=media",
+    "id": "3301",
+    "name": "frog planche",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_74.gif?alt=media",
+    "id": "3296",
+    "name": "front lever",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_75.gif?alt=media",
+    "id": "0464",
+    "name": "front plank with twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_76.gif?alt=media",
+    "id": "3315",
+    "name": "full maltese",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_77.gif?alt=media",
+    "id": "3299",
+    "name": "full planche",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_78.gif?alt=media",
+    "id": "0467",
+    "name": "gorilla chin",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_79.gif?alt=media",
+    "id": "0469",
+    "name": "groin crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_80.gif?alt=media",
+    "id": "3202",
+    "name": "half sit-up (male)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_81.gif?alt=media",
+    "id": "1764",
+    "name": "hanging leg hip raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_82.gif?alt=media",
+    "id": "0472",
+    "name": "hanging leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_83.gif?alt=media",
+    "id": "1761",
+    "name": "hanging oblique knee raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_84.gif?alt=media",
+    "id": "0473",
+    "name": "hanging pike",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_85.gif?alt=media",
+    "id": "0474",
+    "name": "hanging straight leg hip raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_86.gif?alt=media",
+    "id": "0475",
+    "name": "hanging straight leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_87.gif?alt=media",
+    "id": "0476",
+    "name": "hanging straight twisting leg hip raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_88.gif?alt=media",
+    "id": "0484",
+    "name": "hip raise (bent knee)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_89.gif?alt=media",
+    "id": "1471",
+    "name": "inchworm",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_90.gif?alt=media",
+    "id": "3698",
+    "name": "inchworm v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_91.gif?alt=media",
+    "id": "0491",
+    "name": "incline leg hip raise (leg straight)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_92.gif?alt=media",
+    "id": "0495",
+    "name": "incline twisting sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_93.gif?alt=media",
+    "id": "0507",
+    "name": "jackknife sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_94.gif?alt=media",
+    "id": "0508",
+    "name": "janda sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_95.gif?alt=media",
+    "id": "0517",
+    "name": "kettlebell advanced windmill",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_96.gif?alt=media",
+    "id": "0524",
+    "name": "kettlebell bent press",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_97.gif?alt=media",
+    "id": "0530",
+    "name": "kettlebell double windmill",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_98.gif?alt=media",
+    "id": "0532",
+    "name": "kettlebell figure 8",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "kettlebell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_99.gif?alt=media",
+    "id": "0554",
+    "name": "kettlebell windmill",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_100.gif?alt=media",
+    "id": "3640",
+    "name": "knee touch crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_101.gif?alt=media",
+    "id": "3239",
+    "name": "kneeling plank tap shoulder (male)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_102.gif?alt=media",
+    "id": "3419",
+    "name": "l-sit on floor",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "barbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_103.gif?alt=media",
+    "id": "0562",
+    "name": "landmine 180",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_104.gif?alt=media",
+    "id": "3300",
+    "name": "lean planche",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_105.gif?alt=media",
+    "id": "0570",
+    "name": "leg pull in flat bench",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_106.gif?alt=media",
+    "id": "0583",
+    "name": "lever kneeling twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_107.gif?alt=media",
+    "id": "1452",
+    "name": "lever seated crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_108.gif?alt=media",
+    "id": "0595",
+    "name": "lever seated crunch (chest pad)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_109.gif?alt=media",
+    "id": "3760",
+    "name": "lever seated crunch v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "leverage machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_110.gif?alt=media",
+    "id": "0600",
+    "name": "lever seated leg raise crunch ",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_111.gif?alt=media",
+    "id": "1688",
+    "name": "lunge with twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_112.gif?alt=media",
+    "id": "2312",
+    "name": "lying elbow to knee",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_113.gif?alt=media",
+    "id": "0620",
+    "name": "lying leg raise flat bench",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_114.gif?alt=media",
+    "id": "0865",
+    "name": "lying leg-hip raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_115.gif?alt=media",
+    "id": "0634",
+    "name": "negative crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_116.gif?alt=media",
+    "id": "1495",
+    "name": "oblique crunch v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_117.gif?alt=media",
+    "id": "0635",
+    "name": "oblique crunches floor",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "medicine ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_118.gif?alt=media",
+    "id": "0640",
+    "name": "one arm slam (with medicine ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_119.gif?alt=media",
+    "id": "0641",
+    "name": "otis up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_120.gif?alt=media",
+    "id": "3147",
+    "name": "pelvic tilt",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_121.gif?alt=media",
+    "id": "1687",
+    "name": "posterior step to overhead reach",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_122.gif?alt=media",
+    "id": "3119",
+    "name": "potty squat",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_123.gif?alt=media",
+    "id": "3665",
+    "name": "power point plank",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_124.gif?alt=media",
+    "id": "3203",
+    "name": "prisoner half sit-up (male)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_125.gif?alt=media",
+    "id": "1707",
+    "name": "prone twist on stability ball",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_126.gif?alt=media",
+    "id": "0650",
+    "name": "pull-in (on stability ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_127.gif?alt=media",
+    "id": "0664",
+    "name": "push-up to side plank",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_128.gif?alt=media",
+    "id": "3201",
+    "name": "quarter sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_129.gif?alt=media",
+    "id": "0872",
+    "name": "reverse crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_130.gif?alt=media",
+    "id": "3663",
+    "name": "reverse plank with leg lift",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_131.gif?alt=media",
+    "id": "2204",
+    "name": "roller body saw",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_132.gif?alt=media",
+    "id": "2206",
+    "name": "roller reverse crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_133.gif?alt=media",
+    "id": "0687",
+    "name": "russian twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_134.gif?alt=media",
+    "id": "0689",
+    "name": "seated leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_135.gif?alt=media",
+    "id": "0691",
+    "name": "seated side crunch (wall)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_136.gif?alt=media",
+    "id": "3699",
+    "name": "shoulder tap",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_137.gif?alt=media",
+    "id": "0705",
+    "name": "side bridge v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_138.gif?alt=media",
+    "id": "0709",
+    "name": "side hip (on parallel bars)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_139.gif?alt=media",
+    "id": "3213",
+    "name": "side-to-side toe touch (male)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_140.gif?alt=media",
+    "id": "0735",
+    "name": "sit-up v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_141.gif?alt=media",
+    "id": "3679",
+    "name": "sit-up with arms on chest",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "hammer",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_142.gif?alt=media",
+    "id": "1496",
+    "name": "sledge hammer",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "smith machine",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_143.gif?alt=media",
+    "id": "0756",
+    "name": "smith hip raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "dumbbell",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_144.gif?alt=media",
+    "id": "0777",
+    "name": "spell caster",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_145.gif?alt=media",
+    "id": "2329",
+    "name": "spine twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "stability ball",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_146.gif?alt=media",
+    "id": "2297",
+    "name": "stability ball crunch (full range hands behind head)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "wheel roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_147.gif?alt=media",
+    "id": "0796",
+    "name": "standing wheel rollerout",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_148.gif?alt=media",
+    "id": "3314",
+    "name": "straddle maltese",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_149.gif?alt=media",
+    "id": "3298",
+    "name": "straddle planche",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_150.gif?alt=media",
+    "id": "0805",
+    "name": "suspended abdominal fallout",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_151.gif?alt=media",
+    "id": "0807",
+    "name": "suspended reverse crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_152.gif?alt=media",
+    "id": "0871",
+    "name": "tuck crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_153.gif?alt=media",
+    "id": "2802",
+    "name": "twisted leg raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_154.gif?alt=media",
+    "id": "2801",
+    "name": "twisted leg raise (female)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_155.gif?alt=media",
+    "id": "3420",
+    "name": "v-sit on floor",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_156.gif?alt=media",
+    "id": "0826",
+    "name": "vertical leg raise (on parallel bars)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_157.gif?alt=media",
+    "id": "0832",
+    "name": "weighted crunch",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_158.gif?alt=media",
+    "id": "3670",
+    "name": "weighted decline sit-up",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_159.gif?alt=media",
+    "id": "2135",
+    "name": "weighted front plank",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_160.gif?alt=media",
+    "id": "0866",
+    "name": "weighted hanging leg-hip raise",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_161.gif?alt=media",
+    "id": "0840",
+    "name": "weighted overhead crunch (on stability ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_162.gif?alt=media",
+    "id": "0846",
+    "name": "weighted russian twist",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_163.gif?alt=media",
+    "id": "0845",
+    "name": "weighted russian twist (legs up)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_164.gif?alt=media",
+    "id": "2371",
+    "name": "weighted russian twist v. 2",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_165.gif?alt=media",
+    "id": "0849",
+    "name": "weighted seated twist (on stability ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "weighted",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_166.gif?alt=media",
+    "id": "0850",
+    "name": "weighted side bend (on stability ball)",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "wheel roller",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_167.gif?alt=media",
+    "id": "0857",
+    "name": "wheel rollerout",
+    "target": "abs"
+  },
+  {
+    "bodyPart": "waist",
+    "equipment": "body weight",
+    "gifUrl": "https://firebasestorage.googleapis.com/v0/b/my-fitness-care.appspot.com/o/exercise-demo%2Fwaist%2Fwaist_168.gif?alt=media",
+    "id": "0858",
+    "name": "wind sprints",
+    "target": "abs"
+  }
+]
