@@ -36,7 +36,6 @@ export interface IUserExerciseDetails {
   rest_days: string[];
   workout_days: string[];
 }
-
 const useGetUserExerciseDetails = (userId: string) => {
   const userDetailsCollection = firestore().collection('user-details');
 
