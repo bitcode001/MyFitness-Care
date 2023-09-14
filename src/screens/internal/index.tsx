@@ -14,6 +14,7 @@ import {MSpacing} from '@/constant/measurements';
 
 import {StyleSheet, View, Animated, Dimensions} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import EntypoIcon from 'react-native-vector-icons/Entypo';
 import RoutineSetupScreen from './Routine/routine.setup.screen';
 import {
   IUserExerciseDetails,
@@ -27,6 +28,7 @@ import {
   useExtractQuery,
 } from '@/hooks/useExtractFirebaseData';
 import FallbackUI from '@/components/Fallback/fallback.ui';
+import GymShop from './gym-shop/GymShop';
 
 const styles = StyleSheet.create({
   shadow: {
@@ -43,11 +45,19 @@ const styles = StyleSheet.create({
 
 const GenIcon = (focused: boolean, name: string) => (
   <View className="d-flex flex-col h-full flex-1 justify-center">
-    <MaterialIcon
-      name={name}
-      size={30}
-      color={focused ? '#e32f45' : '#748c94'}
-    />
+    {name === 'shop' ? (
+      <EntypoIcon
+        name={name}
+        size={28}
+        color={focused ? '#e32f45' : '#748c94'}
+      />
+    ) : (
+      <MaterialIcon
+        name={name}
+        size={30}
+        color={focused ? '#e32f45' : '#748c94'}
+      />
+    )}
   </View>
 );
 
@@ -56,7 +66,7 @@ const getWidth = () => {
 
   width = width - 40;
 
-  return width / 4;
+  return width / 5;
 };
 
 export default function InternalBottomStack(): JSX.Element {
@@ -186,6 +196,24 @@ export default function InternalBottomStack(): JSX.Element {
           })}
         />
         <Tab.Screen
+          name="Shop"
+          component={GymShop}
+          options={{
+            tabBarIcon: ({focused}) => GenIcon(focused, 'shop'),
+            tabBarItemStyle: {
+              height: MSpacing.bottomTabBar.height,
+            },
+          }}
+          listeners={({navigation, route}) => ({
+            tabPress: e => {
+              Animated.spring(tabOffsetValue, {
+                toValue: getWidth() * 3,
+                useNativeDriver: true,
+              }).start();
+            },
+          })}
+        />
+        <Tab.Screen
           name="Profile"
           component={ProfileScreen}
           options={{
@@ -197,7 +225,7 @@ export default function InternalBottomStack(): JSX.Element {
           listeners={({navigation, route}) => ({
             tabPress: e => {
               Animated.spring(tabOffsetValue, {
-                toValue: getWidth() * 3,
+                toValue: getWidth() * 4,
                 useNativeDriver: true,
               }).start();
             },

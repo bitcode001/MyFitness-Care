@@ -41,7 +41,7 @@ interface InitialLoginFormInterface {
 }
 
 export default function LoginScreen({navigation}: LoginInterface): JSX.Element {
-  const {signInWithCredential} = useFirebase();
+  const {signInWithCredential, signInWithGoogle} = useFirebase();
   const [passwordVisible, setPasswordVisible] = React.useState(false);
   const togglePasswordVisibility = () => setPasswordVisible(!passwordVisible);
   const dispatch = useDispatch();
@@ -64,6 +64,26 @@ export default function LoginScreen({navigation}: LoginInterface): JSX.Element {
         type: 'error',
         text1: 'Error',
         text2: msg,
+      });
+    }
+  };
+
+  const handleLoginWithGoogle = async () => {
+    // dispatch(startSpinner());
+    try {
+      await signInWithGoogle();
+      // dispatch(stopSpinner());
+      Toast.show({
+        type: 'success',
+        text1: 'Success',
+        text2: 'You have successfully logged in!',
+      });
+    } catch (error: any) {
+      // dispatch(stopSpinner());
+      Toast.show({
+        type: 'error',
+        text1: 'Error',
+        text2: error.message,
       });
     }
   };
@@ -107,7 +127,7 @@ export default function LoginScreen({navigation}: LoginInterface): JSX.Element {
                 right={
                   <TextInput.Icon
                     onPress={() => togglePasswordVisibility()}
-                    icon="eye"
+                    icon={passwordVisible ? 'eye-off' : 'eye'}
                   />
                 }
                 onChangeText={handleChange('password')}
@@ -130,7 +150,7 @@ export default function LoginScreen({navigation}: LoginInterface): JSX.Element {
         mode="outlined"
         className="mt-5"
         icon={require('@/assets/icons/google.png')}
-        onPress={() => navigation.navigate('Register')}>
+        onPress={() => handleLoginWithGoogle()}>
         <Text>Sign in with Google</Text>
       </Button>
       <Text className="text-center my-5">Or</Text>

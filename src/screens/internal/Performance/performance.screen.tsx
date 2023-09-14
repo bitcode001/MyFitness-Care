@@ -1,11 +1,21 @@
-import ChartOne from '@/components/ChartOne';
+// import ChartOne from '@/components/ChartOne';
 import SafeAreaScrollView from '@/components/SafeAreaScrollView';
 import UserIntro from '@/components/UserIntro';
 import {MThemeColors} from '@/constant/colors';
 import {MSpacing} from '@/constant/measurements';
-import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import React from 'react';
+import {View, Text, Image} from 'react-native';
 import {ProgressBar} from 'react-native-paper';
+// Data fetching utilities
+import {
+  IUserExerciseRecords,
+  useGetUserExerciseRecords,
+} from '@/apis/exercise.db';
+import {useDispatch, useSelector} from 'react-redux';
+import {RootState} from '@/redux/store';
+import {startSpinner, stopSpinner} from '@/redux/slice/spinner.slice';
+import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
+import {EXP_BAR} from '@/constant/utils';
 
 const perks = [
   {
@@ -36,7 +46,29 @@ const perks = [
 
 const adjustedGap = 20;
 
-const SummaryGrid = () => {
+const SummaryGrid = ({
+  mappedData,
+}: {
+  mappedData: IUserExerciseRecords | undefined;
+}) => {
+  const decideMetrics = (i: number) => {
+    if (!mappedData) {
+      return 0;
+    }
+    switch (i) {
+      case 0:
+        return mappedData?.economy.m_trophies ?? 0;
+      case 1:
+        return mappedData?.economy.m_streak ?? 0;
+      case 2:
+        return mappedData?.economy.m_level ?? 0;
+      case 3:
+        return mappedData?.exercise.length ?? 0;
+      default:
+        return 0;
+    }
+  };
+
   return (
     <View
       className="flex flex-wrap flex-row justify-between mt-10"
@@ -60,7 +92,7 @@ const SummaryGrid = () => {
                 {perk.title}
               </Text>
               <Text className="text-2xl font-semibold text-black">
-                {perk.count}
+                {String(decideMetrics(index)) ?? '0'}
               </Text>
             </View>
           </View>
@@ -71,51 +103,82 @@ const SummaryGrid = () => {
 };
 
 export default function PerformanceScreen(): JSX.Element {
-  const [selected, setSelected] = useState('week');
-  const options = ['week', 'month', 'year'];
-  const renderOptions = () => {
-    return options.map(option => (
-      <TouchableOpacity
-        key={option}
-        className="flex-1 rounded-lg"
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={{
-          backgroundColor:
-            selected === option ? MThemeColors.white : 'transparent',
-        }}
-        onPress={() => {
-          setSelected(option);
-          console.log('selected', option);
-        }}>
-        <Text className="text-center capitalize p-2">{option}</Text>
-      </TouchableOpacity>
-    ));
-  };
+  // const [selected, setSelected] = useState('week');
+  // const options = ['week', 'month', 'year'];
+  // const renderOptions = () => {
+  //   return options.map(option => (
+  //     <TouchableOpacity
+  //       key={option}
+  //       className="flex-1 rounded-lg"
+  //       // eslint-disable-next-line react-native/no-inline-styles
+  //       style={{
+  //         backgroundColor:
+  //           selected === option ? MThemeColors.white : 'transparent',
+  //       }}
+  //       onPress={() => {
+  //         setSelected(option);
+  //         console.log('selected', option);
+  //       }}>
+  //       <Text className="text-center capitalize p-2">{option}</Text>
+  //     </TouchableOpacity>
+  //   ));
+  // };
+  // Data fetching logic
+  const authState = useSelector((state: RootState) => state.auth);
+  const dispatch = useDispatch();
+  const {data, isLoading, isFetching} = useGetUserExerciseRecords(
+    authState.frUser?.uid ?? '',
+  );
+
+  const {mappedData} = useExtractDocument<IUserExerciseRecords>(data);
+
+  const myExp = mappedData?.economy.m_exp ?? 0;
+  const totalExp = (() => {
+    let total = 0;
+    if (mappedData?.economy) {
+      total = mappedData.economy.m_level * EXP_BAR;
+    }
+    return total;
+  })();
+  const progressBar = (myExp / totalExp) * 100;
+
+  React.useEffect(() => {
+    // console.log('mapped Data', mappedData);
+    if (isLoading && isFetching) {
+      dispatch(startSpinner());
+    } else {
+      dispatch(stopSpinner());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, isFetching]);
+
   return (
     <SafeAreaScrollView>
       <UserIntro profileLabel="Progress Summary" />
 
       {/* MENU SELECTION SECTION */}
-      <View
+      {/* <View
         className="p-2 flex flex-row justify-between items-center mt-10 rounded-lg"
         style={{backgroundColor: MThemeColors.tabBg}}>
         {renderOptions()}
-      </View>
+      </View> */}
 
       {/* CHART SECTION */}
-      <ChartOne />
+      {/* <ChartOne /> */}
 
       {/* Experience display section */}
       <Text className="text-2xl font-normal mt-16 mb-5">Experience Points</Text>
       <ProgressBar
-        progress={0.5}
+        progress={progressBar ? progressBar / 100 : 0}
         color={MThemeColors.black}
         className="h-3 rounded-lg"
       />
-      <Text className="text-xs text-black mt-2">1300/1500 exp</Text>
+      <Text className="text-xs text-black mt-2">
+        {myExp} / {totalExp} exp
+      </Text>
 
       {/* Summary Grid Section */}
-      <SummaryGrid />
+      <SummaryGrid mappedData={mappedData} />
     </SafeAreaScrollView>
   );
 }
