@@ -54,6 +54,7 @@ const useGetUserExerciseDetails = (userId: string) => {
 
 const useSetUserExerciseDetails = (userId: string) => {
   const userDetailsCollection = firestore().collection('user-details');
+  const queryClient = useQueryClient();
 
   return useMutation<
     void,
@@ -63,6 +64,9 @@ const useSetUserExerciseDetails = (userId: string) => {
     mutationKey: ['setUserExerciseDetails', userId],
     mutationFn: (data: IUserExerciseDetails) =>
       userDetailsCollection.doc(userId).set(data),
+    onSuccess: () => {
+      queryClient.invalidateQueries(['getUserExerciseRecords', userId]);
+    },
   });
 };
 

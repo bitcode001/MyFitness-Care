@@ -54,7 +54,7 @@ const GlobalSpinner = () => {
           autoPlay
           loop
           // resizeMode="cover"
-          // eslint-disable-next-line react-native/no-inline-styles
+
           cacheComposition={true}
           // autoSize={true}
           enableMergePathsAndroidForKitKatAndAbove
@@ -65,9 +65,9 @@ const GlobalSpinner = () => {
           renderMode="AUTOMATIC"
         />
       </View>
-      <Button mode="contained" onPress={handleStopSpinner}>
+      {/* <Button mode="contained" onPress={handleStopSpinner}>
         Close
-      </Button>
+      </Button> */}
     </Modal>
   );
 };

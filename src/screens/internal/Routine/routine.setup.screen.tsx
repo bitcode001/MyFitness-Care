@@ -322,7 +322,10 @@ export default function RoutineSetupScreen({
     // MUTATE USER DATA NOW
     mutateFinalUserData(finalData);
     // MUTATE and INITIALIZE EMPTY USER EXERCISE RECORD
-    mutateUserExerciseRecords(initialUserExerciseRecords);
+    // Only if user is setting up for the first time
+    if (!isReupdatingEx) {
+      mutateUserExerciseRecords(initialUserExerciseRecords);
+    }
   };
 
   React.useEffect(() => {
@@ -332,7 +335,10 @@ export default function RoutineSetupScreen({
       // if (mutationIdle && mutationIdle2) {
       // }
 
-      if (mutationSuccess && mutationSuccess2) {
+      if (
+        (isReupdatingEx && mutationSuccess) ||
+        (mutationSuccess && mutationSuccess2)
+      ) {
         dispatch(stopSpinner());
         Toast.show({
           type: 'success',
@@ -342,10 +348,12 @@ export default function RoutineSetupScreen({
         resetExerciseDays();
         if (!isReupdatingEx) {
           dispatch(invalidateExerciseSlice());
+        } else {
+          handleUpdateComplete && handleUpdateComplete(true);
+          updateCb && updateCb();
         }
-        handleUpdateComplete && handleUpdateComplete(true);
-        updateCb && updateCb();
       }
+
       if (mutationError || mutationError2) {
         Toast.show({
           type: 'error',

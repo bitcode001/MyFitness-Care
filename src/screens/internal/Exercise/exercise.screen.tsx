@@ -33,6 +33,7 @@ import {
 // import {WEEKDAYS} from '../Routine/routine.setup.screen';
 import Toast from 'react-native-toast-message';
 import AnimatedProgressPie from '@/components/AnimatedProgressPie';
+import {useFocusEffect} from '@react-navigation/native';
 
 export default function ExerciseScreen(): JSX.Element {
   const insets = useSafeAreaInsets();
@@ -44,9 +45,12 @@ export default function ExerciseScreen(): JSX.Element {
   const authState = useSelector((state: RootState) => state.auth);
   const exerciseState = useSelector((state: RootState) => state.exercise);
   const dispatch = useDispatch();
-  const {data, isLoading, isFetching} = useGetUserExerciseDetails(
-    authState.frUser?.uid ?? '',
-  );
+  const {
+    data,
+    isLoading,
+    isFetching,
+    refetch: fetchExerciseAgain,
+  } = useGetUserExerciseDetails(authState.frUser?.uid ?? '');
 
   const {
     mutate: mutateUserExerciseRecords,
@@ -222,6 +226,15 @@ export default function ExerciseScreen(): JSX.Element {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading, isFetching]);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      if (!isFetching && !isLoading) {
+        fetchExerciseAgain();
+      }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []),
+  );
 
   React.useEffect(() => {
     if (completedExerciseIndex === exerciseList - 1) {
