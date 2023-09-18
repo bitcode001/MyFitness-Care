@@ -1,3 +1,85 @@
+// import React from 'react';
+// import {View, StyleSheet} from 'react-native';
+// import Svg, {G, Circle, Text} from 'react-native-svg';
+
+// interface ProgressPieProps {
+//   percentage: number;
+//   circleLength?: number;
+//   strokeWidth?: number;
+//   label?: number;
+//   customColorCode?: string;
+// }
+
+// const AnimatedProgressPie = ({
+//   percentage,
+//   circleLength = 200,
+//   strokeWidth = 10,
+//   label,
+//   customColorCode,
+// }: ProgressPieProps) => {
+//   const R = circleLength / (2 * Math.PI);
+//   const cx = R + strokeWidth;
+//   const cy = R + strokeWidth;
+//   const svgW = R * 2 + strokeWidth * 2;
+//   const svgH = R * 2 + strokeWidth * 2;
+
+//   const strokeDashoffset = circleLength * (1 - percentage);
+
+//   return (
+//     <View style={styles.container}>
+//       <Svg width={svgW} height={svgH} style={styles.svg}>
+//         <G>
+//           <Circle
+//             cx={cx}
+//             cy={cy}
+//             r={R}
+//             stroke={customColorCode ? customColorCode : 'rgb(34, 197, 94)'}
+//             strokeWidth={strokeWidth}
+//             fill={'transparent'}
+//             strokeOpacity={0.4}
+//           />
+//           <G transform={`rotate(${-90} ${cx} ${cy})`}>
+//             <Circle
+//               cx={cx}
+//               cy={cy}
+//               r={R}
+//               stroke={customColorCode ? customColorCode : 'rgb(34, 197, 94)'}
+//               strokeWidth={strokeWidth / 2}
+//               fill={'transparent'}
+//               strokeDasharray={circleLength}
+//               strokeLinecap={'round'}
+//               strokeDashoffset={strokeDashoffset}
+//             />
+//           </G>
+//           {/* <Text
+//             x={cx}
+//             y={cy}
+//             textAnchor="middle"
+//             alignmentBaseline="middle"
+//             fontSize={16}
+//             fontWeight="medium"
+//             fill="#666">
+//             {label ? label : Math.floor(percentage * 100)}
+//           </Text> */}
+//         </G>
+//       </Svg>
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+//   svg: {
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
+
+// export default AnimatedProgressPie;
+
 import React from 'react';
 import {View} from 'react-native';
 // import {View} from 'react-native';
@@ -33,7 +115,7 @@ const AnimatedProgressPie = ({
   const svgW = R * 2 + strokeWidth * 2;
   const svgH = R * 2 + strokeWidth * 2;
 
-  const animatedProgress = useSharedValue(percentage);
+  const animatedProgress = useSharedValue<number>(percentage);
 
   animatedProgress.value = withTiming(percentage, {
     duration: 300, // Adjust duration as needed
@@ -41,21 +123,12 @@ const AnimatedProgressPie = ({
   });
 
   const animatedProps = useAnimatedProps(() => {
-    // const animate = interpolate(
-    //   animatedProgress.value,
-    //   [0, percentage],
-    //   [0, percentage],
-    //   {
-    //     extrapolateRight: Extrapolation.CLAMP,
-    //   },
-    // );
     return {
       strokeDashoffset: circleLength * (1 - animatedProgress.value),
     };
   });
 
   return (
-    // <Svg width={R * 2 + strokeWidth * 2} height={R * 2 + strokeWidth * 2}>
     <View className="flex items-center justify-center">
       <Svg
         width={svgW}
@@ -91,7 +164,7 @@ const AnimatedProgressPie = ({
             textAnchor="middle"
             alignmentBaseline="middle"
             fontSize={16}
-            fontWeight="medium"
+            fontWeight={'bold'}
             fill="#666">
             {label ? label : Math.floor(percentage)}
           </Text>

@@ -1,12 +1,5 @@
 import React, {useState} from 'react';
-import {
-  Image,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  useColorScheme,
-} from 'react-native';
+import {ScrollView, View, Text, StatusBar, useColorScheme} from 'react-native';
 
 import {MThemeColors} from '@/constant/colors';
 import {MSpacing} from '@/constant/measurements';
@@ -34,6 +27,7 @@ import {
 import Toast from 'react-native-toast-message';
 import AnimatedProgressPie from '@/components/AnimatedProgressPie';
 import {useFocusEffect} from '@react-navigation/native';
+import FastImage from 'react-native-fast-image';
 
 export default function ExerciseScreen(): JSX.Element {
   const insets = useSafeAreaInsets();
@@ -167,7 +161,7 @@ export default function ExerciseScreen(): JSX.Element {
             Your next exercise
           </Text>
           <View className="flex flex-row justify-center items-center">
-            <Image
+            <FastImage
               className="w-48 h-48 flex-1"
               source={{
                 uri:
@@ -341,7 +335,7 @@ export default function ExerciseScreen(): JSX.Element {
                     </Text>
 
                     <Text className="text-center mt-1">Take some rest</Text>
-                    <Image
+                    <FastImage
                       className="w-24 h-24 mt-6 self-center"
                       source={require('@/assets/icons/athlete.png')}
                     />
@@ -411,7 +405,7 @@ export default function ExerciseScreen(): JSX.Element {
                 Enjoy your rest day champ !
               </Text>
 
-              <Image
+              <FastImage
                 className="w-24 h-24 my-6"
                 source={require('@/assets/icons/achievement.png')}
               />
@@ -444,7 +438,7 @@ export default function ExerciseScreen(): JSX.Element {
                 key={index}
                 className="bg-white rounded-2xl p-4 flex flex-row justify-between items-center my-4"
                 style={customizeExerciseStat(index)}>
-                <Image
+                <FastImage
                   className="w-16 h-16 rounded-full"
                   source={{uri: item.gifUrl}}
                 />

@@ -1,6 +1,6 @@
 import {StackNavigationProp} from '@react-navigation/stack';
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import {ProfileStackParamList} from './profile.screen';
 import {ActivityIndicator, Button} from 'react-native-paper';
@@ -14,6 +14,7 @@ import {useExtractDocument} from '@/hooks/useExtractFirebaseData';
 import {useSelector} from 'react-redux';
 import {RootState} from '@/redux/store';
 import {WEEKDAYS} from '../Routine/routine.setup.screen';
+import FastImage from 'react-native-fast-image';
 
 type MyExerciseListScreenNavigationProp = StackNavigationProp<
   ProfileStackParamList,
@@ -95,7 +96,7 @@ export default function MyExerciseList({
                     <View
                       key={index}
                       className="bg-white rounded-2xl p-4 flex flex-row justify-between items-center my-4">
-                      <Image
+                      <FastImage
                         className="w-16 h-16 rounded-full"
                         source={{uri: item.gifUrl}}
                       />

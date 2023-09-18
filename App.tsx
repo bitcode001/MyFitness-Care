@@ -16,6 +16,7 @@ import MainScreen from '@/screens/main.screen';
 
 import {PaperProvider} from 'react-native-paper';
 import {enGB, registerTranslation} from 'react-native-paper-dates';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 registerTranslation('en-GB', enGB);
 registerTranslation('en-GB', {
   save: 'Save',
@@ -43,7 +44,9 @@ function App(): JSX.Element {
           <PersistGate persistor={persistStore(store)}>
             <NavigationContainer>
               <PaperProvider>
-                <MainScreen />
+                <GestureHandlerRootView style={{flex: 1}}>
+                  <MainScreen />
+                </GestureHandlerRootView>
               </PaperProvider>
             </NavigationContainer>
           </PersistGate>

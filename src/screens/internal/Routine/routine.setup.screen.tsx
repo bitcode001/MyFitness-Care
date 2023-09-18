@@ -348,6 +348,7 @@ export default function RoutineSetupScreen({
         resetExerciseDays();
         if (!isReupdatingEx) {
           dispatch(invalidateExerciseSlice());
+          handleUpdateComplete && handleUpdateComplete(true);
         } else {
           handleUpdateComplete && handleUpdateComplete(true);
           updateCb && updateCb();
